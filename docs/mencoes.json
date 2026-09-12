@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-09-12T02:20:14+00:00",
- "observacao": "Citação de nome no texto de um documento público NÃO significa que a pessoa seja investigada, ré ou suspeita. O painel conta menções, e só isso.",
+ "gerado_em": "2026-09-12T02:52:13+00:00",
+ "observacao": "Citação de nome no texto de um documento público NÃO significa que a pessoa seja investigada, ré ou suspeita. O painel conta menções, e só isso. O papel processual mostrado ao lado de um nome vem da aba de partes do próprio processo — quem não é parte aparece apenas como citado.",
  "resumo": {
   "pecas": 416,
   "baixadas": 416,
@@ -11,10 +11,49 @@
   "pecas_novas_nesta_coleta": 0,
   "nomes_encontrados": 13
  },
+ "papeis": [
+  {
+   "id": "citado",
+   "titulo": "Citados no material",
+   "ordem": 1,
+   "cor": "#f2b544",
+   "nota": "Nomes que aparecem escritos nas peças sem serem parte formal desses processos."
+  },
+  {
+   "id": "alvo",
+   "titulo": "Alvos formais da investigação",
+   "ordem": 2,
+   "cor": "#ff7a45",
+   "nota": "Quem figura como investigado, requerido ou intimado nos autos, e as empresas do caso."
+  },
+  {
+   "id": "tema",
+   "titulo": "Operações e temas",
+   "ordem": 3,
+   "cor": "#38bdf8",
+   "nota": "Não são pessoas: são as apurações e instituições citadas no material."
+  },
+  {
+   "id": "acusacao",
+   "titulo": "Quem investiga e acusa",
+   "ordem": 4,
+   "cor": "#4ade80",
+   "nota": "Aparecem em quase toda peça porque conduzem o processo — por isso ficam separados."
+  },
+  {
+   "id": "julga",
+   "titulo": "Quem julga",
+   "ordem": 5,
+   "cor": "#8b5cf6",
+   "nota": "Relator e demais ministros que decidiram no caso; assinam as próprias decisões."
+  }
+ ],
  "pessoas": [
   {
    "nome": "PGR",
-   "grupo": "Instituições",
+   "papel": "acusacao",
+   "papel_no_config": "acusacao",
+   "papel_processual": [],
    "pecas": 237,
    "pecas_de_conteudo": 31,
    "mencoes": 305,
@@ -41,7 +80,9 @@
   },
   {
    "nome": "André Mendonça",
-   "grupo": "Ministros do STF",
+   "papel": "julga",
+   "papel_no_config": "julga",
+   "papel_processual": [],
    "pecas": 196,
    "pecas_de_conteudo": 45,
    "mencoes": 744,
@@ -68,7 +109,14 @@
   },
   {
    "nome": "Polícia Federal",
-   "grupo": "Instituições",
+   "papel": "acusacao",
+   "papel_no_config": "acusacao",
+   "papel_processual": [
+    "AUT. POL em Inq 5026",
+    "AUT. POL em Inq 5035",
+    "AUT. POL em Pet 15198",
+    "AUT. POL em Pet 15487"
+   ],
    "pecas": 94,
    "pecas_de_conteudo": 33,
    "mencoes": 387,
@@ -94,7 +142,14 @@
   },
   {
    "nome": "Daniel Vorcaro",
-   "grupo": "Caso Master",
+   "papel": "alvo",
+   "papel_no_config": "alvo",
+   "papel_processual": [
+    "INTDO em Inq 5026",
+    "INTDO em Pet 15198",
+    "INTDO em Pet 15873",
+    "INVEST em Inq 5035"
+   ],
    "pecas": 36,
    "pecas_de_conteudo": 21,
    "mencoes": 246,
@@ -118,7 +173,9 @@
   },
   {
    "nome": "Dias Toffoli",
-   "grupo": "Ministros do STF",
+   "papel": "julga",
+   "papel_no_config": "julga",
+   "papel_processual": [],
    "pecas": 33,
    "pecas_de_conteudo": 8,
    "mencoes": 64,
@@ -135,7 +192,9 @@
   },
   {
    "nome": "Compliance Zero",
-   "grupo": "Caso Master",
+   "papel": "tema",
+   "papel_no_config": "tema",
+   "papel_processual": [],
    "pecas": 33,
    "pecas_de_conteudo": 26,
    "mencoes": 126,
@@ -157,7 +216,14 @@
   },
   {
    "nome": "Banco Master",
-   "grupo": "Caso Master",
+   "papel": "alvo",
+   "papel_no_config": "alvo",
+   "papel_processual": [
+    "BENEF em Rcl 95516",
+    "BENEF em Rcl 97917",
+    "RECDO em ARE 1565238",
+    "RECDO em ARE 1570184"
+   ],
    "pecas": 26,
    "pecas_de_conteudo": 22,
    "mencoes": 127,
@@ -179,7 +245,12 @@
   },
   {
    "nome": "Ciro Nogueira",
-   "grupo": "Políticos",
+   "papel": "alvo",
+   "papel_no_config": "citado",
+   "papel_processual": [
+    "REQDO em Pet 15855",
+    "REQDO em Pet 15873"
+   ],
    "pecas": 12,
    "pecas_de_conteudo": 5,
    "mencoes": 55,
@@ -192,7 +263,9 @@
   },
   {
    "nome": "Banco Central",
-   "grupo": "Instituições",
+   "papel": "tema",
+   "papel_no_config": "tema",
+   "papel_processual": [],
    "pecas": 11,
    "pecas_de_conteudo": 8,
    "mencoes": 42,
@@ -209,7 +282,9 @@
   },
   {
    "nome": "Edson Fachin",
-   "grupo": "Ministros do STF",
+   "papel": "julga",
+   "papel_no_config": "julga",
+   "papel_processual": [],
    "pecas": 6,
    "pecas_de_conteudo": 6,
    "mencoes": 9,
@@ -224,7 +299,9 @@
   },
   {
    "nome": "Alexandre de Moraes",
-   "grupo": "Ministros do STF",
+   "papel": "citado",
+   "papel_no_config": "citado",
+   "papel_processual": [],
    "pecas": 2,
    "pecas_de_conteudo": 2,
    "mencoes": 4,
@@ -237,7 +314,9 @@
   },
   {
    "nome": "Jair Bolsonaro",
-   "grupo": "Políticos",
+   "papel": "citado",
+   "papel_no_config": "citado",
+   "papel_processual": [],
    "pecas": 2,
    "pecas_de_conteudo": 2,
    "mencoes": 2,
@@ -250,7 +329,9 @@
   },
   {
    "nome": "Flávio Bolsonaro",
-   "grupo": "Políticos",
+   "papel": "citado",
+   "papel_no_config": "citado",
+   "papel_processual": [],
    "pecas": 1,
    "pecas_de_conteudo": 1,
    "mencoes": 3,
@@ -264,15 +345,15 @@
  "ausentes": [
   {
    "nome": "Cláudio Castro",
-   "grupo": "Políticos"
+   "papel": "citado"
   },
   {
    "nome": "Jaques Wagner",
-   "grupo": "Políticos"
+   "papel": "citado"
   },
   {
    "nome": "Filme sobre Bolsonaro (Dark Horse)",
-   "grupo": "Caso Master"
+   "papel": "tema"
   }
  ],
  "por_processo": [
@@ -315,9 +396,9 @@
     "Polícia Federal": 20,
     "Dias Toffoli": 2,
     "Compliance Zero": 2,
-    "Edson Fachin": 1,
     "Daniel Vorcaro": 1,
-    "Banco Master": 1
+    "Banco Master": 1,
+    "Edson Fachin": 1
    }
   },
   {
@@ -418,8 +499,8 @@
     "Polícia Federal": 2,
     "André Mendonça": 1,
     "Alexandre de Moraes": 1,
-    "Edson Fachin": 1,
-    "Compliance Zero": 1
+    "Compliance Zero": 1,
+    "Edson Fachin": 1
    }
   },
   {
@@ -470,8 +551,8 @@
    "processo": "Pet 15977",
    "pecas": 4,
    "nomes": {
-    "André Mendonça": 3,
     "PGR": 3,
+    "André Mendonça": 3,
     "Compliance Zero": 2,
     "Polícia Federal": 2,
     "Daniel Vorcaro": 1
@@ -496,8 +577,8 @@
     "Polícia Federal": 3,
     "Banco Master": 2,
     "Alexandre de Moraes": 1,
-    "Edson Fachin": 1,
-    "Compliance Zero": 1
+    "Compliance Zero": 1,
+    "Edson Fachin": 1
    }
   },
   {

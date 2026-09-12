@@ -102,7 +102,7 @@ def main() -> None:
 
     cfg = json.loads(NOMES.read_text(encoding="utf-8"))
     alvos = [
-        (n["nome"], n["grupo"], [re.compile(rf"\b{re.escape(normalizar(v))}\b") for v in n["variantes"]])
+        (n["nome"], n["papel"], [re.compile(rf"\b{re.escape(normalizar(v))}\b") for v in n["variantes"]])
         for n in cfg["nomes"]
     ]
 
@@ -164,7 +164,7 @@ def main() -> None:
             )
             reg["mencoes"] = {
                 nome: total
-                for nome, _grupo, padroes in alvos
+                for nome, _papel, padroes in alvos
                 if (total := sum(len(p.findall(norm)) for p in padroes))
             }
         else:
@@ -188,7 +188,8 @@ def main() -> None:
             {
                 "gerado_em": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 "observacao": cfg["observacao"],
-                "grupos": {n["nome"]: n["grupo"] for n in cfg["nomes"]},
+                "papeis": cfg["papeis"],
+                "papel_do_nome": {n["nome"]: n["papel"] for n in cfg["nomes"]},
                 "resumo": resumo,
                 "pecas": saida,
             },

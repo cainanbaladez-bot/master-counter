@@ -111,6 +111,19 @@
 
 <section>
   <div class="wrap">
+    <h2>O que está fechado — e por quê</h2>
+    <p class="desc">Nem todo sigilo é igual. O portal do STF marca o próprio andamento como
+      “Petição Sigilosa” ou “Decisão (sigiloso)” — esses são os que o ministro pode abrir. Ao lado,
+      os andamentos que normalmente teriam peça e não têm, e os que nunca teriam (conclusão,
+      remessa, autuação). Processo com investigação em curso tem motivo legal para seguir fechado:
+      esse é o critério que a própria presidência do STF usou ao mandar abrir o resto.</p>
+    <div class="kpis" id="kpis-sigilo" style="margin-bottom:18px"></div>
+    <div class="painel"><div id="classes"></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <h2>Ritmo de liberação</h2>
     <p class="desc">Cada barra é um dia: quantos documentos ficaram acessíveis naquela data de
       andamento. A linha é o acumulado. Os traços verticais marcam os episódios públicos de cobrança
@@ -152,8 +165,8 @@
   <div class="wrap">
     <h2>A composição mudou</h2>
     <p class="desc">Cada coluna é um mês de juntada das peças hoje acessíveis; a altura mostra
-      quantas peças daquele mês citam cada nome. É aqui que dá para ver o material sair de um
-      conjunto girando em torno de um ministro do STF para outro que traz nomes de políticos.</p>
+      quantas peças daquele mês citam cada nome. Aqui ficam de fora a acusação e os julgadores —
+      eles assinam quase tudo e esmagariam a escala; o que resta é quem o material cita.</p>
     <div class="painel">
       <svg id="grafico-nomes" viewBox="0 0 1000 380" role="img" aria-label="Nomes citados por mês"></svg>
       <div class="legenda" id="legenda-nomes"></div>
@@ -175,7 +188,8 @@
 <section id="sec-matriz" hidden>
   <div class="wrap">
     <h2>Nomes por processo</h2>
-    <p class="desc">Os três nomes mais citados nas peças públicas de cada processo.</p>
+    <p class="desc">Os nomes mais citados nas peças públicas de cada processo, tirando acusação e
+      julgadores — é o que mostra qual processo gira em torno de quem.</p>
     <div class="rolagem"><table id="matriz"></table></div>
   </div>
 </section>
@@ -231,7 +245,7 @@ function desenhar(d){
   document.getElementById("carimbo").textContent =
     `Última coleta: ${ger.toLocaleString("pt-BR")} · ${fmt(d.resumo.processos)} processos · fonte: portal do STF`;
 
-  kpis(d); grafico(d); tabela(d); tipos(d); marcos(d); metodo(d);
+  kpis(d); sigilo(d); grafico(d); tabela(d); tipos(d); marcos(d); metodo(d);
 
   document.getElementById("rodape").innerHTML =
     `Dados públicos coletados do ` + d.fontes.map(f=>`<a href="${f.url}" target="_blank" rel="noopener">${f.nome}</a>`).join(" e do ") +
@@ -244,8 +258,10 @@ function kpis(d){
   const h = d.historico || [];
   const delta = h.length > 1 ? r.documentos - h[h.length-2].documentos : null;
   const alvo = [
-    {n: r.pct_andamentos_com_documento.toFixed(1).replace(".",",")+"%", r:"dos andamentos têm documento que dá para abrir",
-     d:`${fmt(r.andamentos_com_documento)} de ${fmt(r.andamentos)} andamentos`, destaque:true, barra:r.pct_andamentos_com_documento},
+    {n: (r.pct_sigilo_levantado??0).toFixed(1).replace(".",",")+"%", r:"do material que o STF marcou como sigiloso já dá para abrir",
+     d:`${fmt(r.sigilosos_liberados)} de ${fmt(r.sigilosos)} andamentos sigilosos`, destaque:true, barra:r.pct_sigilo_levantado},
+    {n: r.pct_andamentos_com_documento.toFixed(1).replace(".",",")+"%", r:"de todos os andamentos têm documento acessível",
+     d:`${fmt(r.andamentos_com_documento)} de ${fmt(r.andamentos)} andamentos`},
     {n: fmt(r.documentos), r:"documentos acessíveis no portal",
      d: delta === null ? "primeira coleta" : (delta > 0 ? `+${fmt(delta)} desde a coleta anterior` : "estável desde a coleta anterior")},
     {n: fmt(r.processos), r:"processos do caso mapeados", d:`${fmt(r.processos_sob_relator)} sob relatoria de Mendonça`},
@@ -259,6 +275,52 @@ function kpis(d){
       ${k.barra!==undefined?`<div class="barra"><i style="width:${Math.min(100,k.barra)}%"></i></div>`:""}
       <div class="d">${k.d}</div>
     </div>`).join("");
+}
+
+function sigilo(d){
+  const r = d.resumo, cls = d.classes || [];
+  const cor = {sigiloso_fechado:"#8b5cf6", sigiloso_liberado:"#4ade80", peca_esperada_ausente:"#ff7a45",
+               publico_com_peca:"#f2b544", sem_peca_por_natureza:"#6b7280", anulado:"#3f4655"};
+  document.getElementById("kpis-sigilo").innerHTML = [
+    {n: fmt(r.sigilosos), rot:"andamentos marcados como sigilosos pelo portal", d:`${fmt(r.sigilosos_liberados)} deles já com peça acessível`},
+    {n: fmt(r.peca_esperada_ausente), rot:"andamentos que deveriam ter peça e não têm", d:"sem marca de sigilo — só não há documento publicado"},
+    {n: `${fmt(r.processos_com_apuracao_ativa)} de ${fmt(r.processos)}`, rot:"processos com sinal de apuração em curso",
+     d:"diligência, autos à PF ou inquérito movimentado nos últimos meses"}
+  ].map(k=>`<div class="kpi"><div class="n">${k.n}</div><div class="r">${k.rot}</div><div class="d">${k.d}</div></div>`).join("");
+
+  const tipos = d.sigilo_por_tipo || [];
+  if(tipos.length){
+    document.getElementById("kpis-sigilo").insertAdjacentHTML("afterend", `
+      <div class="painel" style="margin-bottom:18px">
+        <b style="font-size:.95rem">De onde vem esse número</b>
+        <p style="color:var(--txt-2);font-size:.88rem;margin:8px 0 14px">O denominador é dominado
+          pelas petições que as partes protocolam sob sigilo — que raramente viram públicas em
+          qualquer processo. Separado por tipo, o quadro é outro: o que o próprio ministro assina
+          já está majoritariamente aberto.</p>
+        <div class="rolagem"><table>
+          <thead><tr><th>Tipo de andamento sigiloso</th><th>Abertos</th><th>Ainda fechados</th><th>% aberto</th></tr></thead>
+          <tbody>${tipos.map(t=>`<tr>
+            <td>${t.tipo}</td><td class="num">${fmt(t.abertos)}</td>
+            <td class="num">${fmt(t.fechados)}</td>
+            <td class="num">${t.pct.toFixed(1).replace(".",",")}%
+              <span class="mini"><i style="width:${t.pct}%"></i></span></td></tr>`).join("")}</tbody>
+        </table></div>
+      </div>`);
+  }
+
+  const total = cls.reduce((a,c)=>a+c.n,0) || 1;
+  document.getElementById("classes").innerHTML = `
+    <div style="display:flex;height:26px;border-radius:8px;overflow:hidden;margin-bottom:16px">
+      ${cls.map(c=>`<div style="width:${100*c.n/total}%;background:${cor[c.id]||"#6b7280"}"
+          title="${c.rotulo}: ${fmt(c.n)}"></div>`).join("")}
+    </div>
+    ${cls.map(c=>`
+      <div style="display:grid;grid-template-columns:18px 1fr 120px;gap:10px;align-items:center;padding:5px 0">
+        <i class="chip" style="background:${cor[c.id]||"#6b7280"}"></i>
+        <span style="font-size:.88rem;color:var(--txt-2)">${c.rotulo}</span>
+        <span style="font-family:var(--mono);font-size:.82rem;text-align:right">${fmt(c.n)}
+          <span style="color:var(--txt-3)"> · ${(100*c.n/total).toFixed(1).replace(".",",")}%</span></span>
+      </div>`).join("")}`;
 }
 
 function grafico(d){
@@ -320,8 +382,9 @@ let ordem = {col:"documentos", desc:true};
 function tabela(d){
   const cols = [
     ["rotulo","Processo",false], ["relator","Relator",false], ["publicidade","Publicidade",false],
-    ["andamentos","Andamentos",true], ["documentos","Docs. acessíveis",true],
-    ["pct_com_documento","% com doc.",true], ["ultima_movimentacao","Última mov.",false], [null,"Links",false]
+    ["andamentos","Andamentos",true], ["sigilosos","Sigilosos",true],
+    ["pct_sigilo_levantado","% sigilo aberto",true], ["apuracao_ativa","Apuração",false],
+    ["ultima_movimentacao","Última mov.",false], [null,"Links",false]
   ];
   const el = document.getElementById("tabela");
   const linhas = [...d.processos].sort((a,b)=>{
@@ -337,9 +400,10 @@ function tabela(d){
         <td>${(p.relator||"—").replace("MIN. ","")}</td>
         <td><span class="pill ${(p.publicidade||"").startsWith("Públic")?"pub":"sig"}">${p.publicidade||"—"}</span></td>
         <td class="num">${fmt(p.andamentos)}</td>
-        <td class="num">${fmt(p.documentos)}</td>
-        <td class="num">${(p.pct_com_documento||0).toFixed(1).replace(".",",")}%
-          <span class="mini"><i style="width:${Math.min(100,p.pct_com_documento)}%"></i></span></td>
+        <td class="num">${fmt(p.sigilosos)}<span style="color:var(--txt-3)"> · ${fmt(p.sigilosos_liberados)} abertos</span></td>
+        <td class="num">${p.pct_sigilo_levantado===null?"—":(p.pct_sigilo_levantado.toFixed(1).replace(".",",")+"%")}
+          <span class="mini"><i style="width:${Math.min(100,p.pct_sigilo_levantado||0)}%"></i></span></td>
+        <td><span class="pill ${p.apuracao_ativa?"sig":"pub"}">${p.apuracao_ativa?"em curso":"sem sinal"}</span></td>
         <td class="num">${dataBR(p.ultima_movimentacao)}</td>
         <td><a href="${p.url_portal}" target="_blank" rel="noopener">andamentos</a> ·
             <a href="${p.url_pecas}" target="_blank" rel="noopener">peças</a></td>
@@ -366,19 +430,31 @@ function desenharNomes(m){
 
 function listaPessoas(m){
   const ps = m.pessoas || [];
-  if(!ps.length){ document.getElementById("pessoas").innerHTML =
-    `<p class="desc" style="margin:0">Nenhum dos nomes acompanhados apareceu nas peças lidas.</p>`; return; }
+  const alvo = document.getElementById("pessoas");
+  if(!ps.length){ alvo.innerHTML = `<p class="desc" style="margin:0">Nenhum dos nomes acompanhados apareceu nas peças lidas.</p>`; return; }
+  const papeis = [...(m.papeis||[])].sort((a,b)=>a.ordem-b.ordem);
   const max = Math.max(...ps.map(p=>p.pecas));
-  document.getElementById("pessoas").innerHTML = ps.map(p=>`
-    <div style="display:grid;grid-template-columns:210px 1fr 120px;gap:12px;align-items:center;padding:7px 0"
-         title="${p.pecas} peça(s), ${p.mencoes} menção(ões) · ${p.processos.length} processo(s)">
-      <span style="font-size:.88rem">${p.nome}
-        <span style="color:var(--txt-3);font-size:.72rem;display:block">${p.grupo}</span></span>
-      <span class="mini" style="width:100%;height:10px">
-        <i style="width:${(100*p.pecas/max).toFixed(1)}%;background:${CORES[p.grupo]||CORES[""]}"></i></span>
-      <span style="font-family:var(--mono);font-size:.8rem;text-align:right">${fmt(p.pecas)} peça${p.pecas===1?"":"s"}
-        <span style="color:var(--txt-3);display:block;font-size:.72rem">${fmt(p.pecas_de_conteudo ?? 0)} de conteúdo · ${fmt(p.mencoes)} menções</span></span>
-    </div>`).join("");
+  alvo.innerHTML = papeis.map(papel => {
+    const grupo = ps.filter(p => p.papel === papel.id);
+    if(!grupo.length) return "";
+    return `<div style="margin:0 0 26px">
+      <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:4px">
+        <b style="font-size:1rem;color:${papel.cor}">${papel.titulo}</b>
+        <span style="color:var(--txt-3);font-size:.8rem">${papel.nota}</span>
+      </div>
+      ${grupo.map(p=>`
+        <div style="display:grid;grid-template-columns:230px 1fr 130px;gap:12px;align-items:center;padding:7px 0"
+             title="${p.pecas} peça(s), ${p.mencoes} menção(ões) · ${p.processos.length} processo(s)">
+          <span style="font-size:.88rem">${p.nome}
+            <span style="color:var(--txt-3);font-size:.72rem;display:block">
+              ${p.papel_processual && p.papel_processual.length ? p.papel_processual[0] : "não é parte nesses processos"}</span></span>
+          <span class="mini" style="width:100%;height:10px">
+            <i style="width:${(100*p.pecas/max).toFixed(1)}%;background:${papel.cor}"></i></span>
+          <span style="font-family:var(--mono);font-size:.8rem;text-align:right">${fmt(p.pecas)} peça${p.pecas===1?"":"s"}
+            <span style="color:var(--txt-3);display:block;font-size:.72rem">${fmt(p.pecas_de_conteudo ?? 0)} de conteúdo · ${fmt(p.mencoes)} menções</span></span>
+        </div>`).join("")}
+    </div>`;
+  }).join("");
 
   const aus = m.ausentes || [];
   document.getElementById("ausentes").innerHTML = !aus.length ? "" : `
@@ -398,8 +474,11 @@ function graficoNomes(m){
   const svg = document.getElementById("grafico-nomes");
   if(!serie.length){ svg.innerHTML = `<text x="20" y="40" fill="#9aa3af">sem dados</text>`; return; }
   // os nomes mais citados no conjunto, para não virar sopa de cores
-  const top = (m.pessoas||[]).slice(0,7).map(p=>p.nome);
-  const cor = n => CORES[(m.pessoas.find(p=>p.nome===n)||{}).grupo] || CORES[""];
+  // quem conduz o caso (acusação e julgadores) aparece em quase toda peça e afogaria o resto
+  const foco = (m.pessoas||[]).filter(p => ["citado","alvo","tema"].includes(p.papel));
+  const top = foco.slice(0,7).map(p=>p.nome);
+  const corDoPapel = Object.fromEntries((m.papeis||[]).map(x=>[x.id,x.cor]));
+  const cor = n => corDoPapel[(m.pessoas.find(p=>p.nome===n)||{}).papel] || "#6b7280";
   const W=1000,H=380,ml=46,mr=16,mt=20,mb=52, iw=W-ml-mr, ih=H-mt-mb;
   const maxCol = Math.max(1, ...serie.map(s => top.reduce((a,n)=>a+(s.nomes[n]||0),0)));
   const lg = Math.min(46, iw/serie.length*0.72);
@@ -431,7 +510,8 @@ function graficoNomes(m){
 function levas(m){
   const ls = m.levas || [];
   document.getElementById("levas").innerHTML = ls.map(l=>{
-    const nomes = Object.entries(l.nomes).slice(0,8);
+    const foco = new Set((m.pessoas||[]).filter(p=>["citado","alvo","tema"].includes(p.papel)).map(p=>p.nome));
+    const nomes = Object.entries(l.nomes).filter(([n])=>foco.has(n)).slice(0,8);
     return `<div class="painel" style="margin-bottom:14px">
       <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
         <b style="font-family:var(--mono)">${dataBR(l.data)}</b>
@@ -446,9 +526,12 @@ function levas(m){
 }
 
 function matriz(m){
-  const linhas = (m.por_processo||[]).filter(p=>Object.keys(p.nomes).length);
+  const foco = new Set((m.pessoas||[]).filter(p=>["citado","alvo","tema"].includes(p.papel)).map(p=>p.nome));
+  const linhas = (m.por_processo||[]).map(p=>({
+    ...p, nomes: Object.fromEntries(Object.entries(p.nomes).filter(([n])=>foco.has(n)))
+  })).filter(p=>Object.keys(p.nomes).length);
   document.getElementById("matriz").innerHTML =
-    `<thead><tr><th>Processo</th><th>Peças lidas</th><th>Nomes mais citados</th></tr></thead>
+    `<thead><tr><th>Processo</th><th>Peças lidas</th><th>Do que o material trata</th></tr></thead>
      <tbody>${linhas.map(p=>`
       <tr><td><b>${p.processo}</b></td><td class="num">${fmt(p.pecas)}</td>
         <td style="white-space:normal">${Object.entries(p.nomes).slice(0,3)
@@ -487,12 +570,17 @@ function marcos(d){
 function metodo(d){
   const r = d.resumo;
   document.getElementById("metodo").innerHTML = `
-    <div><h3>O que o contador mede</h3><p>A proporção de andamentos processuais que trazem um
-      documento baixável no portal do STF. É o que um cidadão qualquer consegue abrir hoje, sem
-      cadastro e sem ser parte no processo.</p></div>
-    <div><h3>O que ele não mede</h3><p>Não é a porcentagem dos 26 GB de arquivos citados na imprensa:
-      o STF não publica o total de peças de um processo em formato aberto. Peça que continua restrita
-      simplesmente não aparece com link — por isso o denominador é o andamento, não o arquivo.</p></div>
+    <div><h3>O que o contador mede</h3><p>Quantos dos andamentos que o próprio portal do STF marca
+      como sigilosos ("Petição Sigilosa", "Decisão (sigiloso)") já trazem um documento baixável.
+      É a medida mais próxima de "quanto do sigilo foi levantado" que dá para fazer por fora.</p></div>
+    <div><h3>O que ele não mede</h3><p>Não é a porcentagem dos 26 GB citados na imprensa: o STF não
+      publica o total de peças em formato aberto, e a lista completa (com as restritas) só existe no
+      visualizador de autos eletrônicos, que não é raspável. O denominador aqui é o andamento.</p></div>
+    <div><h3>Sigilo legítimo x sigilo sem explicação</h3><p>Processo com investigação em curso tem
+      motivo legal para seguir fechado — foi esse o critério da presidência do STF ao mandar abrir o
+      que não tem apuração ativa. A coluna "Apuração" marca os processos com sinal recente de
+      diligência, remessa à PF ou movimentação de inquérito. É inferência a partir dos andamentos,
+      não juízo sobre o mérito.</p></div>
     <div><h3>De onde vêm os dados</h3><p>Do próprio portal público do STF: a lista de processos vem
       da busca por parte (Vorcaro, Banco Master) e cada processo é lido nas abas de informações,
       andamentos, decisões e petições. Nada de login, nada de raspagem de área restrita.</p></div>

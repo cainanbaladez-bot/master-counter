@@ -224,6 +224,18 @@ def parse_andamentos(html: str) -> list[dict]:
     return itens
 
 
+def parse_partes(html: str) -> list[dict]:
+    """Aba de partes: cada bloco traz .detalhe-parte (o papel) e .nome-parte (o nome)."""
+    sopa = BeautifulSoup(html, "html.parser")
+    partes = []
+    for bloco in sopa.select("div.processo-partes"):
+        papel = _texto(bloco.select_one(".detalhe-parte"))
+        for nome in bloco.select(".nome-parte"):
+            if _texto(nome):
+                partes.append({"papel": papel, "nome": _texto(nome)})
+    return partes
+
+
 def parse_lista_simples(html: str, seletor: str) -> list[dict]:
     sopa = BeautifulSoup(html, "html.parser")
     linhas = []
@@ -245,6 +257,7 @@ ABAS = {
     "andamentos": "abaAndamentos.asp?incidente={inc}&imprimir=",
     "decisoes": "abaDecisoes.asp?incidente={inc}",
     "peticoes": "abaPeticoes.asp?incidente={inc}",
+    "partes": "abaPartes.asp?incidente={inc}",
 }
 
 
@@ -273,6 +286,7 @@ def coletar_processo(inc: int, usar_cache: bool) -> dict:
         "cabecalho": parse_cabecalho(paginas["detalhe"]),
         "informacoes": parse_informacoes(paginas["informacoes"]),
         "andamentos": andamentos,
+        "partes_processuais": parse_partes(paginas.get("partes", "")),
         "decisoes": parse_lista_simples(paginas["decisoes"], "tr"),
         "peticoes": parse_lista_simples(paginas["peticoes"], "tr"),
     }

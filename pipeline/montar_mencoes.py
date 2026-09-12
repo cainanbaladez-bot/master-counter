@@ -33,6 +33,42 @@ VISTAS = RAIZ / "dados" / "pecas_vistas.json"
 SAIDA = RAIZ / "docs" / "mencoes.json"
 
 
+def normalizar_nome(nome: str) -> str:
+    import unicodedata
+
+    t = unicodedata.normalize("NFKD", (nome or "").lower())
+    t = "".join(c for c in t if not unicodedata.combining(c))
+    return " ".join(t.replace("(", " ").split())
+
+
+def papel_processual(nome: str, partes_por_nome: dict) -> list[str]:
+    """Casa "Daniel Vorcaro" com a parte "DANIEL BUENO VORCARO": todos os tokens do
+    nome monitorado precisam aparecer no nome da parte."""
+    tokens = [t for t in normalizar_nome(nome).split() if len(t) > 2]
+    if not tokens:
+        return []
+    achados = set()
+    for chave, ocorrencias in partes_por_nome.items():
+        if all(t in chave for t in tokens):
+            for o in ocorrencias:
+                achados.add(f"{o['papel']} em {o['processo']}")
+    return sorted(achados)[:4]
+
+
+# papéis processuais que caracterizam alvo da apuração
+PAPEL_DE_ALVO = ("REQDO", "INVEST", "INTDO", "DENUNC", "RÉU", "REU", "PACTE", "RECLDO")
+
+
+def papel_efetivo(papel_config: str, papeis_processuais: list[str]) -> str:
+    """Os autos mandam mais que o config: quem figura como requerido/investigado é
+    alvo formal, ainda que eu o tivesse cadastrado apenas como citado."""
+    if papel_config == "citado" and any(
+        pp.split(" em ")[0].strip().upper().startswith(PAPEL_DE_ALVO) for pp in papeis_processuais
+    ):
+        return "alvo"
+    return papel_config
+
+
 def iso(data_br: str) -> str:
     p = (data_br or "").split("/")
     return f"{p[2]}-{p[1]}-{p[0]}" if len(p) == 3 else ""
@@ -41,7 +77,21 @@ def iso(data_br: str) -> str:
 def main() -> None:
     bruto = json.loads(MENCOES.read_text(encoding="utf-8"))
     pecas = bruto["pecas"]
-    grupos = bruto["grupos"]
+    papel_do_nome = bruto["papel_do_nome"]
+    papeis = bruto["papeis"]
+
+    # partes formais de cada processo, direto da aba de partes do STF
+    partes_por_nome: dict[str, list] = defaultdict(list)
+    proc_json = RAIZ / "dados" / "processos.json"
+    if proc_json.exists():
+        for pr in json.loads(proc_json.read_text(encoding="utf-8"))["processos"]:
+            rot = (pr.get("cabecalho") or {}).get("rotulo") or pr.get("rotulo")
+            for parte in pr.get("partes_processuais", []):
+                if parte["papel"].startswith("ADV"):
+                    continue
+                partes_por_nome[normalizar_nome(parte["nome"])].append(
+                    {"processo": rot, "papel": parte["papel"].split("(")[0].strip(" .")}
+                )
     hoje = date.today().isoformat()
 
     # --- rastreamento de levas: quando cada peça apareceu pela primeira vez ----
@@ -74,7 +124,11 @@ def main() -> None:
     pessoas = [
         {
             "nome": nome,
-            "grupo": grupos.get(nome, ""),
+            "papel": papel_efetivo(
+                papel_do_nome.get(nome, "citado"), papel_processual(nome, partes_por_nome)
+            ),
+            "papel_no_config": papel_do_nome.get(nome, "citado"),
+            "papel_processual": papel_processual(nome, partes_por_nome),
             "pecas": por_nome_pecas[nome],
             "pecas_de_conteudo": por_nome_subst[nome],
             "mencoes": por_nome_mencoes[nome],
@@ -89,8 +143,8 @@ def main() -> None:
     # nomes acompanhados que ainda não apareceram em nenhuma peça acessível —
     # a diferença entre o que foi anunciado como liberado e o que dá para abrir
     ausentes = [
-        {"nome": nome, "grupo": grupo}
-        for nome, grupo in grupos.items()
+        {"nome": nome, "papel": papel}
+        for nome, papel in papel_do_nome.items()
         if nome not in por_nome_pecas
     ]
 
@@ -151,6 +205,7 @@ def main() -> None:
             pecas_novas_nesta_coleta=novas,
             nomes_encontrados=len(pessoas),
         ),
+        "papeis": papeis,
         "pessoas": pessoas,
         "ausentes": ausentes,
         "por_processo": por_processo,

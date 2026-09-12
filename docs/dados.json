@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-12T00:02:50+00:00",
+ "gerado_em": "2026-09-12T02:53:42+00:00",
  "caso": {
   "nome": "Caso Banco Master no STF",
   "relator": "MIN. ANDRÉ MENDONÇA",
@@ -26,15 +26,20 @@
   }
  ],
  "resumo": {
-  "processos": 16,
-  "processos_sob_relator": 16,
-  "processos_publicos": 16,
+  "processos": 17,
+  "processos_sob_relator": 17,
+  "processos_publicos": 17,
   "processos_sigilosos": 0,
-  "andamentos": 2626,
-  "andamentos_com_documento": 490,
-  "documentos": 490,
-  "pct_andamentos_com_documento": 18.7,
-  "fora_do_escopo": 19
+  "andamentos": 2861,
+  "andamentos_com_documento": 560,
+  "documentos": 560,
+  "pct_andamentos_com_documento": 19.6,
+  "fora_do_escopo": 19,
+  "sigilosos": 956,
+  "sigilosos_liberados": 47,
+  "pct_sigilo_levantado": 4.9,
+  "peca_esperada_ausente": 362,
+  "processos_com_apuracao_ativa": 13
  },
  "processos": [
   {
@@ -66,7 +71,74 @@
    "primeira_movimentacao": "2025-12-22",
    "ultima_movimentacao": "2026-09-11",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 264,
+    "sigiloso_fechado": 217,
+    "publico_com_peca": 81,
+    "peca_esperada_ausente": 86,
+    "sigiloso_liberado": 4,
+    "anulado": 2
+   },
+   "sigilosos": 221,
+   "sigilosos_liberados": 4,
+   "pct_sigilo_levantado": 1.8,
+   "partes_formais": [
+    {
+     "papel": "AUTOR(A/S)(ES)",
+     "nome": "MINISTÉRIO PÚBLICO FEDERAL"
+    },
+    {
+     "papel": "PROC.(A/S)(ES)",
+     "nome": "PROCURADOR-GERAL DA REPÚBLICA"
+    },
+    {
+     "papel": "AUT. POL.",
+     "nome": "POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "PAULO HENRIQUE BEZERRA RODRIGUES COSTA"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "ANDRE FELIPE DE OLIVEIRA SEIXAS MAIA"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "HENRIQUE SOUZA E SILVA PERETTO"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "ALBERTO FELIX DE OLIVEIRA NETO"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "ROBERIO CESAR BONFIM MANGUEIRA"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "LUIZ ANTONIO BULL"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "ANGELO ANTONIO RIBEIRO DA SILVA"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "DARIO OSWALDO GARCIA JUNIOR"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "ASCENDINO MADUREIRA GARCIA"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Autos disponibilizados à autoridade policial",
+    "Despacho"
+   ],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7559421,
@@ -98,7 +170,76 @@
    "primeira_movimentacao": "2026-04-10",
    "ultima_movimentacao": "2026-09-08",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 51,
+    "publico_com_peca": 71,
+    "peca_esperada_ausente": 14,
+    "sigiloso_liberado": 7,
+    "sigiloso_fechado": 51
+   },
+   "sigilosos": 58,
+   "sigilosos_liberados": 7,
+   "pct_sigilo_levantado": 12.1,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "FELIPE CANCADO VORCARO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "CIRO NOGUEIRA LIMA FILHO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "BERNARDO RODRIGUES DE OLIVEIRA FILHO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "GREEN INVESTIMENTOS SA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "GREEN ENERGIA FUNDO DE INVESTIMENTOS EM PARTICIPACOES - MULTIESTRATEGIA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "RAIMUNDO NETO E SILVA NOGUEIRA LIMA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "CNLF EMPREENDIMENTOS IMOBILIARIOS LTDA"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "DANIEL BUENO VORCARO"
+    },
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "FELIPE CANCADO VORCARO"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Autos disponibilizados à autoridade policial",
+    "Comunicação assinada",
+    "Decisão (sigiloso)",
+    "Decisão Referendada",
+    "Vista ao(à) Ministro(a)"
+   ],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7514886,
@@ -129,7 +270,76 @@
    "primeira_movimentacao": "2026-02-27",
    "ultima_movimentacao": "2026-09-11",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 171,
+    "peca_esperada_ausente": 49,
+    "publico_com_peca": 66,
+    "sigiloso_fechado": 111,
+    "sigiloso_liberado": 6,
+    "anulado": 4
+   },
+   "sigilosos": 117,
+   "sigilosos_liberados": 6,
+   "pct_sigilo_levantado": 5.1,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DANIEL BUENO VORCARO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "FABIANO CAMPOS ZETTEL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURAO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "PAULO SERGIO NEVES DE SOUZA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "BELLINE SANTANA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ANA CLAUDIA QUEIROZ DE PAIVA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "MORIAH ASSET EMPREENDIMENTOS E PARTICIPACOES LTDA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "KING MOTORS LOCACAO DE VEICULOS E PARTICIPACOES LTDA"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Autos disponibilizados à autoridade policial",
+    "Decisão (sigiloso)",
+    "Despacho",
+    "Determinada a diligência"
+   ],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7576893,
@@ -160,7 +370,143 @@
    "primeira_movimentacao": "2026-04-28",
    "ultima_movimentacao": "2026-09-08",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 53,
+    "sigiloso_fechado": 62,
+    "publico_com_peca": 68,
+    "peca_esperada_ausente": 32,
+    "sigiloso_liberado": 4
+   },
+   "sigilosos": 66,
+   "sigilosos_liberados": 4,
+   "pct_sigilo_levantado": 6.1,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "HENRIQUE MOURA VORCARO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DAVID HENRIQUE ALVES"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "VICTOR LIMA SEDLMAIER"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "MANOEL MENDES RODRIGUES"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ANDERSON WANDER DA SILVA LIMA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ERLENE NONATO LACERDA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "HELDER ALVES DE LIMA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "KATHERINE VENANCIO TELES"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "FRANCISCO JOSE PEREIRA DA SILVA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "VALERIA VIEIRA PEREIRA DA SILVA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "MARILSON ROSENO DA SILVA"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Certidão",
+    "Comunicação assinada",
+    "Decisão Referendada",
+    "Expedido(a)"
+   ],
+   "movimentacao_recente": true
+  },
+  {
+   "incidente": 7535768,
+   "rotulo": "Pet 15711",
+   "numero_unico": "0167857-74.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "17/03/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Investigação Penal",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "DANIEL BUENO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7535768",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7535768",
+   "andamentos": 235,
+   "andamentos_com_documento": 70,
+   "documentos": 70,
+   "pct_com_documento": 29.8,
+   "primeira_movimentacao": "2026-03-17",
+   "ultima_movimentacao": "2026-09-10",
+   "decisoes": 0,
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 72,
+    "publico_com_peca": 62,
+    "peca_esperada_ausente": 26,
+    "sigiloso_liberado": 8,
+    "sigiloso_fechado": 65,
+    "anulado": 2
+   },
+   "sigilosos": 73,
+   "sigilosos_liberados": 8,
+   "pct_sigilo_levantado": 11.0,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DE OFÍCIO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DANIEL BUENO VORCARO"
+    },
+    {
+     "papel": "AUT. POL.",
+     "nome": "POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DE OFÍCIO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DANIEL BUENO VORCARO"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Autos disponibilizados à autoridade policial"
+   ],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7473336,
@@ -179,10 +525,10 @@
    "origem": "DISTRITO FEDERAL",
    "nota": "",
    "partes": [
-    "NATALIA BUENO VORCARO ZETTEL",
+    "DANIEL BUENO VORCARO",
     "FELIPE CANCADO VORCARO",
-    "HENRIQUE MOURA VORCARO",
-    "DANIEL BUENO VORCARO"
+    "NATALIA BUENO VORCARO ZETTEL",
+    "HENRIQUE MOURA VORCARO"
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7473336",
    "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7473336",
@@ -193,7 +539,74 @@
    "primeira_movimentacao": "2025-12-22",
    "ultima_movimentacao": "2026-09-11",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 84,
+    "publico_com_peca": 63,
+    "sigiloso_fechado": 181,
+    "peca_esperada_ausente": 66,
+    "sigiloso_liberado": 6,
+    "anulado": 2
+   },
+   "sigilosos": 187,
+   "sigilosos_liberados": 6,
+   "pct_sigilo_levantado": 3.2,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "MINISTÉRIO PÚBLICO FEDERAL"
+    },
+    {
+     "papel": "PROC.(A/S)(ES)",
+     "nome": "PROCURADOR-GERAL DA REPÚBLICA"
+    },
+    {
+     "papel": "AUT. POL.",
+     "nome": "POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "JULIANA MELLO ESTEVES PEREIRA"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "RODRIGO LUIZ CAMARGO RIBEIRO"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "NATALIA BUENO VORCARO ZETTEL"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "THIAGO ASSUMPCAO HENRIQUES"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "MAURICIO ANTONIO QUADRADO"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "ASCENDINO MADUREIRA GARCIA"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "RICARDO BATISTA DE SIQUEIRA XAVIER"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "MICAELA FERRAZ SEVERO"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "BENJAMIM BOTELHO DE ALMEIDA"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Autos disponibilizados à autoridade policial",
+    "Despacho"
+   ],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7515623,
@@ -223,7 +636,74 @@
    "primeira_movimentacao": "2026-03-02",
    "ultima_movimentacao": "2026-09-11",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 59,
+    "publico_com_peca": 17,
+    "sigiloso_fechado": 33,
+    "peca_esperada_ausente": 12,
+    "sigiloso_liberado": 2,
+    "anulado": 3
+   },
+   "sigilosos": 35,
+   "sigilosos_liberados": 2,
+   "pct_sigilo_levantado": 5.7,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "FABIANO CAMPOS ZETTEL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURAO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "MARILSON ROSENO DA SILVA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "PAULO SERGIO NEVES DE SOUZA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA."
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "MORIAH ASSET EMPREENDIMENTOS E PARTICIPACOES LTDA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "KING PARTICIPACOES IMOBILIARIAS LTDA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "KING MOTORS LOCACAO DE VEICULOS E PARTICIPACOES LTDA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "LUIS FELIPE WOYCEICHOSKI"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ANA CLAUDIA QUEIROZ DE PAIVA"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Autos disponibilizados à autoridade policial",
+    "Decisão (sigiloso)"
+   ],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7556527,
@@ -253,7 +733,74 @@
    "primeira_movimentacao": "2026-04-07",
    "ultima_movimentacao": "2026-08-24",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "publico_com_peca": 13,
+    "sigiloso_fechado": 23,
+    "sigiloso_liberado": 4,
+    "sem_peca_por_natureza": 25,
+    "peca_esperada_ausente": 4
+   },
+   "sigilosos": 27,
+   "sigilosos_liberados": 4,
+   "pct_sigilo_levantado": 14.8,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "CIRO NOGUEIRA LIMA FILHO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "RAIMUNDO NETO E SILVA NOGUEIRA LIMA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "BERNARDO RODRIGUES DE OLIVEIRA FILHO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "CNLF EMPREENDIMENTOS IMOBILIARIOS LTDA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "CIRO NOGUEIRA COMERCIO DE MOTOCICLETAS LTDA."
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "FELIPE CANCADO VORCARO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "GREEN INVESTIMENTOS SA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "GREEN ENERGIA FUNDO DE INVESTIMENTOS EM PARTICIPACOES - MULTIESTRATEGIA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "LAD CAPITAL GESTORA DE RECURSOS LTDA"
+    },
+    {
+     "papel": "AUT. POL.",
+     "nome": "POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Autos disponibilizados à autoridade policial",
+    "Comunicação assinada",
+    "Despacho"
+   ],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7576883,
@@ -284,7 +831,72 @@
    "primeira_movimentacao": "2026-04-28",
    "ultima_movimentacao": "2026-09-11",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 32,
+    "publico_com_peca": 12,
+    "sigiloso_fechado": 18,
+    "peca_esperada_ausente": 10,
+    "sigiloso_liberado": 3
+   },
+   "sigilosos": 21,
+   "sigilosos_liberados": 3,
+   "pct_sigilo_levantado": 14.3,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "HENRIQUE MOURA VORCARO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DANIEL BUENO VORCARO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ERLENE NONATO LACERDA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "HELDER ALVES DE LIMA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DAVID HENRIQUE ALVES"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "VICTOR LIMA SEDLMAIER"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "RODRIGO PIMENTA FRANCO AVELAR CAMPOS"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "KATHERINE VENANCIO TELES"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "MANOEL MENDES RODRIGUES"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ANDERSON WANDER DA SILVA LIMA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "SEBASTIAO MONTEIRO JUNIOR"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Comunicação assinada"
+   ],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7509527,
@@ -314,7 +926,64 @@
    "primeira_movimentacao": "2026-02-23",
    "ultima_movimentacao": "2026-09-08",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "publico_com_peca": 15,
+    "sigiloso_fechado": 20,
+    "sem_peca_por_natureza": 6,
+    "peca_esperada_ausente": 3
+   },
+   "sigilosos": 20,
+   "sigilosos_liberados": 0,
+   "pct_sigilo_levantado": 0.0,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "PAULO SERGIO NEVES DE SOUZA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "BELLINE SANTANA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "FABIANO CAMPOS ZETTEL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ANA CLAUDIA QUEIROZ DE PAIVA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "LEONARDO AUGUSTO FURTADO PALHARES"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DANIEL BUENO VORCARO"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "PAULO SERGIO NEVES DE SOUZA"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Autos disponibilizados à autoridade policial",
+    "Despacho"
+   ],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7509111,
@@ -344,7 +1013,73 @@
    "primeira_movimentacao": "2026-02-22",
    "ultima_movimentacao": "2026-09-11",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sigiloso_fechado": 21,
+    "publico_com_peca": 11,
+    "sigiloso_liberado": 1,
+    "sem_peca_por_natureza": 7,
+    "peca_esperada_ausente": 1
+   },
+   "sigilosos": 22,
+   "sigilosos_liberados": 1,
+   "pct_sigilo_levantado": 4.5,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "FABIANO CAMPOS ZETTEL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURAO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ALINA FRANCO BOUERES DE ARAUJO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DANIEL SOUZA IOST"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "KING PARTICIPACOES IMOBILIARIAS LTDA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "KING MOTORS LOCACAO DE VEICULOS E PARTICIPACOES LTDA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DIEGO ESCOSTEGUY ZERO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DANIEL BUENO VORCARO"
+    },
+    {
+     "papel": "AUT. POL.",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Autos disponibilizados à autoridade policial",
+    "Decisão (sigiloso)"
+   ],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7450195,
@@ -377,7 +1112,54 @@
    "primeira_movimentacao": "2025-11-27",
    "ultima_movimentacao": "2026-08-25",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sigiloso_fechado": 79,
+    "sem_peca_por_natureza": 134,
+    "peca_esperada_ausente": 37,
+    "publico_com_peca": 7,
+    "anulado": 2
+   },
+   "sigilosos": 79,
+   "sigilosos_liberados": 0,
+   "pct_sigilo_levantado": 0.0,
+   "partes_formais": [
+    {
+     "papel": "RECLTE.(S)",
+     "nome": "DANIEL BUENO VORCARO"
+    },
+    {
+     "papel": "RECLDO.(A/S)",
+     "nome": "JUIZ FEDERAL DA 10ª VARA CRIMINAL E 1º JUIZADO ESPECIAL FEDERAL CRIMINAL DA SEÇÃO JUDICIÁRIA DO DISTRITO FEDERAL"
+    },
+    {
+     "papel": "RECLDO.(A/S)",
+     "nome": "POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "BENEF.(A/S)",
+     "nome": "NÃO INDICADO"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "LUIZ ANTONIO BULL"
+    },
+    {
+     "papel": "INTDO.(A/S)",
+     "nome": "JOÃO CARLOS PAOLILO BACELAR FILHO"
+    },
+    {
+     "papel": "RECLTE.(S)",
+     "nome": "DANIEL BUENO VORCARO"
+    },
+    {
+     "papel": "RECLDO.(A/S)",
+     "nome": "JUIZ FEDERAL DA 10ª VARA CRIMINAL E 1º JUIZADO ESPECIAL FEDERAL CRIMINAL DA SEÇÃO JUDICIÁRIA DO DISTRITO FEDERAL"
+    }
+   ],
+   "apuracao_ativa": false,
+   "gatilhos": [],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7498168,
@@ -407,7 +1189,55 @@
    "primeira_movimentacao": "2026-02-09",
    "ultima_movimentacao": "2026-09-11",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 14,
+    "publico_com_peca": 6,
+    "sigiloso_fechado": 23,
+    "peca_esperada_ausente": 5
+   },
+   "sigilosos": 23,
+   "sigilosos_liberados": 0,
+   "pct_sigilo_levantado": 0.0,
+   "partes_formais": [
+    {
+     "papel": "AUTOR(A/S)(ES)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "INVEST.(A/S)",
+     "nome": "THIAGO MIRANDA SILVA"
+    },
+    {
+     "papel": "INVEST.(A/S)",
+     "nome": "MARILSON ROSENO DA SILVA"
+    },
+    {
+     "papel": "INVEST.(A/S)",
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURAO"
+    },
+    {
+     "papel": "INVEST.(A/S)",
+     "nome": "DANIEL BUENO VORCARO"
+    },
+    {
+     "papel": "AUT. POL.",
+     "nome": "POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "AUTOR(A/S)(ES)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "INVEST.(A/S)",
+     "nome": "THIAGO MIRANDA SILVA"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Autos disponibilizados à autoridade policial"
+   ],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7506302,
@@ -437,7 +1267,69 @@
    "primeira_movimentacao": "2026-02-18",
    "ultima_movimentacao": "2026-06-18",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 9,
+    "publico_com_peca": 6,
+    "sigiloso_fechado": 2,
+    "peca_esperada_ausente": 1
+   },
+   "sigilosos": 2,
+   "sigilosos_liberados": 0,
+   "pct_sigilo_levantado": 0.0,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DANIEL BUENO VORCARO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "AUGUSTO FERREIRA LIMA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "LUIZ ANTONIO BULL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ALBERTO FELIX DE OLIVEIRA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ANGELO ANTONIO RIBEIRO DA SILVA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ANDRE FELIPE DE OLIVEIRA SEIXAS MAIA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "HENRIQUE SOUZA E SILVA PERETTO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "PAULO HENRIQUE BEZERRA RODRIGUES COSTA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DARIO OSWALDO GARCIA JUNIOR"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "TIRRENO CONSULTORIA PROMOTORIA DE CREDITO E PARTICIPACOES SA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "VIKING PARTICIPACOES LTDA"
+    }
+   ],
+   "apuracao_ativa": false,
+   "gatilhos": [],
+   "movimentacao_recente": false
   },
   {
    "incidente": 7607109,
@@ -468,7 +1360,52 @@
    "primeira_movimentacao": "2026-05-27",
    "ultima_movimentacao": "2026-06-26",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 6,
+    "publico_com_peca": 6,
+    "peca_esperada_ausente": 1
+   },
+   "sigilosos": 0,
+   "sigilosos_liberados": 0,
+   "pct_sigilo_levantado": null,
+   "partes_formais": [
+    {
+     "papel": "RECLTE.(S)",
+     "nome": "RICARDO BAZAN DOS SANTOS"
+    },
+    {
+     "papel": "RECLDO.(A/S)",
+     "nome": "TRIBUNAL DE JUSTIÇA DO ESTADO DE SÃO PAULO"
+    },
+    {
+     "papel": "BENEF.(A/S)",
+     "nome": "BANCO DO BRASIL SA"
+    },
+    {
+     "papel": "BENEF.(A/S)",
+     "nome": "BANCO DAYCOVAL S/A"
+    },
+    {
+     "papel": "BENEF.(A/S)",
+     "nome": "BANCO MASTER S/A"
+    },
+    {
+     "papel": "BENEF.(A/S)",
+     "nome": "CREFISA SA CREDITO FINANCIAMENTO E INVESTIMENTOS"
+    },
+    {
+     "papel": "RECLTE.(S)",
+     "nome": "RICARDO BAZAN DOS SANTOS"
+    },
+    {
+     "papel": "RECLDO.(A/S)",
+     "nome": "TRIBUNAL DE JUSTIÇA DO ESTADO DE SÃO PAULO"
+    }
+   ],
+   "apuracao_ativa": false,
+   "gatilhos": [],
+   "movimentacao_recente": false
   },
   {
    "incidente": 7505188,
@@ -498,7 +1435,73 @@
    "primeira_movimentacao": "2026-02-18",
    "ultima_movimentacao": "2026-07-30",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 15,
+    "peca_esperada_ausente": 9,
+    "publico_com_peca": 4,
+    "sigiloso_fechado": 2,
+    "sigiloso_liberado": 1
+   },
+   "sigilosos": 3,
+   "sigilosos_liberados": 1,
+   "pct_sigilo_levantado": 33.3,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DANIEL BUENO VORCARO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "AUGUSTO FERREIRA LIMA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "LUIZ ANTONIO BULL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ALBERTO FELIX DE OLIVEIRA NETO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ANGELO ANTONIO RIBEIRO DA SILVA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ANDRE FELIPE DE OLIVEIRA SEIXAS MAIA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "HENRIQUE SOUZA E SILVA PERETTO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "PAULO HENRIQUE BEZERRA RODRIGUES COSTA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DARIO OSWALDO GARCIA JUNIOR"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "TIRRENO CONSULTORIA PROMOTORIA DE CREDITO E PARTICIPACOES SA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "VIKING PARTICIPACOES LTDA"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Comunicação assinada",
+    "Expedido(a)"
+   ],
+   "movimentacao_recente": true
   },
   {
    "incidente": 7576885,
@@ -528,7 +1531,73 @@
    "primeira_movimentacao": "2026-04-28",
    "ultima_movimentacao": "2026-05-25",
    "decisoes": 0,
-   "peticoes": 0
+   "peticoes": 0,
+   "classes": {
+    "peca_esperada_ausente": 6,
+    "sem_peca_por_natureza": 15,
+    "sigiloso_liberado": 1,
+    "sigiloso_fechado": 1,
+    "publico_com_peca": 3
+   },
+   "sigilosos": 2,
+   "sigilosos_liberados": 1,
+   "pct_sigilo_levantado": 50.0,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DELEGADO DE POLÍCIA FEDERAL"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "HENRIQUE MOURA VORCARO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ERLENE NONATO LACERDA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "HELDER ALVES DE LIMA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DAVID HENRIQUE ALVES"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "VICTOR LIMA SEDLMAIER"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "RODRIGO PIMENTA FRANCO AVELAR CAMPOS"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "KATHERINE VENANCIO TELES"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "MANOEL MENDES RODRIGUES"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "ANDERSON WANDER DA SILVA LIMA"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "SEBASTIAO MONTEIRO JUNIOR"
+    },
+    {
+     "papel": "AUT. POL.",
+     "nome": "POLÍCIA FEDERAL"
+    }
+   ],
+   "apuracao_ativa": false,
+   "gatilhos": [
+    "Comunicação assinada",
+    "Expedido(a)"
+   ],
+   "movimentacao_recente": false
   }
  ],
  "serie": [
@@ -1074,905 +2143,980 @@
   },
   {
    "data": "2026-03-17",
-   "andamentos": 16,
-   "documentos": 0,
-   "documentos_acumulados": 117
+   "andamentos": 20,
+   "documentos": 1,
+   "documentos_acumulados": 118
   },
   {
    "data": "2026-03-18",
    "andamentos": 22,
    "documentos": 5,
-   "documentos_acumulados": 122
+   "documentos_acumulados": 123
   },
   {
    "data": "2026-03-19",
-   "andamentos": 13,
-   "documentos": 2,
-   "documentos_acumulados": 124
+   "andamentos": 26,
+   "documentos": 7,
+   "documentos_acumulados": 130
   },
   {
    "data": "2026-03-20",
-   "andamentos": 13,
+   "andamentos": 17,
    "documentos": 3,
-   "documentos_acumulados": 127
+   "documentos_acumulados": 133
   },
   {
    "data": "2026-03-21",
    "andamentos": 1,
    "documentos": 0,
-   "documentos_acumulados": 127
+   "documentos_acumulados": 133
   },
   {
    "data": "2026-03-23",
    "andamentos": 15,
    "documentos": 3,
-   "documentos_acumulados": 130
+   "documentos_acumulados": 136
   },
   {
    "data": "2026-03-24",
-   "andamentos": 8,
+   "andamentos": 12,
    "documentos": 2,
-   "documentos_acumulados": 132
+   "documentos_acumulados": 138
   },
   {
    "data": "2026-03-25",
    "andamentos": 19,
    "documentos": 0,
-   "documentos_acumulados": 132
+   "documentos_acumulados": 138
   },
   {
    "data": "2026-03-26",
    "andamentos": 3,
    "documentos": 1,
-   "documentos_acumulados": 133
+   "documentos_acumulados": 139
   },
   {
    "data": "2026-03-27",
-   "andamentos": 9,
+   "andamentos": 11,
    "documentos": 0,
-   "documentos_acumulados": 133
+   "documentos_acumulados": 139
   },
   {
    "data": "2026-03-28",
    "andamentos": 13,
    "documentos": 6,
-   "documentos_acumulados": 139
+   "documentos_acumulados": 145
   },
   {
    "data": "2026-03-30",
-   "andamentos": 21,
-   "documentos": 4,
-   "documentos_acumulados": 143
+   "andamentos": 22,
+   "documentos": 5,
+   "documentos_acumulados": 150
   },
   {
    "data": "2026-03-31",
-   "andamentos": 27,
+   "andamentos": 28,
    "documentos": 3,
-   "documentos_acumulados": 146
+   "documentos_acumulados": 153
   },
   {
    "data": "2026-04-01",
    "andamentos": 9,
    "documentos": 1,
-   "documentos_acumulados": 147
+   "documentos_acumulados": 154
   },
   {
    "data": "2026-04-02",
    "andamentos": 2,
    "documentos": 0,
-   "documentos_acumulados": 147
+   "documentos_acumulados": 154
   },
   {
    "data": "2026-04-03",
    "andamentos": 3,
    "documentos": 2,
-   "documentos_acumulados": 149
+   "documentos_acumulados": 156
   },
   {
    "data": "2026-04-04",
    "andamentos": 3,
    "documentos": 0,
-   "documentos_acumulados": 149
+   "documentos_acumulados": 156
   },
   {
    "data": "2026-04-05",
    "andamentos": 3,
    "documentos": 0,
-   "documentos_acumulados": 149
+   "documentos_acumulados": 156
   },
   {
    "data": "2026-04-06",
    "andamentos": 5,
    "documentos": 0,
-   "documentos_acumulados": 149
+   "documentos_acumulados": 156
   },
   {
    "data": "2026-04-07",
    "andamentos": 9,
    "documentos": 3,
-   "documentos_acumulados": 152
+   "documentos_acumulados": 159
   },
   {
    "data": "2026-04-08",
    "andamentos": 23,
    "documentos": 4,
-   "documentos_acumulados": 156
+   "documentos_acumulados": 163
   },
   {
    "data": "2026-04-09",
    "andamentos": 10,
    "documentos": 2,
-   "documentos_acumulados": 158
+   "documentos_acumulados": 165
   },
   {
    "data": "2026-04-10",
-   "andamentos": 20,
-   "documentos": 4,
-   "documentos_acumulados": 162
+   "andamentos": 29,
+   "documentos": 6,
+   "documentos_acumulados": 171
   },
   {
    "data": "2026-04-13",
    "andamentos": 6,
    "documentos": 0,
-   "documentos_acumulados": 162
+   "documentos_acumulados": 171
   },
   {
    "data": "2026-04-14",
    "andamentos": 4,
    "documentos": 2,
-   "documentos_acumulados": 164
+   "documentos_acumulados": 173
   },
   {
    "data": "2026-04-15",
-   "andamentos": 11,
+   "andamentos": 13,
    "documentos": 2,
-   "documentos_acumulados": 166
+   "documentos_acumulados": 175
   },
   {
    "data": "2026-04-16",
-   "andamentos": 3,
-   "documentos": 0,
-   "documentos_acumulados": 166
+   "andamentos": 9,
+   "documentos": 2,
+   "documentos_acumulados": 177
   },
   {
    "data": "2026-04-17",
-   "andamentos": 2,
+   "andamentos": 3,
    "documentos": 0,
-   "documentos_acumulados": 166
+   "documentos_acumulados": 177
   },
   {
    "data": "2026-04-18",
    "andamentos": 2,
    "documentos": 0,
-   "documentos_acumulados": 166
+   "documentos_acumulados": 177
   },
   {
    "data": "2026-04-19",
    "andamentos": 2,
    "documentos": 2,
-   "documentos_acumulados": 168
+   "documentos_acumulados": 179
   },
   {
    "data": "2026-04-22",
-   "andamentos": 5,
-   "documentos": 1,
-   "documentos_acumulados": 169
+   "andamentos": 12,
+   "documentos": 2,
+   "documentos_acumulados": 181
   },
   {
    "data": "2026-04-23",
-   "andamentos": 14,
+   "andamentos": 15,
    "documentos": 1,
-   "documentos_acumulados": 170
+   "documentos_acumulados": 182
   },
   {
    "data": "2026-04-24",
-   "andamentos": 9,
+   "andamentos": 11,
    "documentos": 3,
-   "documentos_acumulados": 173
+   "documentos_acumulados": 185
   },
   {
    "data": "2026-04-25",
    "andamentos": 1,
    "documentos": 1,
-   "documentos_acumulados": 174
+   "documentos_acumulados": 186
   },
   {
    "data": "2026-04-27",
-   "andamentos": 7,
-   "documentos": 1,
-   "documentos_acumulados": 175
+   "andamentos": 8,
+   "documentos": 2,
+   "documentos_acumulados": 188
   },
   {
    "data": "2026-04-28",
    "andamentos": 17,
    "documentos": 5,
-   "documentos_acumulados": 180
+   "documentos_acumulados": 193
   },
   {
    "data": "2026-04-29",
    "andamentos": 9,
    "documentos": 3,
-   "documentos_acumulados": 183
+   "documentos_acumulados": 196
   },
   {
    "data": "2026-04-30",
    "andamentos": 17,
    "documentos": 10,
-   "documentos_acumulados": 193
+   "documentos_acumulados": 206
   },
   {
    "data": "2026-05-01",
    "andamentos": 2,
    "documentos": 0,
-   "documentos_acumulados": 193
+   "documentos_acumulados": 206
   },
   {
    "data": "2026-05-04",
-   "andamentos": 9,
-   "documentos": 1,
-   "documentos_acumulados": 194
+   "andamentos": 10,
+   "documentos": 2,
+   "documentos_acumulados": 208
   },
   {
    "data": "2026-05-05",
-   "andamentos": 19,
+   "andamentos": 21,
    "documentos": 0,
-   "documentos_acumulados": 194
+   "documentos_acumulados": 208
   },
   {
    "data": "2026-05-06",
    "andamentos": 34,
    "documentos": 13,
-   "documentos_acumulados": 207
+   "documentos_acumulados": 221
   },
   {
    "data": "2026-05-07",
-   "andamentos": 30,
+   "andamentos": 31,
    "documentos": 12,
-   "documentos_acumulados": 219
+   "documentos_acumulados": 233
   },
   {
    "data": "2026-05-08",
    "andamentos": 16,
    "documentos": 5,
-   "documentos_acumulados": 224
+   "documentos_acumulados": 238
   },
   {
    "data": "2026-05-11",
    "andamentos": 51,
    "documentos": 12,
-   "documentos_acumulados": 236
+   "documentos_acumulados": 250
   },
   {
    "data": "2026-05-12",
-   "andamentos": 25,
-   "documentos": 1,
-   "documentos_acumulados": 237
+   "andamentos": 28,
+   "documentos": 3,
+   "documentos_acumulados": 253
   },
   {
    "data": "2026-05-13",
    "andamentos": 44,
    "documentos": 16,
-   "documentos_acumulados": 253
+   "documentos_acumulados": 269
   },
   {
    "data": "2026-05-14",
-   "andamentos": 39,
+   "andamentos": 40,
    "documentos": 10,
-   "documentos_acumulados": 263
+   "documentos_acumulados": 279
   },
   {
    "data": "2026-05-15",
-   "andamentos": 12,
+   "andamentos": 15,
    "documentos": 2,
-   "documentos_acumulados": 265
+   "documentos_acumulados": 281
   },
   {
    "data": "2026-05-16",
    "andamentos": 7,
    "documentos": 3,
-   "documentos_acumulados": 268
+   "documentos_acumulados": 284
   },
   {
    "data": "2026-05-18",
-   "andamentos": 23,
-   "documentos": 6,
-   "documentos_acumulados": 274
+   "andamentos": 35,
+   "documentos": 9,
+   "documentos_acumulados": 293
   },
   {
    "data": "2026-05-19",
-   "andamentos": 16,
+   "andamentos": 18,
    "documentos": 4,
-   "documentos_acumulados": 278
+   "documentos_acumulados": 297
   },
   {
    "data": "2026-05-20",
-   "andamentos": 12,
+   "andamentos": 14,
    "documentos": 2,
-   "documentos_acumulados": 280
+   "documentos_acumulados": 299
   },
   {
    "data": "2026-05-21",
    "andamentos": 28,
    "documentos": 6,
-   "documentos_acumulados": 286
+   "documentos_acumulados": 305
   },
   {
    "data": "2026-05-22",
-   "andamentos": 22,
-   "documentos": 2,
-   "documentos_acumulados": 288
+   "andamentos": 31,
+   "documentos": 4,
+   "documentos_acumulados": 309
   },
   {
    "data": "2026-05-24",
    "andamentos": 1,
    "documentos": 0,
-   "documentos_acumulados": 288
+   "documentos_acumulados": 309
   },
   {
    "data": "2026-05-25",
-   "andamentos": 13,
-   "documentos": 4,
-   "documentos_acumulados": 292
+   "andamentos": 19,
+   "documentos": 6,
+   "documentos_acumulados": 315
   },
   {
    "data": "2026-05-26",
-   "andamentos": 2,
-   "documentos": 1,
-   "documentos_acumulados": 293
+   "andamentos": 7,
+   "documentos": 3,
+   "documentos_acumulados": 318
   },
   {
    "data": "2026-05-27",
-   "andamentos": 3,
-   "documentos": 0,
-   "documentos_acumulados": 293
+   "andamentos": 11,
+   "documentos": 2,
+   "documentos_acumulados": 320
   },
   {
    "data": "2026-05-28",
-   "andamentos": 7,
+   "andamentos": 8,
    "documentos": 2,
-   "documentos_acumulados": 295
+   "documentos_acumulados": 322
   },
   {
    "data": "2026-05-29",
    "andamentos": 22,
    "documentos": 5,
-   "documentos_acumulados": 300
+   "documentos_acumulados": 327
   },
   {
    "data": "2026-06-01",
-   "andamentos": 29,
-   "documentos": 15,
-   "documentos_acumulados": 315
+   "andamentos": 30,
+   "documentos": 16,
+   "documentos_acumulados": 343
   },
   {
    "data": "2026-06-02",
-   "andamentos": 24,
+   "andamentos": 25,
    "documentos": 7,
-   "documentos_acumulados": 322
+   "documentos_acumulados": 350
   },
   {
    "data": "2026-06-03",
    "andamentos": 25,
    "documentos": 4,
-   "documentos_acumulados": 326
+   "documentos_acumulados": 354
   },
   {
    "data": "2026-06-04",
    "andamentos": 3,
    "documentos": 3,
-   "documentos_acumulados": 329
+   "documentos_acumulados": 357
   },
   {
    "data": "2026-06-05",
    "andamentos": 5,
    "documentos": 2,
-   "documentos_acumulados": 331
+   "documentos_acumulados": 359
   },
   {
    "data": "2026-06-08",
-   "andamentos": 13,
-   "documentos": 2,
-   "documentos_acumulados": 333
+   "andamentos": 15,
+   "documentos": 3,
+   "documentos_acumulados": 362
   },
   {
    "data": "2026-06-09",
    "andamentos": 4,
    "documentos": 0,
-   "documentos_acumulados": 333
+   "documentos_acumulados": 362
   },
   {
    "data": "2026-06-10",
-   "andamentos": 7,
-   "documentos": 0,
-   "documentos_acumulados": 333
+   "andamentos": 9,
+   "documentos": 2,
+   "documentos_acumulados": 364
   },
   {
    "data": "2026-06-11",
-   "andamentos": 11,
-   "documentos": 5,
-   "documentos_acumulados": 338
+   "andamentos": 14,
+   "documentos": 7,
+   "documentos_acumulados": 371
   },
   {
    "data": "2026-06-12",
    "andamentos": 18,
    "documentos": 2,
-   "documentos_acumulados": 340
+   "documentos_acumulados": 373
   },
   {
    "data": "2026-06-15",
-   "andamentos": 14,
+   "andamentos": 18,
    "documentos": 0,
-   "documentos_acumulados": 340
+   "documentos_acumulados": 373
   },
   {
    "data": "2026-06-16",
-   "andamentos": 14,
+   "andamentos": 15,
    "documentos": 7,
-   "documentos_acumulados": 347
+   "documentos_acumulados": 380
   },
   {
    "data": "2026-06-17",
    "andamentos": 16,
    "documentos": 2,
-   "documentos_acumulados": 349
+   "documentos_acumulados": 382
   },
   {
    "data": "2026-06-18",
    "andamentos": 3,
    "documentos": 0,
-   "documentos_acumulados": 349
+   "documentos_acumulados": 382
   },
   {
    "data": "2026-06-19",
    "andamentos": 11,
    "documentos": 1,
-   "documentos_acumulados": 350
+   "documentos_acumulados": 383
   },
   {
    "data": "2026-06-22",
    "andamentos": 16,
    "documentos": 12,
-   "documentos_acumulados": 362
+   "documentos_acumulados": 395
   },
   {
    "data": "2026-06-23",
    "andamentos": 13,
    "documentos": 1,
-   "documentos_acumulados": 363
+   "documentos_acumulados": 396
   },
   {
    "data": "2026-06-24",
-   "andamentos": 8,
+   "andamentos": 11,
    "documentos": 3,
-   "documentos_acumulados": 366
+   "documentos_acumulados": 399
   },
   {
    "data": "2026-06-25",
-   "andamentos": 4,
-   "documentos": 0,
-   "documentos_acumulados": 366
+   "andamentos": 16,
+   "documentos": 2,
+   "documentos_acumulados": 401
   },
   {
    "data": "2026-06-26",
-   "andamentos": 15,
+   "andamentos": 16,
    "documentos": 5,
-   "documentos_acumulados": 371
+   "documentos_acumulados": 406
   },
   {
    "data": "2026-06-27",
-   "andamentos": 5,
-   "documentos": 4,
-   "documentos_acumulados": 375
+   "andamentos": 7,
+   "documentos": 5,
+   "documentos_acumulados": 411
+  },
+  {
+   "data": "2026-06-29",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 411
   },
   {
    "data": "2026-06-30",
-   "andamentos": 4,
+   "andamentos": 7,
    "documentos": 1,
-   "documentos_acumulados": 376
+   "documentos_acumulados": 412
   },
   {
    "data": "2026-07-01",
-   "andamentos": 6,
-   "documentos": 2,
-   "documentos_acumulados": 378
+   "andamentos": 13,
+   "documentos": 4,
+   "documentos_acumulados": 416
   },
   {
    "data": "2026-07-02",
-   "andamentos": 6,
+   "andamentos": 7,
    "documentos": 1,
-   "documentos_acumulados": 379
+   "documentos_acumulados": 417
   },
   {
    "data": "2026-07-03",
-   "andamentos": 2,
+   "andamentos": 3,
    "documentos": 0,
-   "documentos_acumulados": 379
+   "documentos_acumulados": 417
   },
   {
    "data": "2026-07-06",
-   "andamentos": 4,
-   "documentos": 2,
-   "documentos_acumulados": 381
+   "andamentos": 7,
+   "documentos": 3,
+   "documentos_acumulados": 420
   },
   {
    "data": "2026-07-07",
-   "andamentos": 12,
+   "andamentos": 13,
    "documentos": 4,
-   "documentos_acumulados": 385
+   "documentos_acumulados": 424
   },
   {
    "data": "2026-07-09",
    "andamentos": 1,
    "documentos": 0,
-   "documentos_acumulados": 385
+   "documentos_acumulados": 424
   },
   {
    "data": "2026-07-10",
    "andamentos": 3,
    "documentos": 1,
-   "documentos_acumulados": 386
+   "documentos_acumulados": 425
   },
   {
    "data": "2026-07-12",
    "andamentos": 1,
    "documentos": 0,
-   "documentos_acumulados": 386
+   "documentos_acumulados": 425
   },
   {
    "data": "2026-07-13",
-   "andamentos": 15,
-   "documentos": 6,
-   "documentos_acumulados": 392
+   "andamentos": 16,
+   "documentos": 7,
+   "documentos_acumulados": 432
   },
   {
    "data": "2026-07-14",
-   "andamentos": 20,
-   "documentos": 5,
-   "documentos_acumulados": 397
+   "andamentos": 26,
+   "documentos": 8,
+   "documentos_acumulados": 440
   },
   {
    "data": "2026-07-15",
-   "andamentos": 3,
-   "documentos": 0,
-   "documentos_acumulados": 397
+   "andamentos": 5,
+   "documentos": 2,
+   "documentos_acumulados": 442
   },
   {
    "data": "2026-07-16",
-   "andamentos": 6,
+   "andamentos": 7,
    "documentos": 1,
-   "documentos_acumulados": 398
+   "documentos_acumulados": 443
   },
   {
    "data": "2026-07-17",
    "andamentos": 3,
    "documentos": 0,
-   "documentos_acumulados": 398
+   "documentos_acumulados": 443
   },
   {
    "data": "2026-07-18",
    "andamentos": 1,
    "documentos": 0,
-   "documentos_acumulados": 398
+   "documentos_acumulados": 443
   },
   {
    "data": "2026-07-20",
    "andamentos": 8,
    "documentos": 0,
-   "documentos_acumulados": 398
+   "documentos_acumulados": 443
   },
   {
    "data": "2026-07-21",
    "andamentos": 13,
    "documentos": 4,
-   "documentos_acumulados": 402
+   "documentos_acumulados": 447
   },
   {
    "data": "2026-07-22",
    "andamentos": 15,
    "documentos": 6,
-   "documentos_acumulados": 408
+   "documentos_acumulados": 453
   },
   {
    "data": "2026-07-23",
    "andamentos": 9,
    "documentos": 4,
-   "documentos_acumulados": 412
+   "documentos_acumulados": 457
   },
   {
    "data": "2026-07-24",
    "andamentos": 7,
    "documentos": 3,
-   "documentos_acumulados": 415
+   "documentos_acumulados": 460
   },
   {
    "data": "2026-07-25",
    "andamentos": 1,
    "documentos": 0,
-   "documentos_acumulados": 415
+   "documentos_acumulados": 460
   },
   {
    "data": "2026-07-27",
-   "andamentos": 15,
-   "documentos": 2,
-   "documentos_acumulados": 417
+   "andamentos": 17,
+   "documentos": 3,
+   "documentos_acumulados": 463
   },
   {
    "data": "2026-07-28",
    "andamentos": 12,
    "documentos": 4,
-   "documentos_acumulados": 421
+   "documentos_acumulados": 467
   },
   {
    "data": "2026-07-29",
    "andamentos": 13,
    "documentos": 3,
-   "documentos_acumulados": 424
+   "documentos_acumulados": 470
   },
   {
    "data": "2026-07-30",
-   "andamentos": 8,
+   "andamentos": 10,
    "documentos": 0,
-   "documentos_acumulados": 424
+   "documentos_acumulados": 470
   },
   {
    "data": "2026-07-31",
    "andamentos": 3,
    "documentos": 1,
-   "documentos_acumulados": 425
+   "documentos_acumulados": 471
   },
   {
    "data": "2026-08-02",
    "andamentos": 1,
    "documentos": 0,
-   "documentos_acumulados": 425
+   "documentos_acumulados": 471
   },
   {
    "data": "2026-08-03",
    "andamentos": 4,
    "documentos": 1,
-   "documentos_acumulados": 426
+   "documentos_acumulados": 472
   },
   {
    "data": "2026-08-04",
-   "andamentos": 5,
-   "documentos": 0,
-   "documentos_acumulados": 426
+   "andamentos": 9,
+   "documentos": 1,
+   "documentos_acumulados": 473
   },
   {
    "data": "2026-08-05",
    "andamentos": 12,
    "documentos": 4,
-   "documentos_acumulados": 430
+   "documentos_acumulados": 477
   },
   {
    "data": "2026-08-06",
    "andamentos": 4,
    "documentos": 1,
-   "documentos_acumulados": 431
+   "documentos_acumulados": 478
   },
   {
    "data": "2026-08-07",
-   "andamentos": 2,
+   "andamentos": 3,
    "documentos": 0,
-   "documentos_acumulados": 431
+   "documentos_acumulados": 478
   },
   {
    "data": "2026-08-10",
    "andamentos": 1,
    "documentos": 0,
-   "documentos_acumulados": 431
+   "documentos_acumulados": 478
   },
   {
    "data": "2026-08-11",
    "andamentos": 7,
    "documentos": 3,
-   "documentos_acumulados": 434
+   "documentos_acumulados": 481
   },
   {
    "data": "2026-08-12",
-   "andamentos": 6,
-   "documentos": 3,
-   "documentos_acumulados": 437
+   "andamentos": 8,
+   "documentos": 4,
+   "documentos_acumulados": 485
   },
   {
    "data": "2026-08-13",
    "andamentos": 8,
    "documentos": 1,
-   "documentos_acumulados": 438
+   "documentos_acumulados": 486
   },
   {
    "data": "2026-08-14",
-   "andamentos": 8,
+   "andamentos": 10,
    "documentos": 3,
-   "documentos_acumulados": 441
+   "documentos_acumulados": 489
   },
   {
    "data": "2026-08-15",
    "andamentos": 5,
    "documentos": 5,
-   "documentos_acumulados": 446
+   "documentos_acumulados": 494
   },
   {
    "data": "2026-08-17",
-   "andamentos": 10,
-   "documentos": 2,
-   "documentos_acumulados": 448
+   "andamentos": 18,
+   "documentos": 7,
+   "documentos_acumulados": 501
   },
   {
    "data": "2026-08-18",
-   "andamentos": 4,
+   "andamentos": 5,
    "documentos": 0,
-   "documentos_acumulados": 448
+   "documentos_acumulados": 501
   },
   {
    "data": "2026-08-19",
-   "andamentos": 10,
+   "andamentos": 12,
    "documentos": 0,
-   "documentos_acumulados": 448
+   "documentos_acumulados": 501
   },
   {
    "data": "2026-08-20",
    "andamentos": 8,
    "documentos": 0,
-   "documentos_acumulados": 448
+   "documentos_acumulados": 501
   },
   {
    "data": "2026-08-21",
-   "andamentos": 1,
+   "andamentos": 2,
    "documentos": 0,
-   "documentos_acumulados": 448
+   "documentos_acumulados": 501
   },
   {
    "data": "2026-08-24",
-   "andamentos": 5,
-   "documentos": 3,
-   "documentos_acumulados": 451
+   "andamentos": 12,
+   "documentos": 7,
+   "documentos_acumulados": 508
   },
   {
    "data": "2026-08-25",
-   "andamentos": 13,
+   "andamentos": 14,
    "documentos": 0,
-   "documentos_acumulados": 451
+   "documentos_acumulados": 508
   },
   {
    "data": "2026-08-26",
    "andamentos": 13,
    "documentos": 9,
-   "documentos_acumulados": 460
+   "documentos_acumulados": 517
   },
   {
    "data": "2026-08-27",
-   "andamentos": 3,
-   "documentos": 0,
-   "documentos_acumulados": 460
+   "andamentos": 5,
+   "documentos": 1,
+   "documentos_acumulados": 518
   },
   {
    "data": "2026-08-28",
-   "andamentos": 14,
+   "andamentos": 15,
    "documentos": 8,
-   "documentos_acumulados": 468
+   "documentos_acumulados": 526
   },
   {
    "data": "2026-08-31",
-   "andamentos": 6,
+   "andamentos": 7,
    "documentos": 2,
-   "documentos_acumulados": 470
+   "documentos_acumulados": 528
   },
   {
    "data": "2026-09-01",
    "andamentos": 4,
    "documentos": 0,
-   "documentos_acumulados": 470
+   "documentos_acumulados": 528
   },
   {
    "data": "2026-09-02",
    "andamentos": 2,
    "documentos": 0,
-   "documentos_acumulados": 470
+   "documentos_acumulados": 528
   },
   {
    "data": "2026-09-03",
-   "andamentos": 3,
-   "documentos": 0,
-   "documentos_acumulados": 470
+   "andamentos": 6,
+   "documentos": 1,
+   "documentos_acumulados": 529
   },
   {
    "data": "2026-09-04",
    "andamentos": 19,
    "documentos": 12,
-   "documentos_acumulados": 482
+   "documentos_acumulados": 541
   },
   {
    "data": "2026-09-07",
    "andamentos": 2,
    "documentos": 1,
-   "documentos_acumulados": 483
+   "documentos_acumulados": 542
   },
   {
    "data": "2026-09-08",
-   "andamentos": 9,
+   "andamentos": 10,
    "documentos": 2,
-   "documentos_acumulados": 485
+   "documentos_acumulados": 544
   },
   {
    "data": "2026-09-09",
-   "andamentos": 3,
-   "documentos": 0,
-   "documentos_acumulados": 485
+   "andamentos": 10,
+   "documentos": 4,
+   "documentos_acumulados": 548
   },
   {
    "data": "2026-09-10",
-   "andamentos": 3,
-   "documentos": 0,
-   "documentos_acumulados": 485
+   "andamentos": 17,
+   "documentos": 7,
+   "documentos_acumulados": 555
   },
   {
    "data": "2026-09-11",
    "andamentos": 16,
    "documentos": 5,
-   "documentos_acumulados": 490
+   "documentos_acumulados": 560
   }
  ],
  "tipos_andamento": [
   {
    "nome": "Petição",
-   "n": 936
+   "n": 1004
   },
   {
    "nome": "Comunicação assinada",
-   "n": 294
+   "n": 329
   },
   {
    "nome": "Expedido(a)",
-   "n": 188
+   "n": 217
   },
   {
    "nome": "Certidão",
-   "n": 187
+   "n": 206
   },
   {
    "nome": "Conclusos ao(à) Relator(a)",
-   "n": 146
+   "n": 152
+  },
+  {
+   "nome": "Despacho",
+   "n": 142
   },
   {
    "nome": "Remessa",
    "n": 135
   },
   {
-   "nome": "Despacho",
-   "n": 130
+   "nome": "Vista à PGR para fins de intimação",
+   "n": 114
   },
   {
    "nome": "Intimado eletronicamente",
-   "n": 100
-  },
-  {
-   "nome": "Vista à PGR para fins de intimação",
-   "n": 100
+   "n": 111
   },
   {
    "nome": "Juntada do mandado cumprido",
-   "n": 87
+   "n": 94
   },
   {
    "nome": "Decisão (sigiloso)",
-   "n": 62
+   "n": 74
   },
   {
    "nome": "Vista à PGR",
-   "n": 50
+   "n": 56
   },
   {
    "nome": "Publicação, DJE",
-   "n": 30
+   "n": 33
   },
   {
    "nome": "Autos disponibilizados à autoridade policial",
-   "n": 18
+   "n": 22
   },
   {
    "nome": "Autuado",
-   "n": 16
+   "n": 17
+  }
+ ],
+ "sigilo_por_tipo": [
+  {
+   "tipo": "Petição",
+   "abertos": 0,
+   "fechados": 880,
+   "total": 880,
+   "pct": 0.0
+  },
+  {
+   "tipo": "Decisão (sigiloso)",
+   "abertos": 47,
+   "fechados": 25,
+   "total": 72,
+   "pct": 65.3
+  },
+  {
+   "tipo": "Lançamento indevido",
+   "abertos": 0,
+   "fechados": 2,
+   "total": 2,
+   "pct": 0.0
+  },
+  {
+   "tipo": "Certidão",
+   "abertos": 0,
+   "fechados": 1,
+   "total": 1,
+   "pct": 0.0
+  },
+  {
+   "tipo": "Despacho",
+   "abertos": 0,
+   "fechados": 1,
+   "total": 1,
+   "pct": 0.0
+  }
+ ],
+ "classes": [
+  {
+   "id": "sem_peca_por_natureza",
+   "rotulo": "Andamento sem peça por natureza",
+   "n": 1017
+  },
+  {
+   "id": "sigiloso_fechado",
+   "rotulo": "Marcado como sigiloso e ainda fechado",
+   "n": 909
+  },
+  {
+   "id": "publico_com_peca",
+   "rotulo": "Público, com peça acessível",
+   "n": 511
+  },
+  {
+   "id": "peca_esperada_ausente",
+   "rotulo": "Deveria ter peça, e não há",
+   "n": 362
+  },
+  {
+   "id": "sigiloso_liberado",
+   "rotulo": "Marcado como sigiloso e já acessível",
+   "n": 47
+  },
+  {
+   "id": "anulado",
+   "rotulo": "Andamento anulado pelo próprio STF",
+   "n": 15
   }
  ],
  "historico": [
@@ -1980,6 +3124,11 @@
    "ts": "2026-09-12T00:02:51+00:00",
    "documentos": 490,
    "andamentos": 2626
+  },
+  {
+   "ts": "2026-09-12T02:54:55+00:00",
+   "documentos": 560,
+   "andamentos": 2861
   }
  ],
  "fora_do_escopo": [

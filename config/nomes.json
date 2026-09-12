@@ -1,24 +1,37 @@
 {
-  "observacao": "Citação de nome no texto de um documento público NÃO significa que a pessoa seja investigada, ré ou suspeita. O painel conta menções, e só isso.",
+  "observacao": "Citação de nome no texto de um documento público NÃO significa que a pessoa seja investigada, ré ou suspeita. O painel conta menções, e só isso. O papel processual mostrado ao lado de um nome vem da aba de partes do próprio processo — quem não é parte aparece apenas como citado.",
+  "papeis": [
+    { "id": "citado", "titulo": "Citados no material", "ordem": 1, "cor": "#f2b544",
+      "nota": "Nomes que aparecem escritos nas peças sem serem parte formal desses processos." },
+    { "id": "alvo", "titulo": "Alvos formais da investigação", "ordem": 2, "cor": "#ff7a45",
+      "nota": "Quem figura como investigado, requerido ou intimado nos autos, e as empresas do caso." },
+    { "id": "tema", "titulo": "Operações e temas", "ordem": 3, "cor": "#38bdf8",
+      "nota": "Não são pessoas: são as apurações e instituições citadas no material." },
+    { "id": "acusacao", "titulo": "Quem investiga e acusa", "ordem": 4, "cor": "#4ade80",
+      "nota": "Aparecem em quase toda peça porque conduzem o processo — por isso ficam separados." },
+    { "id": "julga", "titulo": "Quem julga", "ordem": 5, "cor": "#8b5cf6",
+      "nota": "Relator e demais ministros que decidiram no caso; assinam as próprias decisões." }
+  ],
   "nomes": [
-    { "nome": "Alexandre de Moraes", "grupo": "Ministros do STF", "variantes": ["alexandre de moraes", "alexandre moraes"] },
-    { "nome": "André Mendonça", "grupo": "Ministros do STF", "variantes": ["andre mendonca", "andré mendonça"] },
-    { "nome": "Edson Fachin", "grupo": "Ministros do STF", "variantes": ["edson fachin"] },
-    { "nome": "Dias Toffoli", "grupo": "Ministros do STF", "variantes": ["dias toffoli", "jose antonio dias toffoli"] },
+    { "nome": "Flávio Bolsonaro", "papel": "citado", "variantes": ["flavio bolsonaro", "flavio nantes bolsonaro"] },
+    { "nome": "Ciro Nogueira", "papel": "citado", "variantes": ["ciro nogueira"] },
+    { "nome": "Cláudio Castro", "papel": "citado", "variantes": ["claudio castro", "claudio bomfim de castro"] },
+    { "nome": "Jaques Wagner", "papel": "citado", "variantes": ["jaques wagner"] },
+    { "nome": "Jair Bolsonaro", "papel": "citado", "variantes": ["jair bolsonaro", "jair messias bolsonaro"] },
+    { "nome": "Alexandre de Moraes", "papel": "citado", "variantes": ["alexandre de moraes", "alexandre moraes"] },
 
-    { "nome": "Flávio Bolsonaro", "grupo": "Políticos", "variantes": ["flavio bolsonaro", "flavio nantes bolsonaro"] },
-    { "nome": "Jair Bolsonaro", "grupo": "Políticos", "variantes": ["jair bolsonaro", "jair messias bolsonaro"] },
-    { "nome": "Ciro Nogueira", "grupo": "Políticos", "variantes": ["ciro nogueira"] },
-    { "nome": "Cláudio Castro", "grupo": "Políticos", "variantes": ["claudio castro", "claudio bomfim de castro"] },
-    { "nome": "Jaques Wagner", "grupo": "Políticos", "variantes": ["jaques wagner"] },
+    { "nome": "Daniel Vorcaro", "papel": "alvo", "variantes": ["daniel vorcaro", "daniel bueno vorcaro"] },
+    { "nome": "Banco Master", "papel": "alvo", "variantes": ["banco master"] },
 
-    { "nome": "Daniel Vorcaro", "grupo": "Caso Master", "variantes": ["daniel vorcaro", "daniel bueno vorcaro"] },
-    { "nome": "Banco Master", "grupo": "Caso Master", "variantes": ["banco master"] },
-    { "nome": "Compliance Zero", "grupo": "Caso Master", "variantes": ["compliance zero"] },
-    { "nome": "Filme sobre Bolsonaro (Dark Horse)", "grupo": "Caso Master", "variantes": ["dark horse"] },
+    { "nome": "Compliance Zero", "papel": "tema", "variantes": ["compliance zero"] },
+    { "nome": "Filme sobre Bolsonaro (Dark Horse)", "papel": "tema", "variantes": ["dark horse"] },
+    { "nome": "Banco Central", "papel": "tema", "variantes": ["banco central do brasil", "bacen"] },
 
-    { "nome": "Banco Central", "grupo": "Instituições", "variantes": ["banco central do brasil", "bacen"] },
-    { "nome": "Polícia Federal", "grupo": "Instituições", "variantes": ["policia federal"] },
-    { "nome": "PGR", "grupo": "Instituições", "variantes": ["procuradoria-geral da republica", "procurador-geral da republica"] }
+    { "nome": "PGR", "papel": "acusacao", "variantes": ["procuradoria-geral da republica", "procurador-geral da republica"] },
+    { "nome": "Polícia Federal", "papel": "acusacao", "variantes": ["policia federal"] },
+
+    { "nome": "André Mendonça", "papel": "julga", "variantes": ["andre mendonca", "andré mendonça"] },
+    { "nome": "Dias Toffoli", "papel": "julga", "variantes": ["dias toffoli", "jose antonio dias toffoli"] },
+    { "nome": "Edson Fachin", "papel": "julga", "variantes": ["edson fachin"] }
   ]
 }
