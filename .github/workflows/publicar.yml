@@ -1,0 +1,44 @@
+name: Publicar painel
+
+# Publicar a página é rápido (segundos) e não pode ficar preso atrás da coleta,
+# que leva dezenas de minutos. Por isso o deploy vive separado:
+#  - push que mexe em docs/  -> publica na hora
+#  - fim do "Atualizar dados" -> publica os dados novos (push feito pelo
+#    GITHUB_TOKEN não dispara workflow sozinho, daí o workflow_run)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - ".github/workflows/publicar.yml"
+  workflow_run:
+    workflows: ["Atualizar dados"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
