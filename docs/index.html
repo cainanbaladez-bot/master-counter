@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contador Master — o que já é público no caso Banco Master no STF</title>
+<meta name="description" content="Painel de dados públicos dos processos do caso Banco Master sob relatoria do ministro André Mendonça no STF: andamentos, peças acessíveis e ritmo de liberação.">
+<style>
+  :root{
+    --bg:#0d0f12; --bg-2:#14171c; --bg-3:#1b1f26;
+    --linha:#262b34; --txt:#e8eaed; --txt-2:#9aa3af; --txt-3:#6b7280;
+    --acento:#f2b544; --acento-2:#ff7a45; --ok:#4ade80; --sig:#8b5cf6;
+    --fonte:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:var(--fonte);
+       font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:var(--acento);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  header.topo{border-bottom:1px solid var(--linha);
+    background:radial-gradient(1200px 380px at 12% -10%,rgba(242,181,68,.14),transparent 60%),var(--bg)}
+  .tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--acento);margin:40px 0 16px}
+  .tag::before{content:"";width:28px;height:1px;background:var(--acento)}
+  h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;margin:0 0 14px;letter-spacing:-.02em;font-weight:700}
+  h1 em{font-style:normal;color:var(--acento)}
+  .sub{color:var(--txt-2);max-width:64ch;font-size:1.05rem;margin:0 0 8px}
+  .meta{font-family:var(--mono);font-size:12px;color:var(--txt-3);padding:18px 0 32px}
+
+  section{padding:48px 0;border-bottom:1px solid var(--linha)}
+  h2{font-size:1.35rem;margin:0 0 6px;letter-spacing:-.01em}
+  .desc{color:var(--txt-2);font-size:.95rem;margin:0 0 26px;max-width:72ch}
+
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+  .kpi{background:var(--bg-2);border:1px solid var(--linha);border-radius:14px;padding:20px}
+  .kpi .n{font-family:var(--mono);font-size:2.1rem;font-weight:600;letter-spacing:-.03em;line-height:1.1}
+  .kpi .r{font-size:.8rem;color:var(--txt-2);margin-top:6px}
+  .kpi .d{font-family:var(--mono);font-size:.72rem;color:var(--txt-3);margin-top:8px}
+  .kpi.destaque{grid-column:span 2;background:linear-gradient(160deg,rgba(242,181,68,.12),var(--bg-2) 60%);
+    border-color:rgba(242,181,68,.35)}
+  .kpi.destaque .n{font-size:3.6rem;color:var(--acento)}
+  @media(max-width:640px){.kpi.destaque{grid-column:span 1}.kpi.destaque .n{font-size:2.6rem}}
+
+  .barra{height:10px;border-radius:6px;background:var(--bg-3);overflow:hidden;margin-top:14px}
+  .barra i{display:block;height:100%;background:linear-gradient(90deg,var(--acento),var(--acento-2))}
+
+  .painel{background:var(--bg-2);border:1px solid var(--linha);border-radius:16px;padding:22px}
+  svg{display:block;width:100%;height:auto;overflow:visible}
+  .legenda{display:flex;gap:18px;flex-wrap:wrap;font-size:.78rem;color:var(--txt-2);margin-top:14px}
+  .legenda span{display:inline-flex;align-items:center;gap:7px}
+  .chip{width:11px;height:11px;border-radius:3px;display:inline-block}
+
+  table{width:100%;border-collapse:collapse;font-size:.88rem}
+  .rolagem{overflow-x:auto;border:1px solid var(--linha);border-radius:14px;background:var(--bg-2)}
+  th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--linha);white-space:nowrap}
+  th{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--txt-3);
+     font-weight:600;cursor:pointer;user-select:none;position:sticky;top:0;background:var(--bg-3)}
+  th:hover{color:var(--acento)}
+  tbody tr:hover{background:rgba(255,255,255,.03)}
+  td.num{font-family:var(--mono);text-align:right}
+  .pill{font-family:var(--mono);font-size:.68rem;padding:3px 8px;border-radius:99px;border:1px solid}
+  .pill.pub{color:var(--ok);border-color:rgba(74,222,128,.35);background:rgba(74,222,128,.08)}
+  .pill.sig{color:var(--sig);border-color:rgba(139,92,246,.35);background:rgba(139,92,246,.1)}
+  .mini{height:6px;width:80px;background:var(--bg-3);border-radius:4px;display:inline-block;vertical-align:middle}
+  .mini i{display:block;height:100%;border-radius:4px;background:var(--acento)}
+
+  ol.marcos{list-style:none;padding:0;margin:0;border-left:2px solid var(--linha)}
+  ol.marcos li{padding:0 0 22px 22px;position:relative}
+  ol.marcos li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;
+    border-radius:50%;background:var(--acento);box-shadow:0 0 0 4px var(--bg)}
+  ol.marcos time{font-family:var(--mono);font-size:.75rem;color:var(--acento)}
+  ol.marcos b{display:block;margin:2px 0 4px}
+  ol.marcos p{margin:0;color:var(--txt-2);font-size:.9rem}
+
+  .metodo{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .metodo div{background:var(--bg-2);border:1px solid var(--linha);border-radius:14px;padding:18px}
+  .metodo h3{margin:0 0 8px;font-size:.95rem}
+  .metodo p{margin:0;color:var(--txt-2);font-size:.88rem}
+  footer{padding:36px 0 60px;color:var(--txt-3);font-size:.85rem}
+  .erro{background:rgba(255,122,69,.1);border:1px solid rgba(255,122,69,.4);padding:16px;border-radius:12px}
+</style>
+</head>
+<body>
+<header class="topo">
+  <div class="wrap">
+    <div class="tag">Dados públicos · STF</div>
+    <h1>Quanto do caso Master <em>já é público</em>?</h1>
+    <p class="sub" id="subtitulo">Painel automático dos processos do caso Banco Master sob relatoria do
+      ministro André Mendonça: quantos andamentos existem, quantos vêm com documento acessível a
+      qualquer cidadão e em que ritmo isso muda.</p>
+    <div class="meta" id="carimbo">carregando…</div>
+  </div>
+</header>
+
+<main id="app">
+  <section class="wrap"><div id="aviso"></div></section>
+</main>
+
+<template id="tpl">
+<section>
+  <div class="wrap">
+    <h2>O contador</h2>
+    <p class="desc">A conta direta: de todos os andamentos registrados nesses processos, em quantos há
+      um documento que dá para abrir sem ser parte no processo.</p>
+    <div class="kpis" id="kpis"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Ritmo de liberação</h2>
+    <p class="desc">Cada barra é um dia: quantos documentos ficaram acessíveis naquela data de
+      andamento. A linha é o acumulado. Os traços verticais marcam os episódios públicos de cobrança
+      e de abertura de sigilo.</p>
+    <div class="painel">
+      <svg id="grafico" viewBox="0 0 1000 340" role="img" aria-label="Documentos acessíveis por dia"></svg>
+      <div class="legenda">
+        <span><i class="chip" style="background:var(--acento)"></i>documentos por dia</span>
+        <span><i class="chip" style="background:var(--acento-2)"></i>acumulado</span>
+        <span><i class="chip" style="background:var(--txt-3)"></i>marco noticiado</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Processo a processo</h2>
+    <p class="desc">Clique no cabeçalho para ordenar. “Peças” abre o visualizador oficial do STF, que
+      mostra a lista completa — inclusive as peças marcadas como restritas.</p>
+    <div class="rolagem"><table id="tabela"></table></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>O que acontece nesses processos</h2>
+    <p class="desc">Tipos de andamento mais frequentes — a rotina do caso, do despacho à juntada.</p>
+    <div class="painel"><div id="tipos"></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Linha do tempo do sigilo</h2>
+    <p class="desc">Marcos registrados à mão, com fonte — são o contexto que explica os saltos do
+      gráfico acima.</p>
+    <ol class="marcos" id="marcos"></ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Como este número é feito</h2>
+    <div class="metodo" id="metodo"></div>
+  </div>
+</section>
+</template>
+
+<footer class="wrap">
+  <p id="rodape"></p>
+</footer>
+
+<script>
+const fmt = n => (n ?? 0).toLocaleString("pt-BR");
+const dataBR = s => s ? s.split("-").reverse().join("/") : "—";
+
+fetch("dados.json?v=" + Date.now())
+  .then(r => r.ok ? r.json() : Promise.reject(r.status))
+  .then(desenhar)
+  .catch(e => {
+    document.getElementById("aviso").innerHTML =
+      `<div class="erro">Não consegui carregar <code>dados.json</code> (${e}). Rode o pipeline
+       (<code>py -3.10 pipeline/coletar.py &amp;&amp; py -3.10 pipeline/montar_dados.py</code>).</div>`;
+    document.getElementById("carimbo").textContent = "sem dados";
+  });
+
+function desenhar(d){
+  document.getElementById("app").appendChild(document.getElementById("tpl").content.cloneNode(true));
+  const ger = new Date(d.gerado_em);
+  document.getElementById("carimbo").textContent =
+    `Última coleta: ${ger.toLocaleString("pt-BR")} · ${fmt(d.resumo.processos)} processos · fonte: portal do STF`;
+
+  kpis(d); grafico(d); tabela(d); tipos(d); marcos(d); metodo(d);
+
+  document.getElementById("rodape").innerHTML =
+    `Dados públicos coletados do ` + d.fontes.map(f=>`<a href="${f.url}" target="_blank" rel="noopener">${f.nome}</a>`).join(" e do ") +
+    `. Este painel é independente e não é um serviço oficial do STF. Código aberto — os números saem
+     inteiros do que o portal publica.`;
+}
+
+function kpis(d){
+  const r = d.resumo;
+  const h = d.historico || [];
+  const delta = h.length > 1 ? r.documentos - h[h.length-2].documentos : null;
+  const alvo = [
+    {n: r.pct_andamentos_com_documento.toFixed(1).replace(".",",")+"%", r:"dos andamentos têm documento que dá para abrir",
+     d:`${fmt(r.andamentos_com_documento)} de ${fmt(r.andamentos)} andamentos`, destaque:true, barra:r.pct_andamentos_com_documento},
+    {n: fmt(r.documentos), r:"documentos acessíveis no portal",
+     d: delta === null ? "primeira coleta" : (delta > 0 ? `+${fmt(delta)} desde a coleta anterior` : "estável desde a coleta anterior")},
+    {n: fmt(r.processos), r:"processos do caso mapeados", d:`${fmt(r.processos_sob_relator)} sob relatoria de Mendonça`},
+    {n: fmt(r.processos_publicos), r:"processos com tramitação pública", d:`${fmt(r.processos_sigilosos)} em segredo de justiça`},
+    {n: fmt(r.andamentos), r:"andamentos registrados no total", d:"soma de todos os processos mapeados"}
+  ];
+  document.getElementById("kpis").innerHTML = alvo.map(k => `
+    <div class="kpi${k.destaque?" destaque":""}">
+      <div class="n">${k.n}</div>
+      <div class="r">${k.r}</div>
+      ${k.barra!==undefined?`<div class="barra"><i style="width:${Math.min(100,k.barra)}%"></i></div>`:""}
+      <div class="d">${k.d}</div>
+    </div>`).join("");
+}
+
+function grafico(d){
+  const s = (d.serie||[]).filter(p => p.documentos > 0 || p.andamentos > 0);
+  const svg = document.getElementById("grafico");
+  if(!s.length){ svg.innerHTML = `<text x="20" y="40" fill="#9aa3af">sem série</text>`; return; }
+  const W=1000,H=340,ml=52,mr=52,mt=18,mb=44;
+  const iw=W-ml-mr, ih=H-mt-mb;
+  const t0=+new Date(s[0].data), t1=+new Date(s[s.length-1].data);
+  const x = t => ml + (t1===t0?iw/2:(( +new Date(t) - t0)/(t1-t0))*iw);
+  const maxD = Math.max(1, ...s.map(p=>p.documentos));
+  const maxA = Math.max(1, ...s.map(p=>p.documentos_acumulados));
+  const y  = v => mt + ih - (v/maxD)*ih;
+  const ya = v => mt + ih - (v/maxA)*ih;
+  const lg = Math.max(1.6, iw/Math.max(40,(t1-t0)/86400000));
+
+  let out = "";
+  // grade
+  for(let i=0;i<=4;i++){
+    const yy = mt + ih*i/4;
+    out += `<line x1="${ml}" x2="${W-mr}" y1="${yy}" y2="${yy}" stroke="#262b34"/>`;
+    out += `<text x="${ml-8}" y="${yy+4}" fill="#6b7280" font-size="11" text-anchor="end" font-family="monospace">${Math.round(maxD*(1-i/4))}</text>`;
+    out += `<text x="${W-mr+8}" y="${yy+4}" fill="#6b7280" font-size="11" font-family="monospace">${Math.round(maxA*(1-i/4))}</text>`;
+  }
+  // marcos
+  (d.marcos||[]).forEach(m => {
+    const tm=+new Date(m.data);
+    if(tm < t0 || tm > t1) return;
+    const xx=x(m.data);
+    out += `<line x1="${xx}" x2="${xx}" y1="${mt-6}" y2="${mt+ih}" stroke="#6b7280" stroke-dasharray="4 4"/>
+            <text x="${xx}" y="${mt-10}" fill="#9aa3af" font-size="10" text-anchor="middle">${dataBR(m.data)}</text>`;
+  });
+  // barras
+  s.forEach(p => {
+    if(!p.documentos) return;
+    const xx=x(p.data), hh=Math.max(1.5, mt+ih-y(p.documentos));
+    out += `<rect x="${xx-lg/2}" y="${y(p.documentos)}" width="${lg}" height="${hh}" fill="#f2b544" rx="1">
+              <title>${dataBR(p.data)} — ${p.documentos} documento(s), ${p.andamentos} andamento(s)</title></rect>`;
+  });
+  // linha acumulada
+  out += `<path d="${s.map((p,i)=>`${i?"L":"M"}${x(p.data).toFixed(1)},${ya(p.documentos_acumulados).toFixed(1)}`).join(" ")}"
+            fill="none" stroke="#ff7a45" stroke-width="2"/>`;
+  // eixo x
+  const passos = Math.min(6, s.length);
+  for(let i=0;i<passos;i++){
+    const p = s[Math.round(i*(s.length-1)/Math.max(1,passos-1))];
+    out += `<text x="${x(p.data)}" y="${H-mb+22}" fill="#6b7280" font-size="11" text-anchor="middle" font-family="monospace">${dataBR(p.data).slice(0,5)}</text>`;
+  }
+  svg.innerHTML = out;
+}
+
+let ordem = {col:"documentos", desc:true};
+function tabela(d){
+  const cols = [
+    ["rotulo","Processo",false], ["relator","Relator",false], ["publicidade","Publicidade",false],
+    ["andamentos","Andamentos",true], ["documentos","Docs. acessíveis",true],
+    ["pct_com_documento","% com doc.",true], ["ultima_movimentacao","Última mov.",false], [null,"Links",false]
+  ];
+  const el = document.getElementById("tabela");
+  const linhas = [...d.processos].sort((a,b)=>{
+    const va=a[ordem.col], vb=b[ordem.col];
+    if(typeof va === "number") return ordem.desc ? vb-va : va-vb;
+    return ordem.desc ? String(vb||"").localeCompare(String(va||"")) : String(va||"").localeCompare(String(vb||""));
+  });
+  el.innerHTML =
+    `<thead><tr>${cols.map(c=>`<th data-c="${c[0]||""}">${c[1]}${ordem.col===c[0]?(ordem.desc?" ↓":" ↑"):""}</th>`).join("")}</tr></thead>
+     <tbody>${linhas.map(p=>`
+      <tr>
+        <td><b>${p.rotulo}</b>${p.nota?`<div style="color:var(--txt-3);font-size:.78rem;white-space:normal;max-width:32ch">${p.nota}</div>`:""}</td>
+        <td>${(p.relator||"—").replace("MIN. ","")}</td>
+        <td><span class="pill ${(p.publicidade||"").startsWith("Públic")?"pub":"sig"}">${p.publicidade||"—"}</span></td>
+        <td class="num">${fmt(p.andamentos)}</td>
+        <td class="num">${fmt(p.documentos)}</td>
+        <td class="num">${(p.pct_com_documento||0).toFixed(1).replace(".",",")}%
+          <span class="mini"><i style="width:${Math.min(100,p.pct_com_documento)}%"></i></span></td>
+        <td class="num">${dataBR(p.ultima_movimentacao)}</td>
+        <td><a href="${p.url_portal}" target="_blank" rel="noopener">andamentos</a> ·
+            <a href="${p.url_pecas}" target="_blank" rel="noopener">peças</a></td>
+      </tr>`).join("")}</tbody>`;
+  el.querySelectorAll("th").forEach(th => th.onclick = () => {
+    const c = th.dataset.c; if(!c) return;
+    ordem = {col:c, desc: ordem.col===c ? !ordem.desc : true};
+    tabela(d);
+  });
+}
+
+function tipos(d){
+  const t = d.tipos_andamento || [];
+  if(!t.length) return;
+  const max = Math.max(...t.map(x=>x.n));
+  document.getElementById("tipos").innerHTML = t.map(x=>`
+    <div style="display:grid;grid-template-columns:190px 1fr 60px;gap:12px;align-items:center;padding:5px 0">
+      <span style="font-size:.85rem;color:var(--txt-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${x.nome}</span>
+      <span class="mini" style="width:100%"><i style="width:${(100*x.n/max).toFixed(1)}%"></i></span>
+      <span style="font-family:var(--mono);font-size:.8rem;text-align:right">${fmt(x.n)}</span>
+    </div>`).join("");
+}
+
+function marcos(d){
+  document.getElementById("marcos").innerHTML = (d.marcos||[]).map(m=>`
+    <li><time>${dataBR(m.data)}</time><b>${m.titulo}</b><p>${m.detalhe||""}
+      ${m.fonte?` <a href="${m.fonte}" target="_blank" rel="noopener">fonte ↗</a>`:""}</p></li>`).join("");
+}
+
+function metodo(d){
+  const r = d.resumo;
+  document.getElementById("metodo").innerHTML = `
+    <div><h3>O que o contador mede</h3><p>A proporção de andamentos processuais que trazem um
+      documento baixável no portal do STF. É o que um cidadão qualquer consegue abrir hoje, sem
+      cadastro e sem ser parte no processo.</p></div>
+    <div><h3>O que ele não mede</h3><p>Não é a porcentagem dos 26 GB de arquivos citados na imprensa:
+      o STF não publica o total de peças de um processo em formato aberto. Peça que continua restrita
+      simplesmente não aparece com link — por isso o denominador é o andamento, não o arquivo.</p></div>
+    <div><h3>De onde vêm os dados</h3><p>Do próprio portal público do STF: a lista de processos vem
+      da busca por parte (Vorcaro, Banco Master) e cada processo é lido nas abas de informações,
+      andamentos, decisões e petições. Nada de login, nada de raspagem de área restrita.</p></div>
+    <div><h3>Com que frequência atualiza</h3><p>O pipeline roda sozinho pelo GitHub Actions e
+      republica esta página. O histórico de cada coleta fica guardado, então dá para ver o contador
+      subir — hoje são ${fmt((d.historico||[]).length)} coleta(s) registrada(s).</p></div>
+    <div><h3>Margem de erro conhecida</h3><p>Andamentos anulados ficam marcados no portal e entram na
+      contagem bruta; documentos podem aparecer repetidos quando o STF republica uma peça. Os
+      números são exatamente os que o portal exibe, sem correção editorial.</p></div>
+    <div><h3>Agregado atual</h3><p>${fmt(r.andamentos_com_documento)} andamentos com documento em
+      ${fmt(r.andamentos)}, somando ${fmt(r.documentos)} arquivos acessíveis em
+      ${fmt(r.processos)} processos.</p></div>`;
+}
+</script>
+</body>
+</html>

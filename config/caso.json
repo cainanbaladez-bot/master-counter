@@ -1,0 +1,40 @@
+{
+  "caso": {
+    "nome": "Caso Banco Master no STF",
+    "relator": "MIN. ANDRÉ MENDONÇA",
+    "descricao": "Acompanhamento, por dados públicos, do andamento e da liberação de peças dos processos do caso Banco Master sob relatoria do ministro André Mendonça no STF."
+  },
+  "descoberta": {
+    "ativa": true,
+    "termos_parte": ["VORCARO", "BANCO MASTER"],
+    "somente_relator": "ANDRÉ MENDONÇA"
+  },
+  "processos_seed": [
+    { "incidente": 7514886, "rotulo": "Pet 15556", "nota": "Representação da PF - 3a fase da Operação Compliance Zero" },
+    { "incidente": 7473347, "rotulo": "Inq 5026", "nota": "Inquérito principal, origem na Justica Federal de SP" },
+    { "incidente": 7498168, "rotulo": "Inq 5035", "nota": "" },
+    { "incidente": 7509527, "rotulo": "Pet 15504", "nota": "" },
+    { "incidente": 7509111, "rotulo": "Pet 15499", "nota": "" },
+    { "incidente": 7473336, "rotulo": "Pet 15198", "nota": "" }
+  ],
+  "marcos": [
+    {
+      "data": "2026-09-10",
+      "titulo": "Mendonça torna públicos ~4 mil arquivos (26 GB)",
+      "detalhe": "Liberação em massa após determinação do presidente Edson Fachin de retirar o sigilo de procedimentos sem investigação em curso.",
+      "fonte": "https://www.brasilemfolhas.com.br/2026/09/mendonca-libera-4-mil-arquivos-de-investigacao-sobre-banco-master/"
+    },
+    {
+      "data": "2026-09-11",
+      "titulo": "Mendonça nega liberação seletiva",
+      "detalhe": "Ministro afirma ter divulgado tudo e nega abertura seletiva do sigilo.",
+      "fonte": "https://exame.com/brasil/mendonca-diz-que-divulgou-tudo-e-nega-liberacao-seletiva-de-sigilo-do-caso-master/"
+    },
+    {
+      "data": "2026-09-08",
+      "titulo": "Cobrança da PGR",
+      "detalhe": "Liberação de 18 processos do caso Master após cobrança da PGR.",
+      "fonte": "https://www.em.com.br/politica/2026/09/7499019-mendonca-libera-18-processos-do-caso-master-apos-cobranca-da-pgr.html"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# cache bruto das páginas do portal (grande e reproduzível)
+dados/raw/
+dados/processos.json
+__pycache__/
+*.pyc
+.venv/
