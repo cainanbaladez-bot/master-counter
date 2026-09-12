@@ -1,0 +1,648 @@
+{
+ "gerado_em": "2026-09-12T02:20:14+00:00",
+ "observacao": "Citação de nome no texto de um documento público NÃO significa que a pessoa seja investigada, ré ou suspeita. O painel conta menções, e só isso.",
+ "resumo": {
+  "pecas": 416,
+  "baixadas": 416,
+  "com_texto": 406,
+  "digitalizadas_sem_ocr": 0,
+  "paginas": 1129,
+  "substantivas": 49,
+  "pecas_novas_nesta_coleta": 0,
+  "nomes_encontrados": 13
+ },
+ "pessoas": [
+  {
+   "nome": "PGR",
+   "grupo": "Instituições",
+   "pecas": 237,
+   "pecas_de_conteudo": 31,
+   "mencoes": 305,
+   "processos": [
+    "Inq 5026",
+    "Inq 5035",
+    "Pet 15198",
+    "Pet 15478",
+    "Pet 15487",
+    "Pet 15499",
+    "Pet 15504",
+    "Pet 15556",
+    "Pet 15562",
+    "Pet 15855",
+    "Pet 15873",
+    "Pet 15976",
+    "Pet 15977",
+    "Pet 15978",
+    "Rcl 88121",
+    "Rcl 95516"
+   ],
+   "primeira_peca": "2025-12-09",
+   "ultima_peca": "2026-09-08"
+  },
+  {
+   "nome": "André Mendonça",
+   "grupo": "Ministros do STF",
+   "pecas": 196,
+   "pecas_de_conteudo": 45,
+   "mencoes": 744,
+   "processos": [
+    "Inq 5026",
+    "Inq 5035",
+    "Pet 15198",
+    "Pet 15478",
+    "Pet 15487",
+    "Pet 15499",
+    "Pet 15504",
+    "Pet 15556",
+    "Pet 15562",
+    "Pet 15855",
+    "Pet 15873",
+    "Pet 15976",
+    "Pet 15977",
+    "Pet 15978",
+    "Rcl 88121",
+    "Rcl 95516"
+   ],
+   "primeira_peca": "2026-02-12",
+   "ultima_peca": "2026-09-04"
+  },
+  {
+   "nome": "Polícia Federal",
+   "grupo": "Instituições",
+   "pecas": 94,
+   "pecas_de_conteudo": 33,
+   "mencoes": 387,
+   "processos": [
+    "Inq 5026",
+    "Inq 5035",
+    "Pet 15198",
+    "Pet 15478",
+    "Pet 15487",
+    "Pet 15499",
+    "Pet 15504",
+    "Pet 15556",
+    "Pet 15562",
+    "Pet 15855",
+    "Pet 15873",
+    "Pet 15976",
+    "Pet 15977",
+    "Pet 15978",
+    "Rcl 88121"
+   ],
+   "primeira_peca": "2025-12-09",
+   "ultima_peca": "2026-08-28"
+  },
+  {
+   "nome": "Daniel Vorcaro",
+   "grupo": "Caso Master",
+   "pecas": 36,
+   "pecas_de_conteudo": 21,
+   "mencoes": 246,
+   "processos": [
+    "Inq 5026",
+    "Inq 5035",
+    "Pet 15198",
+    "Pet 15478",
+    "Pet 15499",
+    "Pet 15504",
+    "Pet 15556",
+    "Pet 15562",
+    "Pet 15855",
+    "Pet 15873",
+    "Pet 15976",
+    "Pet 15977",
+    "Pet 15978"
+   ],
+   "primeira_peca": "2026-01-08",
+   "ultima_peca": "2026-09-11"
+  },
+  {
+   "nome": "Dias Toffoli",
+   "grupo": "Ministros do STF",
+   "pecas": 33,
+   "pecas_de_conteudo": 8,
+   "mencoes": 64,
+   "processos": [
+    "Inq 5026",
+    "Pet 15198",
+    "Pet 15556",
+    "Pet 15873",
+    "Pet 15978",
+    "Rcl 88121"
+   ],
+   "primeira_peca": "2025-11-28",
+   "ultima_peca": "2026-07-21"
+  },
+  {
+   "nome": "Compliance Zero",
+   "grupo": "Caso Master",
+   "pecas": 33,
+   "pecas_de_conteudo": 26,
+   "mencoes": 126,
+   "processos": [
+    "Inq 5026",
+    "Pet 15198",
+    "Pet 15478",
+    "Pet 15487",
+    "Pet 15556",
+    "Pet 15855",
+    "Pet 15873",
+    "Pet 15976",
+    "Pet 15977",
+    "Pet 15978",
+    "Rcl 88121"
+   ],
+   "primeira_peca": "2025-12-09",
+   "ultima_peca": "2026-09-04"
+  },
+  {
+   "nome": "Banco Master",
+   "grupo": "Caso Master",
+   "pecas": 26,
+   "pecas_de_conteudo": 22,
+   "mencoes": 127,
+   "processos": [
+    "Inq 5026",
+    "Pet 15198",
+    "Pet 15478",
+    "Pet 15487",
+    "Pet 15556",
+    "Pet 15855",
+    "Pet 15873",
+    "Pet 15976",
+    "Pet 15978",
+    "Rcl 88121",
+    "Rcl 95516"
+   ],
+   "primeira_peca": "2025-12-09",
+   "ultima_peca": "2026-07-24"
+  },
+  {
+   "nome": "Ciro Nogueira",
+   "grupo": "Políticos",
+   "pecas": 12,
+   "pecas_de_conteudo": 5,
+   "mencoes": 55,
+   "processos": [
+    "Pet 15855",
+    "Pet 15873"
+   ],
+   "primeira_peca": "2026-05-06",
+   "ultima_peca": "2026-06-27"
+  },
+  {
+   "nome": "Banco Central",
+   "grupo": "Instituições",
+   "pecas": 11,
+   "pecas_de_conteudo": 8,
+   "mencoes": 42,
+   "processos": [
+    "Inq 5026",
+    "Pet 15198",
+    "Pet 15478",
+    "Pet 15504",
+    "Pet 15556",
+    "Rcl 88121"
+   ],
+   "primeira_peca": "2025-12-09",
+   "ultima_peca": "2026-07-06"
+  },
+  {
+   "nome": "Edson Fachin",
+   "grupo": "Ministros do STF",
+   "pecas": 6,
+   "pecas_de_conteudo": 6,
+   "mencoes": 9,
+   "processos": [
+    "Pet 15556",
+    "Pet 15873",
+    "Pet 15978",
+    "Rcl 88121"
+   ],
+   "primeira_peca": "2025-12-09",
+   "ultima_peca": "2026-07-27"
+  },
+  {
+   "nome": "Alexandre de Moraes",
+   "grupo": "Ministros do STF",
+   "pecas": 2,
+   "pecas_de_conteudo": 2,
+   "mencoes": 4,
+   "processos": [
+    "Pet 15487",
+    "Rcl 88121"
+   ],
+   "primeira_peca": "2025-12-09",
+   "ultima_peca": "2026-04-08"
+  },
+  {
+   "nome": "Jair Bolsonaro",
+   "grupo": "Políticos",
+   "pecas": 2,
+   "pecas_de_conteudo": 2,
+   "mencoes": 2,
+   "processos": [
+    "Inq 5026",
+    "Pet 15556"
+   ],
+   "primeira_peca": "2026-07-06",
+   "ultima_peca": "2026-07-13"
+  },
+  {
+   "nome": "Flávio Bolsonaro",
+   "grupo": "Políticos",
+   "pecas": 1,
+   "pecas_de_conteudo": 1,
+   "mencoes": 3,
+   "processos": [
+    "Pet 15556"
+   ],
+   "primeira_peca": "2026-07-13",
+   "ultima_peca": "2026-07-13"
+  }
+ ],
+ "ausentes": [
+  {
+   "nome": "Cláudio Castro",
+   "grupo": "Políticos"
+  },
+  {
+   "nome": "Jaques Wagner",
+   "grupo": "Políticos"
+  },
+  {
+   "nome": "Filme sobre Bolsonaro (Dark Horse)",
+   "grupo": "Caso Master"
+  }
+ ],
+ "por_processo": [
+  {
+   "processo": "Inq 5026",
+   "pecas": 70,
+   "nomes": {
+    "PGR": 42,
+    "André Mendonça": 20,
+    "Dias Toffoli": 11,
+    "Polícia Federal": 10,
+    "Daniel Vorcaro": 4,
+    "Compliance Zero": 4,
+    "Banco Central": 4,
+    "Banco Master": 3,
+    "Jair Bolsonaro": 1
+   }
+  },
+  {
+   "processo": "Pet 15873",
+   "pecas": 69,
+   "nomes": {
+    "André Mendonça": 44,
+    "PGR": 32,
+    "Polícia Federal": 20,
+    "Ciro Nogueira": 10,
+    "Compliance Zero": 9,
+    "Daniel Vorcaro": 6,
+    "Dias Toffoli": 2,
+    "Edson Fachin": 2,
+    "Banco Master": 1
+   }
+  },
+  {
+   "processo": "Pet 15978",
+   "pecas": 65,
+   "nomes": {
+    "André Mendonça": 41,
+    "PGR": 33,
+    "Polícia Federal": 20,
+    "Dias Toffoli": 2,
+    "Compliance Zero": 2,
+    "Edson Fachin": 1,
+    "Daniel Vorcaro": 1,
+    "Banco Master": 1
+   }
+  },
+  {
+   "processo": "Pet 15556",
+   "pecas": 57,
+   "nomes": {
+    "PGR": 38,
+    "André Mendonça": 27,
+    "Polícia Federal": 13,
+    "Daniel Vorcaro": 11,
+    "Compliance Zero": 5,
+    "Banco Master": 5,
+    "Dias Toffoli": 4,
+    "Edson Fachin": 2,
+    "Flávio Bolsonaro": 1,
+    "Jair Bolsonaro": 1,
+    "Banco Central": 1
+   }
+  },
+  {
+   "processo": "Pet 15198",
+   "pecas": 56,
+   "nomes": {
+    "PGR": 44,
+    "André Mendonça": 19,
+    "Polícia Federal": 11,
+    "Dias Toffoli": 10,
+    "Banco Master": 7,
+    "Compliance Zero": 6,
+    "Daniel Vorcaro": 4,
+    "Banco Central": 2
+   }
+  },
+  {
+   "processo": "Pet 15562",
+   "pecas": 18,
+   "nomes": {
+    "PGR": 9,
+    "André Mendonça": 8,
+    "Daniel Vorcaro": 2,
+    "Polícia Federal": 2
+   }
+  },
+  {
+   "processo": "Pet 15504",
+   "pecas": 13,
+   "nomes": {
+    "PGR": 6,
+    "André Mendonça": 4,
+    "Polícia Federal": 2,
+    "Daniel Vorcaro": 1,
+    "Banco Central": 1
+   }
+  },
+  {
+   "processo": "Pet 15855",
+   "pecas": 13,
+   "nomes": {
+    "PGR": 8,
+    "André Mendonça": 6,
+    "Polícia Federal": 2,
+    "Ciro Nogueira": 2,
+    "Daniel Vorcaro": 1,
+    "Banco Master": 1,
+    "Compliance Zero": 1
+   }
+  },
+  {
+   "processo": "Pet 15976",
+   "pecas": 12,
+   "nomes": {
+    "André Mendonça": 7,
+    "PGR": 5,
+    "Polícia Federal": 3,
+    "Daniel Vorcaro": 1,
+    "Banco Master": 1,
+    "Compliance Zero": 1
+   }
+  },
+  {
+   "processo": "Pet 15499",
+   "pecas": 10,
+   "nomes": {
+    "PGR": 5,
+    "André Mendonça": 4,
+    "Polícia Federal": 3,
+    "Daniel Vorcaro": 2
+   }
+  },
+  {
+   "processo": "Rcl 88121",
+   "pecas": 8,
+   "nomes": {
+    "PGR": 4,
+    "Dias Toffoli": 4,
+    "Banco Master": 2,
+    "Banco Central": 2,
+    "Polícia Federal": 2,
+    "André Mendonça": 1,
+    "Alexandre de Moraes": 1,
+    "Edson Fachin": 1,
+    "Compliance Zero": 1
+   }
+  },
+  {
+   "processo": "Inq 5035",
+   "pecas": 6,
+   "nomes": {
+    "André Mendonça": 3,
+    "PGR": 2,
+    "Daniel Vorcaro": 1,
+    "Polícia Federal": 1
+   }
+  },
+  {
+   "processo": "Pet 15487",
+   "pecas": 6,
+   "nomes": {
+    "André Mendonça": 4,
+    "PGR": 2,
+    "Polícia Federal": 2,
+    "Alexandre de Moraes": 1,
+    "Banco Master": 1,
+    "Compliance Zero": 1
+   }
+  },
+  {
+   "processo": "Rcl 95516",
+   "pecas": 5,
+   "nomes": {
+    "Banco Master": 3,
+    "André Mendonça": 3,
+    "PGR": 1
+   }
+  },
+  {
+   "processo": "Pet 15478",
+   "pecas": 4,
+   "nomes": {
+    "PGR": 3,
+    "André Mendonça": 2,
+    "Daniel Vorcaro": 1,
+    "Banco Master": 1,
+    "Compliance Zero": 1,
+    "Banco Central": 1,
+    "Polícia Federal": 1
+   }
+  },
+  {
+   "processo": "Pet 15977",
+   "pecas": 4,
+   "nomes": {
+    "André Mendonça": 3,
+    "PGR": 3,
+    "Compliance Zero": 2,
+    "Polícia Federal": 2,
+    "Daniel Vorcaro": 1
+   }
+  }
+ ],
+ "serie_mes": [
+  {
+   "mes": "2025-11",
+   "pecas": 1,
+   "nomes": {
+    "Dias Toffoli": 1
+   }
+  },
+  {
+   "mes": "2025-12",
+   "pecas": 11,
+   "nomes": {
+    "PGR": 7,
+    "Dias Toffoli": 6,
+    "Banco Central": 3,
+    "Polícia Federal": 3,
+    "Banco Master": 2,
+    "Alexandre de Moraes": 1,
+    "Edson Fachin": 1,
+    "Compliance Zero": 1
+   }
+  },
+  {
+   "mes": "2026-01",
+   "pecas": 14,
+   "nomes": {
+    "PGR": 13,
+    "Dias Toffoli": 12,
+    "Polícia Federal": 7,
+    "Banco Master": 3,
+    "Daniel Vorcaro": 2,
+    "Banco Central": 2,
+    "Compliance Zero": 1
+   }
+  },
+  {
+   "mes": "2026-02",
+   "pecas": 43,
+   "nomes": {
+    "PGR": 26,
+    "André Mendonça": 14,
+    "Dias Toffoli": 5,
+    "Compliance Zero": 2,
+    "Daniel Vorcaro": 2,
+    "Polícia Federal": 2,
+    "Banco Master": 1,
+    "Banco Central": 1
+   }
+  },
+  {
+   "mes": "2026-03",
+   "pecas": 54,
+   "nomes": {
+    "PGR": 31,
+    "André Mendonça": 25,
+    "Polícia Federal": 11,
+    "Daniel Vorcaro": 8,
+    "Dias Toffoli": 3,
+    "Banco Master": 2,
+    "Compliance Zero": 2,
+    "Banco Central": 2,
+    "Edson Fachin": 1
+   }
+  },
+  {
+   "mes": "2026-04",
+   "pecas": 40,
+   "nomes": {
+    "PGR": 24,
+    "André Mendonça": 19,
+    "Polícia Federal": 9,
+    "Compliance Zero": 5,
+    "Daniel Vorcaro": 3,
+    "Banco Master": 2,
+    "Alexandre de Moraes": 1,
+    "Banco Central": 1
+   }
+  },
+  {
+   "mes": "2026-05",
+   "pecas": 87,
+   "nomes": {
+    "André Mendonça": 57,
+    "PGR": 41,
+    "Polícia Federal": 38,
+    "Compliance Zero": 14,
+    "Banco Master": 8,
+    "Daniel Vorcaro": 8,
+    "Ciro Nogueira": 7,
+    "Edson Fachin": 3,
+    "Dias Toffoli": 1
+   }
+  },
+  {
+   "mes": "2026-06",
+   "pecas": 65,
+   "nomes": {
+    "PGR": 35,
+    "André Mendonça": 34,
+    "Polícia Federal": 13,
+    "Ciro Nogueira": 5,
+    "Compliance Zero": 4,
+    "Daniel Vorcaro": 4,
+    "Banco Master": 4,
+    "Dias Toffoli": 4,
+    "Banco Central": 1
+   }
+  },
+  {
+   "mes": "2026-07",
+   "pecas": 41,
+   "nomes": {
+    "PGR": 30,
+    "André Mendonça": 20,
+    "Polícia Federal": 7,
+    "Daniel Vorcaro": 6,
+    "Banco Master": 4,
+    "Compliance Zero": 3,
+    "Jair Bolsonaro": 2,
+    "Dias Toffoli": 1,
+    "Banco Central": 1,
+    "Edson Fachin": 1,
+    "Flávio Bolsonaro": 1
+   }
+  },
+  {
+   "mes": "2026-08",
+   "pecas": 40,
+   "nomes": {
+    "PGR": 26,
+    "André Mendonça": 19,
+    "Polícia Federal": 4
+   }
+  },
+  {
+   "mes": "2026-09",
+   "pecas": 20,
+   "nomes": {
+    "André Mendonça": 8,
+    "PGR": 4,
+    "Daniel Vorcaro": 3,
+    "Compliance Zero": 1
+   }
+  }
+ ],
+ "levas": [
+  {
+   "data": "2026-09-11",
+   "pecas": 416,
+   "linha_de_base": true,
+   "nomes": {
+    "PGR": 237,
+    "André Mendonça": 196,
+    "Polícia Federal": 94,
+    "Daniel Vorcaro": 36,
+    "Dias Toffoli": 33,
+    "Compliance Zero": 33,
+    "Banco Master": 26,
+    "Ciro Nogueira": 12,
+    "Banco Central": 11,
+    "Edson Fachin": 6,
+    "Alexandre de Moraes": 2,
+    "Jair Bolsonaro": 2,
+    "Flávio Bolsonaro": 1
+   }
+  }
+ ]
+}

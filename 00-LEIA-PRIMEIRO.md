@@ -15,16 +15,22 @@ própria página.
 ```
 Master-counter/
   config/caso.json          processos-semente, termos de descoberta e MARCOS (editar à mão)
+  config/nomes.json         nomes acompanhados + variantes de grafia (editar à mão)
   pipeline/
     coletar.py              portal do STF -> dados/processos.json (+ cache em dados/raw/)
     montar_dados.py         processos.json -> docs/dados.json (+ dados/historico.jsonl)
+    analisar_conteudo.py    baixa as peças (PDF/RTF), extrai texto, conta nomes -> dados/mencoes.json
+    montar_mencoes.py       -> docs/mencoes.json (+ dados/pecas_vistas.json, que define as LEVAS)
   dados/
     raw/<incidente>/*.html  cache bruto das abas do portal (fora do git)
+    pecas/<id>.pdf|.rtf     cache das peças baixadas (fora do git; ~0,4 MB cada)
     processos.json          estado bruto normalizado (fora do git)
     historico.jsonl         1 linha por coleta: e daqui que sai a curva do contador
+    pecas_vistas.json       id da peça -> data em que apareceu (VERSIONADO: define as levas)
   docs/
-    index.html              o painel (arquivo único, sem dependências, lê dados.json por fetch)
-    dados.json              o que o painel consome (versionado)
+    index.html              o painel (arquivo único, sem dependências)
+    dados.json              contador, série e processos (versionado)
+    mencoes.json            nomes citados, levas e matriz processo x nome (versionado)
   .github/workflows/atualizar.yml   cron 2x/dia -> coleta -> commit -> deploy Pages
 ```
 
@@ -47,6 +53,22 @@ No GitHub Actions roda em 3.11.
    a série diária, o acumulado, os tipos de andamento e acrescenta uma linha em `historico.jsonl`.
 4. **Publicação** — o Action commita `docs/dados.json` + `historico.jsonl` e publica `docs/` no
    GitHub Pages.
+
+### Nomes citados nas peças (seção "Quem aparece")
+
+`analisar_conteudo.py` baixa cada peça pública (média 0,4 MB; ~1 s por download), extrai o texto com
+PyMuPDF (RTF é lido cru) e conta ocorrências dos nomes de `config/nomes.json`, normalizando acentos.
+Peça digitalizada sem OCR é marcada `sem_texto` e não conta nome nenhum — por isso os totais por
+pessoa são **piso, não teto**.
+
+Três cuidados que estão escritos na página e não devem ser removidos:
+- **citação não é acusação** — o nome aparecer num documento não diz nada sobre investigação;
+- a **data do andamento é a de juntada**, não a de levantamento do sigilo (peça de fevereiro
+  liberada em setembro continua datada de fevereiro);
+- por isso as **levas** são medidas pela observação do pipeline: `pecas_vistas.json` guarda quando
+  cada id de peça apareceu pela primeira vez. A 1ª coleta inteira é "linha de base"; da segunda em
+  diante, cada coleta mostra o que entrou e quais nomes vieram junto. **Esse arquivo é versionado —
+  se ele se perder, perde-se a série de levas.**
 
 ### O que o contador é e o que não é
 - **É**: % de andamentos que trazem documento baixável no portal público do STF.
@@ -79,6 +101,9 @@ No GitHub Actions roda em 3.11.
 | Quero… | Faço |
 |---|---|
 | Atualizar os números agora | `py -3.10 pipeline/coletar.py && py -3.10 pipeline/montar_dados.py` |
+| Atualizar os nomes citados | `py -3.10 pipeline/analisar_conteudo.py && py -3.10 pipeline/montar_mencoes.py` |
+| Reler as peças sem rebaixar | `py -3.10 pipeline/analisar_conteudo.py --sem-download` |
+| Acompanhar mais um nome | editar `config/nomes.json` e reler as peças |
 | Reprocessar sem bater no STF | `py -3.10 pipeline/coletar.py --sem-rede` (usa `dados/raw/`) |
 | Acrescentar um processo à mão | editar `config/caso.json` → `processos_seed` |
 | Registrar um marco (cobrança, decisão) | editar `config/caso.json` → `marcos` (com `fonte`) |

@@ -1,0 +1,24 @@
+{
+  "observacao": "Citação de nome no texto de um documento público NÃO significa que a pessoa seja investigada, ré ou suspeita. O painel conta menções, e só isso.",
+  "nomes": [
+    { "nome": "Alexandre de Moraes", "grupo": "Ministros do STF", "variantes": ["alexandre de moraes", "alexandre moraes"] },
+    { "nome": "André Mendonça", "grupo": "Ministros do STF", "variantes": ["andre mendonca", "andré mendonça"] },
+    { "nome": "Edson Fachin", "grupo": "Ministros do STF", "variantes": ["edson fachin"] },
+    { "nome": "Dias Toffoli", "grupo": "Ministros do STF", "variantes": ["dias toffoli", "jose antonio dias toffoli"] },
+
+    { "nome": "Flávio Bolsonaro", "grupo": "Políticos", "variantes": ["flavio bolsonaro", "flavio nantes bolsonaro"] },
+    { "nome": "Jair Bolsonaro", "grupo": "Políticos", "variantes": ["jair bolsonaro", "jair messias bolsonaro"] },
+    { "nome": "Ciro Nogueira", "grupo": "Políticos", "variantes": ["ciro nogueira"] },
+    { "nome": "Cláudio Castro", "grupo": "Políticos", "variantes": ["claudio castro", "claudio bomfim de castro"] },
+    { "nome": "Jaques Wagner", "grupo": "Políticos", "variantes": ["jaques wagner"] },
+
+    { "nome": "Daniel Vorcaro", "grupo": "Caso Master", "variantes": ["daniel vorcaro", "daniel bueno vorcaro"] },
+    { "nome": "Banco Master", "grupo": "Caso Master", "variantes": ["banco master"] },
+    { "nome": "Compliance Zero", "grupo": "Caso Master", "variantes": ["compliance zero"] },
+    { "nome": "Filme sobre Bolsonaro (Dark Horse)", "grupo": "Caso Master", "variantes": ["dark horse"] },
+
+    { "nome": "Banco Central", "grupo": "Instituições", "variantes": ["banco central do brasil", "bacen"] },
+    { "nome": "Polícia Federal", "grupo": "Instituições", "variantes": ["policia federal"] },
+    { "nome": "PGR", "grupo": "Instituições", "variantes": ["procuradoria-geral da republica", "procurador-geral da republica"] }
+  ]
+}

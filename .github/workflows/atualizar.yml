@@ -34,17 +34,30 @@ jobs:
       - name: Instalar dependências
         run: pip install -r requirements.txt
 
+      - name: Cache das peças já baixadas
+        uses: actions/cache@v4
+        with:
+          path: dados/pecas
+          key: pecas-${{ github.run_id }}
+          restore-keys: pecas-
+
       - name: Coletar do portal do STF
         run: python pipeline/coletar.py
 
       - name: Montar dados do painel
         run: python pipeline/montar_dados.py
 
+      - name: Ler as peças e contar nomes citados
+        run: python pipeline/analisar_conteudo.py
+
+      - name: Montar visão de nomes e levas
+        run: python pipeline/montar_mencoes.py
+
       - name: Commitar atualização
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/dados.json dados/historico.jsonl
+          git add docs/dados.json docs/mencoes.json dados/historico.jsonl dados/pecas_vistas.json
           git diff --staged --quiet || git commit -m "dados: coleta automática $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
 

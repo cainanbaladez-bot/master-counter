@@ -135,6 +135,51 @@
   </div>
 </section>
 
+<section id="sec-nomes" hidden>
+  <div class="wrap">
+    <h2>Quem aparece no material que já é público</h2>
+    <p class="desc">Cada peça pública baixada do portal teve o texto lido e os nomes contados.
+      A barra é o número de <b>peças que citam</b> a pessoa; entre parênteses, quantas delas são
+      peças de conteúdo (decisão, relatório, manifestação) e não expediente de cartório.
+      <b>Citação não é acusação</b>: aparecer aqui não significa ser investigado, réu ou suspeito —
+      significa que o nome está escrito em algum documento público do caso.</p>
+    <div class="painel"><div id="pessoas"></div></div>
+    <div id="ausentes" style="margin-top:16px"></div>
+  </div>
+</section>
+
+<section id="sec-composicao" hidden>
+  <div class="wrap">
+    <h2>A composição mudou</h2>
+    <p class="desc">Cada coluna é um mês de juntada das peças hoje acessíveis; a altura mostra
+      quantas peças daquele mês citam cada nome. É aqui que dá para ver o material sair de um
+      conjunto girando em torno de um ministro do STF para outro que traz nomes de políticos.</p>
+    <div class="painel">
+      <svg id="grafico-nomes" viewBox="0 0 1000 380" role="img" aria-label="Nomes citados por mês"></svg>
+      <div class="legenda" id="legenda-nomes"></div>
+    </div>
+  </div>
+</section>
+
+<section id="sec-levas" hidden>
+  <div class="wrap">
+    <h2>O que entrou em cada leva</h2>
+    <p class="desc">A data de juntada não é a data em que a peça saiu do sigilo — peça de
+      fevereiro liberada em setembro continua datada de fevereiro. Por isso as levas são medidas
+      pela observação do próprio pipeline: a cada coleta, as peças que ainda não existiam viram
+      uma leva nova, com os nomes que elas citam.</p>
+    <div id="levas"></div>
+  </div>
+</section>
+
+<section id="sec-matriz" hidden>
+  <div class="wrap">
+    <h2>Nomes por processo</h2>
+    <p class="desc">Os três nomes mais citados nas peças públicas de cada processo.</p>
+    <div class="rolagem"><table id="matriz"></table></div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <h2>O que acontece nesses processos</h2>
@@ -168,9 +213,11 @@
 const fmt = n => (n ?? 0).toLocaleString("pt-BR");
 const dataBR = s => s ? s.split("-").reverse().join("/") : "—";
 
-fetch("dados.json?v=" + Date.now())
-  .then(r => r.ok ? r.json() : Promise.reject(r.status))
-  .then(desenhar)
+Promise.all([
+  fetch("dados.json?v=" + Date.now()).then(r => r.ok ? r.json() : Promise.reject(r.status)),
+  fetch("mencoes.json?v=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null)
+])
+  .then(([d, m]) => { desenhar(d); if(m) desenharNomes(m); })
   .catch(e => {
     document.getElementById("aviso").innerHTML =
       `<div class="erro">Não consegui carregar <code>dados.json</code> (${e}). Rode o pipeline
@@ -302,6 +349,121 @@ function tabela(d){
     ordem = {col:c, desc: ordem.col===c ? !ordem.desc : true};
     tabela(d);
   });
+}
+
+// ---------------------------------------------------------------- nomes citados
+const CORES = {
+  "Ministros do STF":"#8b5cf6", "Políticos":"#f2b544", "Caso Master":"#ff7a45",
+  "Instituições":"#4ade80", "":"#6b7280"
+};
+
+function desenharNomes(m){
+  ["sec-nomes","sec-composicao","sec-levas","sec-matriz"].forEach(id=>{
+    const s = document.getElementById(id); if(s) s.hidden = false;
+  });
+  listaPessoas(m); graficoNomes(m); levas(m); matriz(m); notaConteudo(m);
+}
+
+function listaPessoas(m){
+  const ps = m.pessoas || [];
+  if(!ps.length){ document.getElementById("pessoas").innerHTML =
+    `<p class="desc" style="margin:0">Nenhum dos nomes acompanhados apareceu nas peças lidas.</p>`; return; }
+  const max = Math.max(...ps.map(p=>p.pecas));
+  document.getElementById("pessoas").innerHTML = ps.map(p=>`
+    <div style="display:grid;grid-template-columns:210px 1fr 120px;gap:12px;align-items:center;padding:7px 0"
+         title="${p.pecas} peça(s), ${p.mencoes} menção(ões) · ${p.processos.length} processo(s)">
+      <span style="font-size:.88rem">${p.nome}
+        <span style="color:var(--txt-3);font-size:.72rem;display:block">${p.grupo}</span></span>
+      <span class="mini" style="width:100%;height:10px">
+        <i style="width:${(100*p.pecas/max).toFixed(1)}%;background:${CORES[p.grupo]||CORES[""]}"></i></span>
+      <span style="font-family:var(--mono);font-size:.8rem;text-align:right">${fmt(p.pecas)} peça${p.pecas===1?"":"s"}
+        <span style="color:var(--txt-3);display:block;font-size:.72rem">${fmt(p.pecas_de_conteudo ?? 0)} de conteúdo · ${fmt(p.mencoes)} menções</span></span>
+    </div>`).join("");
+
+  const aus = m.ausentes || [];
+  document.getElementById("ausentes").innerHTML = !aus.length ? "" : `
+    <div class="painel" style="border-color:rgba(255,122,69,.35)">
+      <b style="font-size:.95rem">Anunciados na abertura do sigilo, mas ainda sem nenhuma peça acessível</b>
+      <p style="color:var(--txt-2);font-size:.88rem;margin:8px 0 12px">O portal de andamentos não traz
+        nenhum documento baixável citando estes nomes. Ou o material está nos autos eletrônicos que o
+        portal não expõe como PDF, ou ainda não foi juntado à parte pública.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        ${aus.map(a=>`<span class="pill sig">${a.nome}</span>`).join("")}
+      </div>
+    </div>`;
+}
+
+function graficoNomes(m){
+  const serie = (m.serie_mes||[]).filter(s => Object.keys(s.nomes).length);
+  const svg = document.getElementById("grafico-nomes");
+  if(!serie.length){ svg.innerHTML = `<text x="20" y="40" fill="#9aa3af">sem dados</text>`; return; }
+  // os nomes mais citados no conjunto, para não virar sopa de cores
+  const top = (m.pessoas||[]).slice(0,7).map(p=>p.nome);
+  const cor = n => CORES[(m.pessoas.find(p=>p.nome===n)||{}).grupo] || CORES[""];
+  const W=1000,H=380,ml=46,mr=16,mt=20,mb=52, iw=W-ml-mr, ih=H-mt-mb;
+  const maxCol = Math.max(1, ...serie.map(s => top.reduce((a,n)=>a+(s.nomes[n]||0),0)));
+  const lg = Math.min(46, iw/serie.length*0.72);
+  let out = "";
+  for(let i=0;i<=4;i++){
+    const yy = mt + ih*i/4;
+    out += `<line x1="${ml}" x2="${W-mr}" y1="${yy}" y2="${yy}" stroke="#262b34"/>
+            <text x="${ml-8}" y="${yy+4}" fill="#6b7280" font-size="11" text-anchor="end"
+                  font-family="monospace">${Math.round(maxCol*(1-i/4))}</text>`;
+  }
+  serie.forEach((s,i) => {
+    const xx = ml + (i+0.5)*(iw/serie.length);
+    let acc = 0;
+    top.forEach(n => {
+      const v = s.nomes[n]||0; if(!v) return;
+      const h = v/maxCol*ih, y = mt+ih-acc-h; acc += h;
+      out += `<rect x="${xx-lg/2}" y="${y}" width="${lg}" height="${h}" fill="${cor(n)}" opacity=".92">
+                <title>${s.mes} — ${n}: ${v} peça(s)</title></rect>`;
+    });
+    const [ano,mes] = s.mes.split("-");
+    out += `<text x="${xx}" y="${H-mb+20}" fill="#6b7280" font-size="10" text-anchor="middle"
+                  font-family="monospace">${mes}/${ano.slice(2)}</text>`;
+  });
+  svg.innerHTML = out;
+  document.getElementById("legenda-nomes").innerHTML = top.map(n=>
+    `<span><i class="chip" style="background:${cor(n)}"></i>${n}</span>`).join("");
+}
+
+function levas(m){
+  const ls = m.levas || [];
+  document.getElementById("levas").innerHTML = ls.map(l=>{
+    const nomes = Object.entries(l.nomes).slice(0,8);
+    return `<div class="painel" style="margin-bottom:14px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+        <b style="font-family:var(--mono)">${dataBR(l.data)}</b>
+        <span style="color:var(--txt-2);font-size:.85rem">${fmt(l.pecas)} peças
+          ${l.linha_de_base?" · linha de base (tudo que já estava público na 1ª coleta)":" · entraram desde a coleta anterior"}</span>
+      </div>
+      <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px">
+        ${nomes.length ? nomes.map(([n,v])=>`<span class="pill pub" style="color:var(--txt);border-color:var(--linha)">${n}: ${v}</span>`).join("")
+                       : `<span style="color:var(--txt-3);font-size:.85rem">nenhum nome acompanhado citado</span>`}
+      </div></div>`;
+  }).join("");
+}
+
+function matriz(m){
+  const linhas = (m.por_processo||[]).filter(p=>Object.keys(p.nomes).length);
+  document.getElementById("matriz").innerHTML =
+    `<thead><tr><th>Processo</th><th>Peças lidas</th><th>Nomes mais citados</th></tr></thead>
+     <tbody>${linhas.map(p=>`
+      <tr><td><b>${p.processo}</b></td><td class="num">${fmt(p.pecas)}</td>
+        <td style="white-space:normal">${Object.entries(p.nomes).slice(0,3)
+          .map(([n,v])=>`${n} <span style="color:var(--txt-3);font-family:var(--mono)">(${v})</span>`).join(" · ")}</td></tr>`).join("")}</tbody>`;
+}
+
+function notaConteudo(m){
+  const r = m.resumo || {};
+  const el = document.getElementById("metodo");
+  if(!el) return;
+  el.insertAdjacentHTML("beforeend", `
+    <div><h3>Leitura das peças</h3><p>${fmt(r.baixadas)} peças públicas foram baixadas e lidas:
+      ${fmt(r.com_texto)} tinham texto extraível e ${fmt(r.digitalizadas_sem_ocr)} são digitalizações
+      sem OCR — nestas, nenhum nome é contado, então os totais por pessoa são um piso, não um teto.</p></div>
+    <div><h3>Citação não é acusação</h3><p>${m.observacao}</p></div>`);
 }
 
 function tipos(d){
