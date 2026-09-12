@@ -109,7 +109,11 @@ Três cuidados que estão escritos na página e não devem ser removidos:
 | Registrar um marco (cobrança, decisão) | editar `config/caso.json` → `marcos` (com `fonte`) |
 | Ver o painel local | `py -3.10 -m http.server -d docs 8099` |
 
+## Publicado
+- Repo: https://github.com/cainanbaladez-bot/master-counter (conta do token salvo na máquina)
+- Página: https://cainanbaladez-bot.github.io/master-counter/
+- Topo do painel traz aviso fixo de que não houve revisão jurídica — **não remover**.
+
 ## Pendências
-- Publicar no GitHub (repo + Pages) — ver README.
 - Avaliar coleta do visualizador de peças por Playwright, para ter o denominador real
   (peças restritas x liberadas) em vez do proxy por andamento.

@@ -4,7 +4,10 @@ Painel independente que acompanha, **só com dado público**, quanto do caso Ban
 está acessível a qualquer pessoa: processos sob relatoria do ministro André Mendonça, andamentos
 registrados e quantos deles vêm com documento que dá para abrir sem ser parte no processo.
 
-👉 **Painel:** https://SEU-USUARIO.github.io/master-counter/ (preencher depois de publicar)
+👉 **Painel:** https://cainanbaladez-bot.github.io/master-counter/
+
+> Painel independente, sem revisão de profissional da área jurídica. Os números são leitura
+> automatizada dos andamentos e peças publicados pelo STF.
 
 ## Como rodar
 
@@ -17,23 +20,14 @@ python -m http.server -d docs 8099
 
 No Windows do projeto: `py -3.10` no lugar de `python`.
 
-## Como publicar no GitHub Pages (quando quiser)
+## Publicação
 
-O repositório já está iniciado e commitado localmente. Falta só criar o remoto:
+Já está no ar: repositório [cainanbaladez-bot/master-counter](https://github.com/cainanbaladez-bot/master-counter),
+Pages servindo a pasta `docs/` via GitHub Actions.
 
-**Pelo GitHub Desktop** (não há `gh` instalado nesta máquina): _Add existing repository_ →
-aponte para esta pasta → _Publish repository_ (desmarque "Keep this code private") → depois, em
-**Settings › Pages** do repositório, escolha **Source: GitHub Actions**.
-
-**Ou pela linha de comando**, se instalar o `gh`:
-
-```bash
-gh repo create master-counter --public --source . --push
-gh api -X POST repos/:owner/master-counter/pages -f build_type=workflow
-```
-
-Depois disso o workflow `.github/workflows/atualizar.yml` roda sozinho duas vezes por dia
-(06h e 18h de Brasília), recoleta, commita `docs/dados.json` e republica a página.
+O workflow `.github/workflows/atualizar.yml` roda sozinho duas vezes por dia (06h e 18h de
+Brasília): recoleta o portal, relê as peças, regenera `docs/dados.json` e `docs/mencoes.json`,
+commita e republica a página. Para rodar na hora, use o botão *Run workflow* na aba Actions.
 
 ## Fontes
 
