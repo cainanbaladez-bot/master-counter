@@ -17,10 +17,17 @@ python -m http.server -d docs 8099
 
 No Windows do projeto: `py -3.10` no lugar de `python`.
 
-## Como publicar no GitHub Pages
+## Como publicar no GitHub Pages (quando quiser)
+
+O repositório já está iniciado e commitado localmente. Falta só criar o remoto:
+
+**Pelo GitHub Desktop** (não há `gh` instalado nesta máquina): _Add existing repository_ →
+aponte para esta pasta → _Publish repository_ (desmarque "Keep this code private") → depois, em
+**Settings › Pages** do repositório, escolha **Source: GitHub Actions**.
+
+**Ou pela linha de comando**, se instalar o `gh`:
 
 ```bash
-git init && git add . && git commit -m "Contador Master: painel inicial"
 gh repo create master-counter --public --source . --push
 gh api -X POST repos/:owner/master-counter/pages -f build_type=workflow
 ```
