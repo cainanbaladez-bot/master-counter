@@ -20,6 +20,9 @@
   a{color:var(--acento);text-decoration:none}
   a:hover{text-decoration:underline}
   .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .ressalva{background:var(--bg-3);border-bottom:1px solid var(--linha);
+    font-size:.78rem;color:var(--txt-3);padding:9px 0;line-height:1.45}
+  .ressalva b{color:var(--txt-2);font-weight:600}
   header.topo{border-bottom:1px solid var(--linha);
     background:radial-gradient(1200px 380px at 12% -10%,rgba(242,181,68,.14),transparent 60%),var(--bg)}
   .tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;
@@ -84,6 +87,14 @@
 </style>
 </head>
 <body>
+<div class="ressalva">
+  <div class="wrap">
+    <b>Aviso:</b> painel independente, feito a partir de dados públicos do portal do STF e
+    <b>sem revisão de nenhum profissional da área jurídica</b>. Os números são leitura automatizada
+    de andamentos e peças — para qualquer uso que dependa de precisão processual, confira no
+    <a href="https://portal.stf.jus.br/processos/" target="_blank" rel="noopener">próprio portal</a>.
+  </div>
+</div>
 <header class="topo">
   <div class="wrap">
     <div class="tag">Dados públicos · STF</div>
