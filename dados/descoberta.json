@@ -1,0 +1,428 @@
+[
+ {
+  "incidente": 7576883,
+  "rotulo": "Pet 15976",
+  "numero_unico": "0171983-70.2026.1.00.0000",
+  "autuacao": "28/04/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "DANIEL BUENO VORCARO",
+   "HENRIQUE MOURA VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7576893,
+  "rotulo": "Pet 15978",
+  "numero_unico": "0171986-25.2026.1.00.0000",
+  "autuacao": "28/04/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "HENRIQUE MOURA VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7576885,
+  "rotulo": "Pet 15977",
+  "numero_unico": "0171984-55.2026.1.00.0000",
+  "autuacao": "28/04/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "HENRIQUE MOURA VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7559421,
+  "rotulo": "Pet 15873",
+  "numero_unico": "0170280-07.2026.1.00.0000",
+  "autuacao": "10/04/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "DANIEL BUENO VORCARO",
+   "FELIPE CANCADO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7556527,
+  "rotulo": "Pet 15855",
+  "numero_unico": "0169945-85.2026.1.00.0000",
+  "autuacao": "08/04/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "FELIPE CANCADO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7515623,
+  "rotulo": "Pet 15562",
+  "numero_unico": "0165839-80.2026.1.00.0000",
+  "autuacao": "02/03/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "DANIEL BUENO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7514886,
+  "rotulo": "Pet 15556",
+  "numero_unico": "0165738-43.2026.1.00.0000",
+  "autuacao": "27/02/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "DANIEL BUENO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7509527,
+  "rotulo": "Pet 15504",
+  "numero_unico": "0165174-64.2026.1.00.0000",
+  "autuacao": "23/02/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "DANIEL BUENO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7509111,
+  "rotulo": "Pet 15499",
+  "numero_unico": "0165138-22.2026.1.00.0000",
+  "autuacao": "23/02/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "DANIEL BUENO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7505188,
+  "rotulo": "Pet 15478",
+  "numero_unico": "0164811-77.2026.1.00.0000",
+  "autuacao": "18/02/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "DANIEL BUENO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7498168,
+  "rotulo": "Inq 5035",
+  "numero_unico": "0164182-06.2026.1.00.0000",
+  "autuacao": "09/02/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "DANIEL BUENO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7473336,
+  "rotulo": "Pet 15198",
+  "numero_unico": "0126699-73.2025.1.00.0000",
+  "autuacao": "22/12/2025",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "NATALIA BUENO VORCARO ZETTEL",
+   "FELIPE CANCADO VORCARO",
+   "HENRIQUE MOURA VORCARO",
+   "DANIEL BUENO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7473347,
+  "rotulo": "Inq 5026",
+  "numero_unico": "0126716-12.2025.1.00.0000",
+  "autuacao": "22/12/2025",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "DANIEL BUENO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7450195,
+  "rotulo": "Rcl 88121",
+  "numero_unico": "0124065-07.2025.1.00.0000",
+  "autuacao": "28/11/2025",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "DANIEL BUENO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7616172,
+  "rotulo": "HC 273445",
+  "numero_unico": "0176091-45.2026.1.00.0000",
+  "autuacao": "10/06/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "DANIEL BUENO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7506302,
+  "rotulo": "Pet 15487",
+  "numero_unico": "0164849-89.2026.1.00.0000",
+  "autuacao": "19/02/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "DANIEL BUENO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7400475,
+  "rotulo": "HC 263033",
+  "numero_unico": "0118952-72.2025.1.00.0000",
+  "autuacao": "08/10/2025",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "HENRIQUE VORCARO GARCIA"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 6110176,
+  "rotulo": "RE 1311224",
+  "numero_unico": "0802532-10.2015.4.05.0000",
+  "autuacao": "24/02/2021",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "ASTRID MOURAO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 4052515,
+  "rotulo": "AI 842184",
+  "numero_unico": "Sem Número Único",
+  "autuacao": "28/03/2011",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "DAVID MIGUEL MOURÃO VORCARO",
+   "JOSÉ EDUARDO DE MOURÃO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 3986350,
+  "rotulo": "AI 826287",
+  "numero_unico": "Sem Número Único",
+  "autuacao": "13/11/2010",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "GUILHERME VORCARO HORTA PORTUGAL"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 2681664,
+  "rotulo": "AI 755922",
+  "numero_unico": "Sem Número Único",
+  "autuacao": "03/06/2009",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "JOSÉ EDUARDO DE MOURÃO VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 2192891,
+  "rotulo": "AI 490312",
+  "numero_unico": "Sem Número Único",
+  "autuacao": "07/01/2004",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "ELIZABETH VORCARO FERREIRA HORTA"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 2013960,
+  "rotulo": "RE 343042",
+  "numero_unico": "Sem Número Único",
+  "autuacao": "24/04/2002",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "CATHARINA VORCARO DE MOURÃO COSTA"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 1854585,
+  "rotulo": "RE 282565",
+  "numero_unico": "Sem Número Único",
+  "autuacao": "13/09/2000",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "ELIZABETH VORCARO FERREIRA HORTA"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
+  "incidente": 7673438,
+  "rotulo": "ARE 1620035",
+  "numero_unico": "0509750-41.2024.8.04.0001",
+  "autuacao": "21/08/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "BANCO MASTER S/A - EM LIQUIDACAO EXTRAJUDICIAL"
+  ],
+  "origem_descoberta": "BANCO MASTER"
+ },
+ {
+  "incidente": 7653088,
+  "rotulo": "Rcl 97917",
+  "numero_unico": "0180303-12.2026.1.00.0000",
+  "autuacao": "24/07/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "BANCO MASTER S/A - EM LIQUIDACAO EXTRAJUDICIAL"
+  ],
+  "origem_descoberta": "BANCO MASTER"
+ },
+ {
+  "incidente": 6853613,
+  "rotulo": "RE 1479792",
+  "numero_unico": "5034003-69.2021.4.03.6100",
+  "autuacao": "22/02/2024",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "BANCO MASTER S/A"
+  ],
+  "origem_descoberta": "BANCO MASTER"
+ },
+ {
+  "incidente": 7645437,
+  "rotulo": "ARE 1615475",
+  "numero_unico": "5077482-61.2023.4.02.5101",
+  "autuacao": "15/07/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "BANCO MASTER S/A"
+  ],
+  "origem_descoberta": "BANCO MASTER"
+ },
+ {
+  "incidente": 7627572,
+  "rotulo": "ARE 1612271",
+  "numero_unico": "2242601-32.2025.8.26.0000",
+  "autuacao": "24/06/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "BANCO MASTER S.A."
+  ],
+  "origem_descoberta": "BANCO MASTER"
+ },
+ {
+  "incidente": 7607109,
+  "rotulo": "Rcl 95516",
+  "numero_unico": "0175129-22.2026.1.00.0000",
+  "autuacao": "28/05/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "BANCO MASTER S/A"
+  ],
+  "origem_descoberta": "BANCO MASTER"
+ },
+ {
+  "incidente": 7373506,
+  "rotulo": "ARE 1570184",
+  "numero_unico": "1006099-60.2023.8.26.0196",
+  "autuacao": "17/09/2025",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "BANCO MASTER S/A"
+  ],
+  "origem_descoberta": "BANCO MASTER"
+ },
+ {
+  "incidente": 7344219,
+  "rotulo": "ARE 1565238",
+  "numero_unico": "0436478-14.2024.8.04.0001",
+  "autuacao": "22/08/2025",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "BANCO MASTER S/A"
+  ],
+  "origem_descoberta": "BANCO MASTER"
+ },
+ {
+  "incidente": 7144484,
+  "rotulo": "ARE 1533346",
+  "numero_unico": "0666886-72.2022.8.04.0001",
+  "autuacao": "04/02/2025",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "BANCO MASTER S/A"
+  ],
+  "origem_descoberta": "BANCO MASTER"
+ },
+ {
+  "incidente": 7030089,
+  "rotulo": "ARE 1514194",
+  "numero_unico": "0807151-72.2023.8.19.0066",
+  "autuacao": "11/09/2024",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "BANCO MASTER S/A"
+  ],
+  "origem_descoberta": "BANCO MASTER"
+ },
+ {
+  "incidente": 6702480,
+  "rotulo": "ARE 1450318",
+  "numero_unico": "0828354-28.2022.8.19.0001",
+  "autuacao": "03/08/2023",
+  "publicidade": "Público",
+  "em_tramitacao": "Não",
+  "partes": [
+   "BANCO MASTER S.A."
+  ],
+  "origem_descoberta": "BANCO MASTER"
+ }
+]

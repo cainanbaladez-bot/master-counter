@@ -116,7 +116,7 @@
       andamento. A linha é o acumulado. Os traços verticais marcam os episódios públicos de cobrança
       e de abertura de sigilo.</p>
     <div class="painel">
-      <svg id="grafico" viewBox="0 0 1000 340" role="img" aria-label="Documentos acessíveis por dia"></svg>
+      <svg id="grafico" viewBox="0 0 1000 360" role="img" aria-label="Documentos acessíveis por dia"></svg>
       <div class="legenda">
         <span><i class="chip" style="background:var(--acento)"></i>documentos por dia</span>
         <span><i class="chip" style="background:var(--acento-2)"></i>acumulado</span>
@@ -218,7 +218,7 @@ function grafico(d){
   const s = (d.serie||[]).filter(p => p.documentos > 0 || p.andamentos > 0);
   const svg = document.getElementById("grafico");
   if(!s.length){ svg.innerHTML = `<text x="20" y="40" fill="#9aa3af">sem série</text>`; return; }
-  const W=1000,H=340,ml=52,mr=52,mt=18,mb=44;
+  const W=1000,H=360,ml=52,mr=52,mt=54,mb=44;
   const iw=W-ml-mr, ih=H-mt-mb;
   const t0=+new Date(s[0].data), t1=+new Date(s[s.length-1].data);
   const x = t => ml + (t1===t0?iw/2:(( +new Date(t) - t0)/(t1-t0))*iw);
@@ -236,13 +236,19 @@ function grafico(d){
     out += `<text x="${ml-8}" y="${yy+4}" fill="#6b7280" font-size="11" text-anchor="end" font-family="monospace">${Math.round(maxD*(1-i/4))}</text>`;
     out += `<text x="${W-mr+8}" y="${yy+4}" fill="#6b7280" font-size="11" font-family="monospace">${Math.round(maxA*(1-i/4))}</text>`;
   }
-  // marcos
-  (d.marcos||[]).forEach(m => {
+  // marcos — rótulos escalonados para não empilharem quando as datas são próximas
+  let ultimoX = -999, nivel = 0;
+  (d.marcos||[]).slice().sort((a,b)=>a.data<b.data?-1:1).forEach(m => {
     const tm=+new Date(m.data);
     if(tm < t0 || tm > t1) return;
     const xx=x(m.data);
-    out += `<line x1="${xx}" x2="${xx}" y1="${mt-6}" y2="${mt+ih}" stroke="#6b7280" stroke-dasharray="4 4"/>
-            <text x="${xx}" y="${mt-10}" fill="#9aa3af" font-size="10" text-anchor="middle">${dataBR(m.data)}</text>`;
+    nivel = (xx - ultimoX < 90) ? nivel + 1 : 0;
+    ultimoX = xx;
+    const yr = mt - 8 - nivel*14;
+    const fim = xx > W - mr - 80;
+    out += `<line x1="${xx}" x2="${xx}" y1="${yr+3}" y2="${mt+ih}" stroke="#6b7280" stroke-dasharray="4 4"/>
+            <text x="${fim ? xx-6 : xx+6}" y="${yr}" fill="#9aa3af" font-size="10"
+                  text-anchor="${fim ? "end" : "start"}">${dataBR(m.data).slice(0,5)} · ${m.titulo.slice(0,34)}</text>`;
   });
   // barras
   s.forEach(p => {

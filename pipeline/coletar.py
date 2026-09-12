@@ -288,12 +288,19 @@ def main() -> None:
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
     seeds = {p["incidente"]: p for p in cfg["processos_seed"]}
 
+    cache_desc = RAIZ / "dados" / "descoberta.json"
     descobertos: list[dict] = []
     if cfg["descoberta"]["ativa"] and not (args.sem_rede or args.sem_descoberta):
         descobertos = descobrir_processos(
             cfg["descoberta"]["termos_parte"], cfg["descoberta"].get("somente_relator")
         )
+        cache_desc.write_text(
+            json.dumps(descobertos, ensure_ascii=False, indent=1), encoding="utf-8"
+        )
         print(f"descoberta: {len(descobertos)} processos com as partes buscadas")
+    elif cache_desc.exists():
+        descobertos = json.loads(cache_desc.read_text(encoding="utf-8"))
+        print(f"descoberta (cache): {len(descobertos)} processos")
 
     catalogo: dict[int, dict] = {}
     for d in descobertos:

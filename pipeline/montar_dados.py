@@ -10,9 +10,13 @@ from __future__ import annotations
 
 import json
 import re
-from collections import Counter, defaultdict
+import sys
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 RAIZ = Path(__file__).resolve().parent.parent
 ENTRADA = RAIZ / "dados" / "processos.json"

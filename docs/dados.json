@@ -1,0 +1,2092 @@
+{
+ "gerado_em": "2026-09-12T00:02:50+00:00",
+ "caso": {
+  "nome": "Caso Banco Master no STF",
+  "relator": "MIN. ANDRÉ MENDONÇA",
+  "descricao": "Acompanhamento, por dados públicos, do andamento e da liberação de peças dos processos do caso Banco Master sob relatoria do ministro André Mendonça no STF."
+ },
+ "marcos": [
+  {
+   "data": "2026-09-08",
+   "titulo": "Cobrança da PGR",
+   "detalhe": "Liberação de 18 processos do caso Master após cobrança da PGR.",
+   "fonte": "https://www.em.com.br/politica/2026/09/7499019-mendonca-libera-18-processos-do-caso-master-apos-cobranca-da-pgr.html"
+  },
+  {
+   "data": "2026-09-10",
+   "titulo": "Mendonça torna públicos ~4 mil arquivos (26 GB)",
+   "detalhe": "Liberação em massa após determinação do presidente Edson Fachin de retirar o sigilo de procedimentos sem investigação em curso.",
+   "fonte": "https://www.brasilemfolhas.com.br/2026/09/mendonca-libera-4-mil-arquivos-de-investigacao-sobre-banco-master/"
+  },
+  {
+   "data": "2026-09-11",
+   "titulo": "Mendonça nega liberação seletiva",
+   "detalhe": "Ministro afirma ter divulgado tudo e nega abertura seletiva do sigilo.",
+   "fonte": "https://exame.com/brasil/mendonca-diz-que-divulgou-tudo-e-nega-liberacao-seletiva-de-sigilo-do-caso-master/"
+  }
+ ],
+ "resumo": {
+  "processos": 16,
+  "processos_sob_relator": 16,
+  "processos_publicos": 16,
+  "processos_sigilosos": 0,
+  "andamentos": 2626,
+  "andamentos_com_documento": 490,
+  "documentos": 490,
+  "pct_andamentos_com_documento": 18.7,
+  "fora_do_escopo": 19
+ },
+ "processos": [
+  {
+   "incidente": 7473347,
+   "rotulo": "Inq 5026",
+   "numero_unico": "0126716-12.2025.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal",
+    "Documento(s) acautelado(s)"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "22/12/2025",
+   "assunto": "DIREITO PENAL | Crimes Previstos na Legislação Extravagante | Crimes contra o Sistema Financeiro Nacional DIREITO PROCESSUAL PENAL | Investigação Penal",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "Inquérito principal, origem na Justica Federal de SP",
+   "partes": [
+    "DANIEL BUENO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7473347",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7473347",
+   "andamentos": 654,
+   "andamentos_com_documento": 85,
+   "documentos": 85,
+   "pct_com_documento": 13.0,
+   "primeira_movimentacao": "2025-12-22",
+   "ultima_movimentacao": "2026-09-11",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7559421,
+   "rotulo": "Pet 15873",
+   "numero_unico": "0170280-07.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal",
+    "Réu Preso"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "10/04/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Prisão Temporária DIREITO PROCESSUAL PENAL | Medidas Assecuratórias",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "DANIEL BUENO VORCARO",
+    "FELIPE CANCADO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7559421",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7559421",
+   "andamentos": 194,
+   "andamentos_com_documento": 78,
+   "documentos": 78,
+   "pct_com_documento": 40.2,
+   "primeira_movimentacao": "2026-04-10",
+   "ultima_movimentacao": "2026-09-08",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7514886,
+   "rotulo": "Pet 15556",
+   "numero_unico": "0165738-43.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal",
+    "Réu Preso"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "27/02/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Prisão Preventiva",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "Representação da PF - 3a fase da Operação Compliance Zero",
+   "partes": [
+    "DANIEL BUENO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7514886",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7514886",
+   "andamentos": 407,
+   "andamentos_com_documento": 72,
+   "documentos": 72,
+   "pct_com_documento": 17.7,
+   "primeira_movimentacao": "2026-02-27",
+   "ultima_movimentacao": "2026-09-11",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7576893,
+   "rotulo": "Pet 15978",
+   "numero_unico": "0171986-25.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal",
+    "Réu Preso"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "28/04/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Prisão Temporária DIREITO PROCESSUAL PENAL | Execução Penal e de Medidas Alternativas | Pena Privativa de Liberdade | Transferência de Preso DIREITO PROCESSUAL PENAL | Medidas Assecuratórias",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "HENRIQUE MOURA VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7576893",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7576893",
+   "andamentos": 219,
+   "andamentos_com_documento": 72,
+   "documentos": 72,
+   "pct_com_documento": 32.9,
+   "primeira_movimentacao": "2026-04-28",
+   "ultima_movimentacao": "2026-09-08",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7473336,
+   "rotulo": "Pet 15198",
+   "numero_unico": "0126699-73.2025.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "22/12/2025",
+   "assunto": "DIREITO PROCESSUAL PENAL",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "NATALIA BUENO VORCARO ZETTEL",
+    "FELIPE CANCADO VORCARO",
+    "HENRIQUE MOURA VORCARO",
+    "DANIEL BUENO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7473336",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7473336",
+   "andamentos": 402,
+   "andamentos_com_documento": 69,
+   "documentos": 69,
+   "pct_com_documento": 17.2,
+   "primeira_movimentacao": "2025-12-22",
+   "ultima_movimentacao": "2026-09-11",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7515623,
+   "rotulo": "Pet 15562",
+   "numero_unico": "0165839-80.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "02/03/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Medidas Assecuratórias | Busca e Apreensão de Bens",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "DANIEL BUENO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7515623",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7515623",
+   "andamentos": 126,
+   "andamentos_com_documento": 20,
+   "documentos": 20,
+   "pct_com_documento": 15.9,
+   "primeira_movimentacao": "2026-03-02",
+   "ultima_movimentacao": "2026-09-11",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7556527,
+   "rotulo": "Pet 15855",
+   "numero_unico": "0169945-85.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "08/04/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Medidas Assecuratórias | Busca e Apreensão de Bens",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "FELIPE CANCADO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7556527",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7556527",
+   "andamentos": 69,
+   "andamentos_com_documento": 17,
+   "documentos": 17,
+   "pct_com_documento": 24.6,
+   "primeira_movimentacao": "2026-04-07",
+   "ultima_movimentacao": "2026-08-24",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7576883,
+   "rotulo": "Pet 15976",
+   "numero_unico": "0171983-70.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "28/04/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Medidas Assecuratórias | Busca e Apreensão de Bens",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "DANIEL BUENO VORCARO",
+    "HENRIQUE MOURA VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7576883",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7576883",
+   "andamentos": 75,
+   "andamentos_com_documento": 15,
+   "documentos": 15,
+   "pct_com_documento": 20.0,
+   "primeira_movimentacao": "2026-04-28",
+   "ultima_movimentacao": "2026-09-11",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7509527,
+   "rotulo": "Pet 15504",
+   "numero_unico": "0165174-64.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "23/02/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Investigação Penal",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "DANIEL BUENO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7509527",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7509527",
+   "andamentos": 44,
+   "andamentos_com_documento": 15,
+   "documentos": 15,
+   "pct_com_documento": 34.1,
+   "primeira_movimentacao": "2026-02-23",
+   "ultima_movimentacao": "2026-09-08",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7509111,
+   "rotulo": "Pet 15499",
+   "numero_unico": "0165138-22.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "23/02/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Investigação Penal",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "DANIEL BUENO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7509111",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7509111",
+   "andamentos": 41,
+   "andamentos_com_documento": 12,
+   "documentos": 12,
+   "pct_com_documento": 29.3,
+   "primeira_movimentacao": "2026-02-22",
+   "ultima_movimentacao": "2026-09-11",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7450195,
+   "rotulo": "Rcl 88121",
+   "numero_unico": "0124065-07.2025.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal",
+    "Medida Liminar",
+    "Réu Preso",
+    "Documento(s) acautelado(s)"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "28/11/2025",
+   "assunto": "DIREITO PROCESSUAL PENAL | Medidas Assecuratórias | Busca e Apreensão de Bens DIREITO PROCESSUAL PENAL | Investigação Penal",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "DANIEL BUENO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7450195",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7450195",
+   "andamentos": 259,
+   "andamentos_com_documento": 8,
+   "documentos": 8,
+   "pct_com_documento": 3.1,
+   "primeira_movimentacao": "2025-11-27",
+   "ultima_movimentacao": "2026-08-25",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7498168,
+   "rotulo": "Inq 5035",
+   "numero_unico": "0164182-06.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "09/02/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Investigação Penal",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "DANIEL BUENO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7498168",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7498168",
+   "andamentos": 48,
+   "andamentos_com_documento": 6,
+   "documentos": 6,
+   "pct_com_documento": 12.5,
+   "primeira_movimentacao": "2026-02-09",
+   "ultima_movimentacao": "2026-09-11",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7506302,
+   "rotulo": "Pet 15487",
+   "numero_unico": "0164849-89.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal"
+   ],
+   "em_tramitacao": "Não",
+   "autuacao": "19/02/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Investigação Penal",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "DANIEL BUENO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7506302",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7506302",
+   "andamentos": 18,
+   "andamentos_com_documento": 6,
+   "documentos": 6,
+   "pct_com_documento": 33.3,
+   "primeira_movimentacao": "2026-02-18",
+   "ultima_movimentacao": "2026-06-18",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7607109,
+   "rotulo": "Rcl 95516",
+   "numero_unico": "0175129-22.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Medida Liminar",
+    "Assistência Judiciária Gratuita"
+   ],
+   "em_tramitacao": "Não",
+   "autuacao": "28/05/2026",
+   "assunto": "DIREITO DO CONSUMIDOR | Contratos de Consumo | Bancários | Empréstimo consignado",
+   "origem": "SÃO PAULO",
+   "nota": "",
+   "partes": [
+    "BANCO MASTER S/A"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7607109",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7607109",
+   "andamentos": 13,
+   "andamentos_com_documento": 6,
+   "documentos": 6,
+   "pct_com_documento": 46.2,
+   "primeira_movimentacao": "2026-05-27",
+   "ultima_movimentacao": "2026-06-26",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7505188,
+   "rotulo": "Pet 15478",
+   "numero_unico": "0164811-77.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "18/02/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Investigação Penal | Quebra do Sigilo Bancário DIREITO PROCESSUAL PENAL | Investigação Penal | Quebra do Sigilo Fiscal",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "DANIEL BUENO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7505188",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7505188",
+   "andamentos": 31,
+   "andamentos_com_documento": 5,
+   "documentos": 5,
+   "pct_com_documento": 16.1,
+   "primeira_movimentacao": "2026-02-18",
+   "ultima_movimentacao": "2026-07-30",
+   "decisoes": 0,
+   "peticoes": 0
+  },
+  {
+   "incidente": 7576885,
+   "rotulo": "Pet 15977",
+   "numero_unico": "0171984-55.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "28/04/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Investigação Penal | Quebra do Sigilo Telefônico",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "HENRIQUE MOURA VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7576885",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7576885",
+   "andamentos": 26,
+   "andamentos_com_documento": 4,
+   "documentos": 4,
+   "pct_com_documento": 15.4,
+   "primeira_movimentacao": "2026-04-28",
+   "ultima_movimentacao": "2026-05-25",
+   "decisoes": 0,
+   "peticoes": 0
+  }
+ ],
+ "serie": [
+  {
+   "data": "2025-11-27",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 0
+  },
+  {
+   "data": "2025-11-28",
+   "andamentos": 3,
+   "documentos": 1,
+   "documentos_acumulados": 1
+  },
+  {
+   "data": "2025-11-29",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 1
+  },
+  {
+   "data": "2025-12-01",
+   "andamentos": 2,
+   "documentos": 0,
+   "documentos_acumulados": 1
+  },
+  {
+   "data": "2025-12-02",
+   "andamentos": 7,
+   "documentos": 0,
+   "documentos_acumulados": 1
+  },
+  {
+   "data": "2025-12-03",
+   "andamentos": 4,
+   "documentos": 0,
+   "documentos_acumulados": 1
+  },
+  {
+   "data": "2025-12-04",
+   "andamentos": 12,
+   "documentos": 0,
+   "documentos_acumulados": 1
+  },
+  {
+   "data": "2025-12-05",
+   "andamentos": 5,
+   "documentos": 0,
+   "documentos_acumulados": 1
+  },
+  {
+   "data": "2025-12-08",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 1
+  },
+  {
+   "data": "2025-12-09",
+   "andamentos": 6,
+   "documentos": 2,
+   "documentos_acumulados": 3
+  },
+  {
+   "data": "2025-12-10",
+   "andamentos": 12,
+   "documentos": 0,
+   "documentos_acumulados": 3
+  },
+  {
+   "data": "2025-12-11",
+   "andamentos": 4,
+   "documentos": 0,
+   "documentos_acumulados": 3
+  },
+  {
+   "data": "2025-12-12",
+   "andamentos": 21,
+   "documentos": 0,
+   "documentos_acumulados": 3
+  },
+  {
+   "data": "2025-12-15",
+   "andamentos": 5,
+   "documentos": 1,
+   "documentos_acumulados": 4
+  },
+  {
+   "data": "2025-12-16",
+   "andamentos": 6,
+   "documentos": 0,
+   "documentos_acumulados": 4
+  },
+  {
+   "data": "2025-12-17",
+   "andamentos": 2,
+   "documentos": 0,
+   "documentos_acumulados": 4
+  },
+  {
+   "data": "2025-12-18",
+   "andamentos": 7,
+   "documentos": 0,
+   "documentos_acumulados": 4
+  },
+  {
+   "data": "2025-12-19",
+   "andamentos": 5,
+   "documentos": 0,
+   "documentos_acumulados": 4
+  },
+  {
+   "data": "2025-12-22",
+   "andamentos": 22,
+   "documentos": 2,
+   "documentos_acumulados": 6
+  },
+  {
+   "data": "2025-12-23",
+   "andamentos": 16,
+   "documentos": 1,
+   "documentos_acumulados": 7
+  },
+  {
+   "data": "2025-12-24",
+   "andamentos": 13,
+   "documentos": 0,
+   "documentos_acumulados": 7
+  },
+  {
+   "data": "2025-12-26",
+   "andamentos": 34,
+   "documentos": 0,
+   "documentos_acumulados": 7
+  },
+  {
+   "data": "2025-12-27",
+   "andamentos": 10,
+   "documentos": 6,
+   "documentos_acumulados": 13
+  },
+  {
+   "data": "2025-12-28",
+   "andamentos": 7,
+   "documentos": 0,
+   "documentos_acumulados": 13
+  },
+  {
+   "data": "2025-12-29",
+   "andamentos": 13,
+   "documentos": 0,
+   "documentos_acumulados": 13
+  },
+  {
+   "data": "2025-12-30",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 13
+  },
+  {
+   "data": "2025-12-31",
+   "andamentos": 6,
+   "documentos": 0,
+   "documentos_acumulados": 13
+  },
+  {
+   "data": "2026-01-02",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 13
+  },
+  {
+   "data": "2026-01-04",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 13
+  },
+  {
+   "data": "2026-01-05",
+   "andamentos": 4,
+   "documentos": 0,
+   "documentos_acumulados": 13
+  },
+  {
+   "data": "2026-01-06",
+   "andamentos": 11,
+   "documentos": 0,
+   "documentos_acumulados": 13
+  },
+  {
+   "data": "2026-01-07",
+   "andamentos": 2,
+   "documentos": 0,
+   "documentos_acumulados": 13
+  },
+  {
+   "data": "2026-01-08",
+   "andamentos": 9,
+   "documentos": 1,
+   "documentos_acumulados": 14
+  },
+  {
+   "data": "2026-01-09",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 14
+  },
+  {
+   "data": "2026-01-12",
+   "andamentos": 8,
+   "documentos": 0,
+   "documentos_acumulados": 14
+  },
+  {
+   "data": "2026-01-13",
+   "andamentos": 14,
+   "documentos": 0,
+   "documentos_acumulados": 14
+  },
+  {
+   "data": "2026-01-14",
+   "andamentos": 31,
+   "documentos": 6,
+   "documentos_acumulados": 20
+  },
+  {
+   "data": "2026-01-15",
+   "andamentos": 25,
+   "documentos": 4,
+   "documentos_acumulados": 24
+  },
+  {
+   "data": "2026-01-16",
+   "andamentos": 14,
+   "documentos": 2,
+   "documentos_acumulados": 26
+  },
+  {
+   "data": "2026-01-17",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 26
+  },
+  {
+   "data": "2026-01-19",
+   "andamentos": 10,
+   "documentos": 1,
+   "documentos_acumulados": 27
+  },
+  {
+   "data": "2026-01-20",
+   "andamentos": 12,
+   "documentos": 1,
+   "documentos_acumulados": 28
+  },
+  {
+   "data": "2026-01-21",
+   "andamentos": 4,
+   "documentos": 0,
+   "documentos_acumulados": 28
+  },
+  {
+   "data": "2026-01-22",
+   "andamentos": 11,
+   "documentos": 1,
+   "documentos_acumulados": 29
+  },
+  {
+   "data": "2026-01-23",
+   "andamentos": 6,
+   "documentos": 1,
+   "documentos_acumulados": 30
+  },
+  {
+   "data": "2026-01-24",
+   "andamentos": 5,
+   "documentos": 1,
+   "documentos_acumulados": 31
+  },
+  {
+   "data": "2026-01-26",
+   "andamentos": 15,
+   "documentos": 1,
+   "documentos_acumulados": 32
+  },
+  {
+   "data": "2026-01-27",
+   "andamentos": 12,
+   "documentos": 1,
+   "documentos_acumulados": 33
+  },
+  {
+   "data": "2026-01-28",
+   "andamentos": 8,
+   "documentos": 0,
+   "documentos_acumulados": 33
+  },
+  {
+   "data": "2026-01-30",
+   "andamentos": 4,
+   "documentos": 0,
+   "documentos_acumulados": 33
+  },
+  {
+   "data": "2026-02-02",
+   "andamentos": 33,
+   "documentos": 1,
+   "documentos_acumulados": 34
+  },
+  {
+   "data": "2026-02-03",
+   "andamentos": 42,
+   "documentos": 0,
+   "documentos_acumulados": 34
+  },
+  {
+   "data": "2026-02-04",
+   "andamentos": 11,
+   "documentos": 1,
+   "documentos_acumulados": 35
+  },
+  {
+   "data": "2026-02-05",
+   "andamentos": 17,
+   "documentos": 5,
+   "documentos_acumulados": 40
+  },
+  {
+   "data": "2026-02-06",
+   "andamentos": 12,
+   "documentos": 0,
+   "documentos_acumulados": 40
+  },
+  {
+   "data": "2026-02-08",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 40
+  },
+  {
+   "data": "2026-02-09",
+   "andamentos": 14,
+   "documentos": 2,
+   "documentos_acumulados": 42
+  },
+  {
+   "data": "2026-02-10",
+   "andamentos": 13,
+   "documentos": 0,
+   "documentos_acumulados": 42
+  },
+  {
+   "data": "2026-02-11",
+   "andamentos": 18,
+   "documentos": 2,
+   "documentos_acumulados": 44
+  },
+  {
+   "data": "2026-02-12",
+   "andamentos": 11,
+   "documentos": 1,
+   "documentos_acumulados": 45
+  },
+  {
+   "data": "2026-02-13",
+   "andamentos": 20,
+   "documentos": 2,
+   "documentos_acumulados": 47
+  },
+  {
+   "data": "2026-02-14",
+   "andamentos": 9,
+   "documentos": 8,
+   "documentos_acumulados": 55
+  },
+  {
+   "data": "2026-02-15",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 55
+  },
+  {
+   "data": "2026-02-16",
+   "andamentos": 1,
+   "documentos": 1,
+   "documentos_acumulados": 56
+  },
+  {
+   "data": "2026-02-17",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 56
+  },
+  {
+   "data": "2026-02-18",
+   "andamentos": 13,
+   "documentos": 1,
+   "documentos_acumulados": 57
+  },
+  {
+   "data": "2026-02-19",
+   "andamentos": 22,
+   "documentos": 2,
+   "documentos_acumulados": 59
+  },
+  {
+   "data": "2026-02-20",
+   "andamentos": 26,
+   "documentos": 1,
+   "documentos_acumulados": 60
+  },
+  {
+   "data": "2026-02-21",
+   "andamentos": 4,
+   "documentos": 0,
+   "documentos_acumulados": 60
+  },
+  {
+   "data": "2026-02-22",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 60
+  },
+  {
+   "data": "2026-02-23",
+   "andamentos": 20,
+   "documentos": 2,
+   "documentos_acumulados": 62
+  },
+  {
+   "data": "2026-02-24",
+   "andamentos": 20,
+   "documentos": 1,
+   "documentos_acumulados": 63
+  },
+  {
+   "data": "2026-02-25",
+   "andamentos": 7,
+   "documentos": 0,
+   "documentos_acumulados": 63
+  },
+  {
+   "data": "2026-02-26",
+   "andamentos": 28,
+   "documentos": 9,
+   "documentos_acumulados": 72
+  },
+  {
+   "data": "2026-02-27",
+   "andamentos": 40,
+   "documentos": 9,
+   "documentos_acumulados": 81
+  },
+  {
+   "data": "2026-02-28",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 81
+  },
+  {
+   "data": "2026-03-01",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 81
+  },
+  {
+   "data": "2026-03-02",
+   "andamentos": 32,
+   "documentos": 6,
+   "documentos_acumulados": 87
+  },
+  {
+   "data": "2026-03-03",
+   "andamentos": 72,
+   "documentos": 1,
+   "documentos_acumulados": 88
+  },
+  {
+   "data": "2026-03-04",
+   "andamentos": 45,
+   "documentos": 7,
+   "documentos_acumulados": 95
+  },
+  {
+   "data": "2026-03-05",
+   "andamentos": 46,
+   "documentos": 8,
+   "documentos_acumulados": 103
+  },
+  {
+   "data": "2026-03-06",
+   "andamentos": 20,
+   "documentos": 0,
+   "documentos_acumulados": 103
+  },
+  {
+   "data": "2026-03-09",
+   "andamentos": 27,
+   "documentos": 7,
+   "documentos_acumulados": 110
+  },
+  {
+   "data": "2026-03-10",
+   "andamentos": 19,
+   "documentos": 2,
+   "documentos_acumulados": 112
+  },
+  {
+   "data": "2026-03-11",
+   "andamentos": 15,
+   "documentos": 0,
+   "documentos_acumulados": 112
+  },
+  {
+   "data": "2026-03-12",
+   "andamentos": 14,
+   "documentos": 0,
+   "documentos_acumulados": 112
+  },
+  {
+   "data": "2026-03-13",
+   "andamentos": 9,
+   "documentos": 1,
+   "documentos_acumulados": 113
+  },
+  {
+   "data": "2026-03-14",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 113
+  },
+  {
+   "data": "2026-03-15",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 113
+  },
+  {
+   "data": "2026-03-16",
+   "andamentos": 20,
+   "documentos": 4,
+   "documentos_acumulados": 117
+  },
+  {
+   "data": "2026-03-17",
+   "andamentos": 16,
+   "documentos": 0,
+   "documentos_acumulados": 117
+  },
+  {
+   "data": "2026-03-18",
+   "andamentos": 22,
+   "documentos": 5,
+   "documentos_acumulados": 122
+  },
+  {
+   "data": "2026-03-19",
+   "andamentos": 13,
+   "documentos": 2,
+   "documentos_acumulados": 124
+  },
+  {
+   "data": "2026-03-20",
+   "andamentos": 13,
+   "documentos": 3,
+   "documentos_acumulados": 127
+  },
+  {
+   "data": "2026-03-21",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 127
+  },
+  {
+   "data": "2026-03-23",
+   "andamentos": 15,
+   "documentos": 3,
+   "documentos_acumulados": 130
+  },
+  {
+   "data": "2026-03-24",
+   "andamentos": 8,
+   "documentos": 2,
+   "documentos_acumulados": 132
+  },
+  {
+   "data": "2026-03-25",
+   "andamentos": 19,
+   "documentos": 0,
+   "documentos_acumulados": 132
+  },
+  {
+   "data": "2026-03-26",
+   "andamentos": 3,
+   "documentos": 1,
+   "documentos_acumulados": 133
+  },
+  {
+   "data": "2026-03-27",
+   "andamentos": 9,
+   "documentos": 0,
+   "documentos_acumulados": 133
+  },
+  {
+   "data": "2026-03-28",
+   "andamentos": 13,
+   "documentos": 6,
+   "documentos_acumulados": 139
+  },
+  {
+   "data": "2026-03-30",
+   "andamentos": 21,
+   "documentos": 4,
+   "documentos_acumulados": 143
+  },
+  {
+   "data": "2026-03-31",
+   "andamentos": 27,
+   "documentos": 3,
+   "documentos_acumulados": 146
+  },
+  {
+   "data": "2026-04-01",
+   "andamentos": 9,
+   "documentos": 1,
+   "documentos_acumulados": 147
+  },
+  {
+   "data": "2026-04-02",
+   "andamentos": 2,
+   "documentos": 0,
+   "documentos_acumulados": 147
+  },
+  {
+   "data": "2026-04-03",
+   "andamentos": 3,
+   "documentos": 2,
+   "documentos_acumulados": 149
+  },
+  {
+   "data": "2026-04-04",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 149
+  },
+  {
+   "data": "2026-04-05",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 149
+  },
+  {
+   "data": "2026-04-06",
+   "andamentos": 5,
+   "documentos": 0,
+   "documentos_acumulados": 149
+  },
+  {
+   "data": "2026-04-07",
+   "andamentos": 9,
+   "documentos": 3,
+   "documentos_acumulados": 152
+  },
+  {
+   "data": "2026-04-08",
+   "andamentos": 23,
+   "documentos": 4,
+   "documentos_acumulados": 156
+  },
+  {
+   "data": "2026-04-09",
+   "andamentos": 10,
+   "documentos": 2,
+   "documentos_acumulados": 158
+  },
+  {
+   "data": "2026-04-10",
+   "andamentos": 20,
+   "documentos": 4,
+   "documentos_acumulados": 162
+  },
+  {
+   "data": "2026-04-13",
+   "andamentos": 6,
+   "documentos": 0,
+   "documentos_acumulados": 162
+  },
+  {
+   "data": "2026-04-14",
+   "andamentos": 4,
+   "documentos": 2,
+   "documentos_acumulados": 164
+  },
+  {
+   "data": "2026-04-15",
+   "andamentos": 11,
+   "documentos": 2,
+   "documentos_acumulados": 166
+  },
+  {
+   "data": "2026-04-16",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 166
+  },
+  {
+   "data": "2026-04-17",
+   "andamentos": 2,
+   "documentos": 0,
+   "documentos_acumulados": 166
+  },
+  {
+   "data": "2026-04-18",
+   "andamentos": 2,
+   "documentos": 0,
+   "documentos_acumulados": 166
+  },
+  {
+   "data": "2026-04-19",
+   "andamentos": 2,
+   "documentos": 2,
+   "documentos_acumulados": 168
+  },
+  {
+   "data": "2026-04-22",
+   "andamentos": 5,
+   "documentos": 1,
+   "documentos_acumulados": 169
+  },
+  {
+   "data": "2026-04-23",
+   "andamentos": 14,
+   "documentos": 1,
+   "documentos_acumulados": 170
+  },
+  {
+   "data": "2026-04-24",
+   "andamentos": 9,
+   "documentos": 3,
+   "documentos_acumulados": 173
+  },
+  {
+   "data": "2026-04-25",
+   "andamentos": 1,
+   "documentos": 1,
+   "documentos_acumulados": 174
+  },
+  {
+   "data": "2026-04-27",
+   "andamentos": 7,
+   "documentos": 1,
+   "documentos_acumulados": 175
+  },
+  {
+   "data": "2026-04-28",
+   "andamentos": 17,
+   "documentos": 5,
+   "documentos_acumulados": 180
+  },
+  {
+   "data": "2026-04-29",
+   "andamentos": 9,
+   "documentos": 3,
+   "documentos_acumulados": 183
+  },
+  {
+   "data": "2026-04-30",
+   "andamentos": 17,
+   "documentos": 10,
+   "documentos_acumulados": 193
+  },
+  {
+   "data": "2026-05-01",
+   "andamentos": 2,
+   "documentos": 0,
+   "documentos_acumulados": 193
+  },
+  {
+   "data": "2026-05-04",
+   "andamentos": 9,
+   "documentos": 1,
+   "documentos_acumulados": 194
+  },
+  {
+   "data": "2026-05-05",
+   "andamentos": 19,
+   "documentos": 0,
+   "documentos_acumulados": 194
+  },
+  {
+   "data": "2026-05-06",
+   "andamentos": 34,
+   "documentos": 13,
+   "documentos_acumulados": 207
+  },
+  {
+   "data": "2026-05-07",
+   "andamentos": 30,
+   "documentos": 12,
+   "documentos_acumulados": 219
+  },
+  {
+   "data": "2026-05-08",
+   "andamentos": 16,
+   "documentos": 5,
+   "documentos_acumulados": 224
+  },
+  {
+   "data": "2026-05-11",
+   "andamentos": 51,
+   "documentos": 12,
+   "documentos_acumulados": 236
+  },
+  {
+   "data": "2026-05-12",
+   "andamentos": 25,
+   "documentos": 1,
+   "documentos_acumulados": 237
+  },
+  {
+   "data": "2026-05-13",
+   "andamentos": 44,
+   "documentos": 16,
+   "documentos_acumulados": 253
+  },
+  {
+   "data": "2026-05-14",
+   "andamentos": 39,
+   "documentos": 10,
+   "documentos_acumulados": 263
+  },
+  {
+   "data": "2026-05-15",
+   "andamentos": 12,
+   "documentos": 2,
+   "documentos_acumulados": 265
+  },
+  {
+   "data": "2026-05-16",
+   "andamentos": 7,
+   "documentos": 3,
+   "documentos_acumulados": 268
+  },
+  {
+   "data": "2026-05-18",
+   "andamentos": 23,
+   "documentos": 6,
+   "documentos_acumulados": 274
+  },
+  {
+   "data": "2026-05-19",
+   "andamentos": 16,
+   "documentos": 4,
+   "documentos_acumulados": 278
+  },
+  {
+   "data": "2026-05-20",
+   "andamentos": 12,
+   "documentos": 2,
+   "documentos_acumulados": 280
+  },
+  {
+   "data": "2026-05-21",
+   "andamentos": 28,
+   "documentos": 6,
+   "documentos_acumulados": 286
+  },
+  {
+   "data": "2026-05-22",
+   "andamentos": 22,
+   "documentos": 2,
+   "documentos_acumulados": 288
+  },
+  {
+   "data": "2026-05-24",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 288
+  },
+  {
+   "data": "2026-05-25",
+   "andamentos": 13,
+   "documentos": 4,
+   "documentos_acumulados": 292
+  },
+  {
+   "data": "2026-05-26",
+   "andamentos": 2,
+   "documentos": 1,
+   "documentos_acumulados": 293
+  },
+  {
+   "data": "2026-05-27",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 293
+  },
+  {
+   "data": "2026-05-28",
+   "andamentos": 7,
+   "documentos": 2,
+   "documentos_acumulados": 295
+  },
+  {
+   "data": "2026-05-29",
+   "andamentos": 22,
+   "documentos": 5,
+   "documentos_acumulados": 300
+  },
+  {
+   "data": "2026-06-01",
+   "andamentos": 29,
+   "documentos": 15,
+   "documentos_acumulados": 315
+  },
+  {
+   "data": "2026-06-02",
+   "andamentos": 24,
+   "documentos": 7,
+   "documentos_acumulados": 322
+  },
+  {
+   "data": "2026-06-03",
+   "andamentos": 25,
+   "documentos": 4,
+   "documentos_acumulados": 326
+  },
+  {
+   "data": "2026-06-04",
+   "andamentos": 3,
+   "documentos": 3,
+   "documentos_acumulados": 329
+  },
+  {
+   "data": "2026-06-05",
+   "andamentos": 5,
+   "documentos": 2,
+   "documentos_acumulados": 331
+  },
+  {
+   "data": "2026-06-08",
+   "andamentos": 13,
+   "documentos": 2,
+   "documentos_acumulados": 333
+  },
+  {
+   "data": "2026-06-09",
+   "andamentos": 4,
+   "documentos": 0,
+   "documentos_acumulados": 333
+  },
+  {
+   "data": "2026-06-10",
+   "andamentos": 7,
+   "documentos": 0,
+   "documentos_acumulados": 333
+  },
+  {
+   "data": "2026-06-11",
+   "andamentos": 11,
+   "documentos": 5,
+   "documentos_acumulados": 338
+  },
+  {
+   "data": "2026-06-12",
+   "andamentos": 18,
+   "documentos": 2,
+   "documentos_acumulados": 340
+  },
+  {
+   "data": "2026-06-15",
+   "andamentos": 14,
+   "documentos": 0,
+   "documentos_acumulados": 340
+  },
+  {
+   "data": "2026-06-16",
+   "andamentos": 14,
+   "documentos": 7,
+   "documentos_acumulados": 347
+  },
+  {
+   "data": "2026-06-17",
+   "andamentos": 16,
+   "documentos": 2,
+   "documentos_acumulados": 349
+  },
+  {
+   "data": "2026-06-18",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 349
+  },
+  {
+   "data": "2026-06-19",
+   "andamentos": 11,
+   "documentos": 1,
+   "documentos_acumulados": 350
+  },
+  {
+   "data": "2026-06-22",
+   "andamentos": 16,
+   "documentos": 12,
+   "documentos_acumulados": 362
+  },
+  {
+   "data": "2026-06-23",
+   "andamentos": 13,
+   "documentos": 1,
+   "documentos_acumulados": 363
+  },
+  {
+   "data": "2026-06-24",
+   "andamentos": 8,
+   "documentos": 3,
+   "documentos_acumulados": 366
+  },
+  {
+   "data": "2026-06-25",
+   "andamentos": 4,
+   "documentos": 0,
+   "documentos_acumulados": 366
+  },
+  {
+   "data": "2026-06-26",
+   "andamentos": 15,
+   "documentos": 5,
+   "documentos_acumulados": 371
+  },
+  {
+   "data": "2026-06-27",
+   "andamentos": 5,
+   "documentos": 4,
+   "documentos_acumulados": 375
+  },
+  {
+   "data": "2026-06-30",
+   "andamentos": 4,
+   "documentos": 1,
+   "documentos_acumulados": 376
+  },
+  {
+   "data": "2026-07-01",
+   "andamentos": 6,
+   "documentos": 2,
+   "documentos_acumulados": 378
+  },
+  {
+   "data": "2026-07-02",
+   "andamentos": 6,
+   "documentos": 1,
+   "documentos_acumulados": 379
+  },
+  {
+   "data": "2026-07-03",
+   "andamentos": 2,
+   "documentos": 0,
+   "documentos_acumulados": 379
+  },
+  {
+   "data": "2026-07-06",
+   "andamentos": 4,
+   "documentos": 2,
+   "documentos_acumulados": 381
+  },
+  {
+   "data": "2026-07-07",
+   "andamentos": 12,
+   "documentos": 4,
+   "documentos_acumulados": 385
+  },
+  {
+   "data": "2026-07-09",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 385
+  },
+  {
+   "data": "2026-07-10",
+   "andamentos": 3,
+   "documentos": 1,
+   "documentos_acumulados": 386
+  },
+  {
+   "data": "2026-07-12",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 386
+  },
+  {
+   "data": "2026-07-13",
+   "andamentos": 15,
+   "documentos": 6,
+   "documentos_acumulados": 392
+  },
+  {
+   "data": "2026-07-14",
+   "andamentos": 20,
+   "documentos": 5,
+   "documentos_acumulados": 397
+  },
+  {
+   "data": "2026-07-15",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 397
+  },
+  {
+   "data": "2026-07-16",
+   "andamentos": 6,
+   "documentos": 1,
+   "documentos_acumulados": 398
+  },
+  {
+   "data": "2026-07-17",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 398
+  },
+  {
+   "data": "2026-07-18",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 398
+  },
+  {
+   "data": "2026-07-20",
+   "andamentos": 8,
+   "documentos": 0,
+   "documentos_acumulados": 398
+  },
+  {
+   "data": "2026-07-21",
+   "andamentos": 13,
+   "documentos": 4,
+   "documentos_acumulados": 402
+  },
+  {
+   "data": "2026-07-22",
+   "andamentos": 15,
+   "documentos": 6,
+   "documentos_acumulados": 408
+  },
+  {
+   "data": "2026-07-23",
+   "andamentos": 9,
+   "documentos": 4,
+   "documentos_acumulados": 412
+  },
+  {
+   "data": "2026-07-24",
+   "andamentos": 7,
+   "documentos": 3,
+   "documentos_acumulados": 415
+  },
+  {
+   "data": "2026-07-25",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 415
+  },
+  {
+   "data": "2026-07-27",
+   "andamentos": 15,
+   "documentos": 2,
+   "documentos_acumulados": 417
+  },
+  {
+   "data": "2026-07-28",
+   "andamentos": 12,
+   "documentos": 4,
+   "documentos_acumulados": 421
+  },
+  {
+   "data": "2026-07-29",
+   "andamentos": 13,
+   "documentos": 3,
+   "documentos_acumulados": 424
+  },
+  {
+   "data": "2026-07-30",
+   "andamentos": 8,
+   "documentos": 0,
+   "documentos_acumulados": 424
+  },
+  {
+   "data": "2026-07-31",
+   "andamentos": 3,
+   "documentos": 1,
+   "documentos_acumulados": 425
+  },
+  {
+   "data": "2026-08-02",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 425
+  },
+  {
+   "data": "2026-08-03",
+   "andamentos": 4,
+   "documentos": 1,
+   "documentos_acumulados": 426
+  },
+  {
+   "data": "2026-08-04",
+   "andamentos": 5,
+   "documentos": 0,
+   "documentos_acumulados": 426
+  },
+  {
+   "data": "2026-08-05",
+   "andamentos": 12,
+   "documentos": 4,
+   "documentos_acumulados": 430
+  },
+  {
+   "data": "2026-08-06",
+   "andamentos": 4,
+   "documentos": 1,
+   "documentos_acumulados": 431
+  },
+  {
+   "data": "2026-08-07",
+   "andamentos": 2,
+   "documentos": 0,
+   "documentos_acumulados": 431
+  },
+  {
+   "data": "2026-08-10",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 431
+  },
+  {
+   "data": "2026-08-11",
+   "andamentos": 7,
+   "documentos": 3,
+   "documentos_acumulados": 434
+  },
+  {
+   "data": "2026-08-12",
+   "andamentos": 6,
+   "documentos": 3,
+   "documentos_acumulados": 437
+  },
+  {
+   "data": "2026-08-13",
+   "andamentos": 8,
+   "documentos": 1,
+   "documentos_acumulados": 438
+  },
+  {
+   "data": "2026-08-14",
+   "andamentos": 8,
+   "documentos": 3,
+   "documentos_acumulados": 441
+  },
+  {
+   "data": "2026-08-15",
+   "andamentos": 5,
+   "documentos": 5,
+   "documentos_acumulados": 446
+  },
+  {
+   "data": "2026-08-17",
+   "andamentos": 10,
+   "documentos": 2,
+   "documentos_acumulados": 448
+  },
+  {
+   "data": "2026-08-18",
+   "andamentos": 4,
+   "documentos": 0,
+   "documentos_acumulados": 448
+  },
+  {
+   "data": "2026-08-19",
+   "andamentos": 10,
+   "documentos": 0,
+   "documentos_acumulados": 448
+  },
+  {
+   "data": "2026-08-20",
+   "andamentos": 8,
+   "documentos": 0,
+   "documentos_acumulados": 448
+  },
+  {
+   "data": "2026-08-21",
+   "andamentos": 1,
+   "documentos": 0,
+   "documentos_acumulados": 448
+  },
+  {
+   "data": "2026-08-24",
+   "andamentos": 5,
+   "documentos": 3,
+   "documentos_acumulados": 451
+  },
+  {
+   "data": "2026-08-25",
+   "andamentos": 13,
+   "documentos": 0,
+   "documentos_acumulados": 451
+  },
+  {
+   "data": "2026-08-26",
+   "andamentos": 13,
+   "documentos": 9,
+   "documentos_acumulados": 460
+  },
+  {
+   "data": "2026-08-27",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 460
+  },
+  {
+   "data": "2026-08-28",
+   "andamentos": 14,
+   "documentos": 8,
+   "documentos_acumulados": 468
+  },
+  {
+   "data": "2026-08-31",
+   "andamentos": 6,
+   "documentos": 2,
+   "documentos_acumulados": 470
+  },
+  {
+   "data": "2026-09-01",
+   "andamentos": 4,
+   "documentos": 0,
+   "documentos_acumulados": 470
+  },
+  {
+   "data": "2026-09-02",
+   "andamentos": 2,
+   "documentos": 0,
+   "documentos_acumulados": 470
+  },
+  {
+   "data": "2026-09-03",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 470
+  },
+  {
+   "data": "2026-09-04",
+   "andamentos": 19,
+   "documentos": 12,
+   "documentos_acumulados": 482
+  },
+  {
+   "data": "2026-09-07",
+   "andamentos": 2,
+   "documentos": 1,
+   "documentos_acumulados": 483
+  },
+  {
+   "data": "2026-09-08",
+   "andamentos": 9,
+   "documentos": 2,
+   "documentos_acumulados": 485
+  },
+  {
+   "data": "2026-09-09",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 485
+  },
+  {
+   "data": "2026-09-10",
+   "andamentos": 3,
+   "documentos": 0,
+   "documentos_acumulados": 485
+  },
+  {
+   "data": "2026-09-11",
+   "andamentos": 16,
+   "documentos": 5,
+   "documentos_acumulados": 490
+  }
+ ],
+ "tipos_andamento": [
+  {
+   "nome": "Petição",
+   "n": 936
+  },
+  {
+   "nome": "Comunicação assinada",
+   "n": 294
+  },
+  {
+   "nome": "Expedido(a)",
+   "n": 188
+  },
+  {
+   "nome": "Certidão",
+   "n": 187
+  },
+  {
+   "nome": "Conclusos ao(à) Relator(a)",
+   "n": 146
+  },
+  {
+   "nome": "Remessa",
+   "n": 135
+  },
+  {
+   "nome": "Despacho",
+   "n": 130
+  },
+  {
+   "nome": "Intimado eletronicamente",
+   "n": 100
+  },
+  {
+   "nome": "Vista à PGR para fins de intimação",
+   "n": 100
+  },
+  {
+   "nome": "Juntada do mandado cumprido",
+   "n": 87
+  },
+  {
+   "nome": "Decisão (sigiloso)",
+   "n": 62
+  },
+  {
+   "nome": "Vista à PGR",
+   "n": 50
+  },
+  {
+   "nome": "Publicação, DJE",
+   "n": 30
+  },
+  {
+   "nome": "Autos disponibilizados à autoridade policial",
+   "n": 18
+  },
+  {
+   "nome": "Autuado",
+   "n": 16
+  }
+ ],
+ "historico": [
+  {
+   "ts": "2026-09-12T00:02:51+00:00",
+   "documentos": 490,
+   "andamentos": 2626
+  }
+ ],
+ "fora_do_escopo": [
+  {
+   "rotulo": "RE 282565",
+   "relator": "MIN. MOREIRA ALVES",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=1854585"
+  },
+  {
+   "rotulo": "RE 343042",
+   "relator": "MIN. SEPÚLVEDA PERTENCE",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2013960"
+  },
+  {
+   "rotulo": "AI 490312",
+   "relator": "MIN. JOAQUIM BARBOSA",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2192891"
+  },
+  {
+   "rotulo": "AI 755922",
+   "relator": "MIN. CELSO DE MELLO",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2681664"
+  },
+  {
+   "rotulo": "AI 826287",
+   "relator": "",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=3986350"
+  },
+  {
+   "rotulo": "AI 842184",
+   "relator": "MIN. RICARDO LEWANDOWSKI",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4052515"
+  },
+  {
+   "rotulo": "RE 1311224",
+   "relator": "MIN. ALEXANDRE DE MORAES",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6110176"
+  },
+  {
+   "rotulo": "ARE 1450318",
+   "relator": "MIN. CRISTIANO ZANIN",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6702480"
+  },
+  {
+   "rotulo": "RE 1479792",
+   "relator": "MIN. GILMAR MENDES",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6853613"
+  },
+  {
+   "rotulo": "ARE 1514194",
+   "relator": "MINISTRO PRESIDENTE",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7030089"
+  },
+  {
+   "rotulo": "ARE 1533346",
+   "relator": "MINISTRO PRESIDENTE",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7144484"
+  },
+  {
+   "rotulo": "ARE 1565238",
+   "relator": "MINISTRO PRESIDENTE",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7344219"
+  },
+  {
+   "rotulo": "ARE 1570184",
+   "relator": "MINISTRO PRESIDENTE",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7373506"
+  },
+  {
+   "rotulo": "HC 263033",
+   "relator": "MINISTRO PRESIDENTE",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7400475"
+  },
+  {
+   "rotulo": "HC 273445",
+   "relator": "MIN. NUNES MARQUES",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7616172"
+  },
+  {
+   "rotulo": "ARE 1612271",
+   "relator": "MINISTRO PRESIDENTE",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7627572"
+  },
+  {
+   "rotulo": "ARE 1615475",
+   "relator": "MINISTRO PRESIDENTE",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7645437"
+  },
+  {
+   "rotulo": "Rcl 97917",
+   "relator": "MIN. FLÁVIO DINO",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7653088"
+  },
+  {
+   "rotulo": "ARE 1620035",
+   "relator": "MINISTRO PRESIDENTE",
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7673438"
+  }
+ ],
+ "fontes": [
+  {
+   "nome": "Portal de processos do STF",
+   "url": "https://portal.stf.jus.br/processos/"
+  },
+  {
+   "nome": "API pública de partes (digital.stf.jus.br)",
+   "url": "https://digital.stf.jus.br/integracoes-processos/api/public/partes/processos"
+  }
+ ]
+}
