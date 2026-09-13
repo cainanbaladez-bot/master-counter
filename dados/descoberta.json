@@ -1,17 +1,5 @@
 [
  {
-  "incidente": 7576885,
-  "rotulo": "Pet 15977",
-  "numero_unico": "0171984-55.2026.1.00.0000",
-  "autuacao": "28/04/2026",
-  "publicidade": "Público",
-  "em_tramitacao": "Sim",
-  "partes": [
-   "HENRIQUE MOURA VORCARO"
-  ],
-  "origem_descoberta": "VORCARO"
- },
- {
   "incidente": 7576883,
   "rotulo": "Pet 15976",
   "numero_unico": "0171983-70.2026.1.00.0000",
@@ -37,6 +25,18 @@
   "origem_descoberta": "VORCARO"
  },
  {
+  "incidente": 7576885,
+  "rotulo": "Pet 15977",
+  "numero_unico": "0171984-55.2026.1.00.0000",
+  "autuacao": "28/04/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "HENRIQUE MOURA VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
   "incidente": 7559421,
   "rotulo": "Pet 15873",
   "numero_unico": "0170280-07.2026.1.00.0000",
@@ -44,8 +44,8 @@
   "publicidade": "Público",
   "em_tramitacao": "Sim",
   "partes": [
-   "FELIPE CANCADO VORCARO",
-   "DANIEL BUENO VORCARO"
+   "DANIEL BUENO VORCARO",
+   "FELIPE CANCADO VORCARO"
   ],
   "origem_descoberta": "VORCARO"
  },
@@ -153,10 +153,10 @@
   "publicidade": "Público",
   "em_tramitacao": "Sim",
   "partes": [
-   "NATALIA BUENO VORCARO ZETTEL",
    "FELIPE CANCADO VORCARO",
-   "HENRIQUE MOURA VORCARO",
-   "DANIEL BUENO VORCARO"
+   "NATALIA BUENO VORCARO ZETTEL",
+   "DANIEL BUENO VORCARO",
+   "HENRIQUE MOURA VORCARO"
   ],
   "origem_descoberta": "VORCARO"
  },
@@ -240,8 +240,8 @@
   "publicidade": "Público",
   "em_tramitacao": "Não",
   "partes": [
-   "DAVID MIGUEL MOURÃO VORCARO",
-   "JOSÉ EDUARDO DE MOURÃO VORCARO"
+   "JOSÉ EDUARDO DE MOURÃO VORCARO",
+   "DAVID MIGUEL MOURÃO VORCARO"
   ],
   "origem_descoberta": "VORCARO"
  },

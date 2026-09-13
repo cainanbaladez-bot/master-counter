@@ -3037,14 +3037,14 @@
    "pct": 0.0
   },
   {
-   "tipo": "Certidão",
+   "tipo": "Despacho",
    "abertos": 0,
    "fechados": 1,
    "total": 1,
    "pct": 0.0
   },
   {
-   "tipo": "Despacho",
+   "tipo": "Certidão",
    "abertos": 0,
    "fechados": 1,
    "total": 1,
@@ -3107,14 +3107,6 @@
    "sigilosos": 956,
    "sigilosos_liberados": 47,
    "pct_sigilo_levantado": 4.92
-  },
-  {
-   "ts": "2026-09-13T03:07:12+00:00",
-   "documentos": 0,
-   "andamentos": 0,
-   "sigilosos": 0,
-   "sigilosos_liberados": 0,
-   "pct_sigilo_levantado": null
   },
   {
    "ts": "2026-09-13T03:16:20+00:00",
