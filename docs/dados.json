@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-13T02:51:43+00:00",
+ "gerado_em": "2026-09-13T03:16:20+00:00",
  "caso": {
   "nome": "Caso Banco Master no STF",
   "relator": "MIN. ANDRÉ MENDONÇA",
@@ -158,8 +158,8 @@
    "origem": "DISTRITO FEDERAL",
    "nota": "",
    "partes": [
-    "FELIPE CANCADO VORCARO",
-    "DANIEL BUENO VORCARO"
+    "DANIEL BUENO VORCARO",
+    "FELIPE CANCADO VORCARO"
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7559421",
    "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7559421",
@@ -513,10 +513,10 @@
    "origem": "DISTRITO FEDERAL",
    "nota": "",
    "partes": [
-    "NATALIA BUENO VORCARO ZETTEL",
     "FELIPE CANCADO VORCARO",
-    "HENRIQUE MOURA VORCARO",
-    "DANIEL BUENO VORCARO"
+    "NATALIA BUENO VORCARO ZETTEL",
+    "DANIEL BUENO VORCARO",
+    "HENRIQUE MOURA VORCARO"
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7473336",
    "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7473336",
@@ -3037,14 +3037,14 @@
    "pct": 0.0
   },
   {
-   "tipo": "Despacho",
+   "tipo": "Certidão",
    "abertos": 0,
    "fechados": 1,
    "total": 1,
    "pct": 0.0
   },
   {
-   "tipo": "Certidão",
+   "tipo": "Despacho",
    "abertos": 0,
    "fechados": 1,
    "total": 1,
@@ -3102,6 +3102,22 @@
   },
   {
    "ts": "2026-09-13T02:51:55+00:00",
+   "documentos": 560,
+   "andamentos": 2861,
+   "sigilosos": 956,
+   "sigilosos_liberados": 47,
+   "pct_sigilo_levantado": 4.92
+  },
+  {
+   "ts": "2026-09-13T03:07:12+00:00",
+   "documentos": 0,
+   "andamentos": 0,
+   "sigilosos": 0,
+   "sigilosos_liberados": 0,
+   "pct_sigilo_levantado": null
+  },
+  {
+   "ts": "2026-09-13T03:16:20+00:00",
    "documentos": 560,
    "andamentos": 2861,
    "sigilosos": 956,
