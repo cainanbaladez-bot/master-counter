@@ -1,14 +1,14 @@
 {
- "gerado_em": "2026-09-13T10:05:43+00:00",
+ "gerado_em": "2026-09-13T22:06:07+00:00",
  "observacao": "Citação de nome no texto de um documento público NÃO significa que a pessoa seja investigada, ré ou suspeita. O painel conta menções, e só isso. O papel processual mostrado ao lado de um nome vem da aba de partes do próprio processo — quem não é parte aparece apenas como citado.",
  "resumo": {
-  "pecas": 474,
-  "baixadas": 474,
-  "com_texto": 462,
+  "pecas": 476,
+  "baixadas": 476,
+  "com_texto": 464,
   "digitalizadas_sem_ocr": 0,
-  "paginas": 1220,
+  "paginas": 1222,
   "substantivas": 52,
-  "pecas_novas_nesta_coleta": 0,
+  "pecas_novas_nesta_coleta": 2,
   "nomes_encontrados": 13
  },
  "papeis": [
@@ -418,6 +418,20 @@
    }
   },
   {
+   "processo": "Pet 15198",
+   "pecas": 57,
+   "nomes": {
+    "PGR": 44,
+    "André Mendonça": 19,
+    "Polícia Federal": 11,
+    "Dias Toffoli": 10,
+    "Banco Master": 7,
+    "Compliance Zero": 6,
+    "Daniel Vorcaro": 4,
+    "Banco Central": 2
+   }
+  },
+  {
    "processo": "Pet 15556",
    "pecas": 57,
    "nomes": {
@@ -435,22 +449,8 @@
    }
   },
   {
-   "processo": "Pet 15198",
-   "pecas": 56,
-   "nomes": {
-    "PGR": 44,
-    "André Mendonça": 19,
-    "Polícia Federal": 11,
-    "Dias Toffoli": 10,
-    "Banco Master": 7,
-    "Compliance Zero": 6,
-    "Daniel Vorcaro": 4,
-    "Banco Central": 2
-   }
-  },
-  {
    "processo": "Pet 15562",
-   "pecas": 18,
+   "pecas": 19,
    "nomes": {
     "PGR": 9,
     "André Mendonça": 8,
@@ -713,7 +713,7 @@
   },
   {
    "mes": "2026-09",
-   "pecas": 30,
+   "pecas": 32,
    "nomes": {
     "André Mendonça": 16,
     "Daniel Vorcaro": 8,
@@ -754,6 +754,12 @@
     "Polícia Federal": 11,
     "Compliance Zero": 2
    }
+  },
+  {
+   "data": "2026-09-13",
+   "pecas": 2,
+   "linha_de_base": false,
+   "nomes": {}
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-13T10:05:34+00:00",
+ "gerado_em": "2026-09-13T22:05:56+00:00",
  "caso": {
   "nome": "Caso Banco Master no STF",
   "relator": "MIN. ANDRÉ MENDONÇA",
@@ -30,15 +30,15 @@
   "processos_sob_relator": 17,
   "processos_publicos": 17,
   "processos_sigilosos": 0,
-  "andamentos": 2861,
-  "andamentos_com_documento": 560,
-  "documentos": 560,
+  "andamentos": 2869,
+  "andamentos_com_documento": 562,
+  "documentos": 562,
   "pct_andamentos_com_documento": 19.6,
   "fora_do_escopo": 19,
   "sigilosos": 956,
   "sigilosos_liberados": 47,
   "pct_sigilo_levantado": 4.9,
-  "peca_esperada_ausente": 362,
+  "peca_esperada_ausente": 365,
   "processos_com_apuracao_ativa": 13
  },
  "processos": [
@@ -64,19 +64,19 @@
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7473347",
    "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7473347",
-   "andamentos": 654,
+   "andamentos": 656,
    "andamentos_com_documento": 85,
    "documentos": 85,
    "pct_com_documento": 13.0,
    "primeira_movimentacao": "2025-12-22",
-   "ultima_movimentacao": "2026-09-11",
+   "ultima_movimentacao": "2026-09-13",
    "decisoes": 0,
    "peticoes": 0,
    "classes": {
-    "sem_peca_por_natureza": 264,
+    "sem_peca_por_natureza": 265,
+    "peca_esperada_ausente": 87,
     "sigiloso_fechado": 217,
     "publico_com_peca": 81,
-    "peca_esperada_ausente": 86,
     "sigiloso_liberado": 4,
     "anulado": 2
    },
@@ -158,8 +158,8 @@
    "origem": "DISTRITO FEDERAL",
    "nota": "",
    "partes": [
-    "DANIEL BUENO VORCARO",
-    "FELIPE CANCADO VORCARO"
+    "FELIPE CANCADO VORCARO",
+    "DANIEL BUENO VORCARO"
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7559421",
    "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7559421",
@@ -437,66 +437,6 @@
    "movimentacao_recente": true
   },
   {
-   "incidente": 7535768,
-   "rotulo": "Pet 15711",
-   "numero_unico": "0167857-74.2026.1.00.0000",
-   "relator": "MIN. ANDRÉ MENDONÇA",
-   "publicidade": "Público",
-   "etiquetas": [
-    "Processo Eletrônico",
-    "Público",
-    "Criminal"
-   ],
-   "em_tramitacao": "Sim",
-   "autuacao": "17/03/2026",
-   "assunto": "DIREITO PROCESSUAL PENAL | Investigação Penal",
-   "origem": "DISTRITO FEDERAL",
-   "nota": "",
-   "partes": [
-    "DANIEL BUENO VORCARO"
-   ],
-   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7535768",
-   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7535768",
-   "andamentos": 235,
-   "andamentos_com_documento": 70,
-   "documentos": 70,
-   "pct_com_documento": 29.8,
-   "primeira_movimentacao": "2026-03-17",
-   "ultima_movimentacao": "2026-09-10",
-   "decisoes": 0,
-   "peticoes": 0,
-   "classes": {
-    "sem_peca_por_natureza": 72,
-    "publico_com_peca": 62,
-    "peca_esperada_ausente": 26,
-    "sigiloso_liberado": 8,
-    "sigiloso_fechado": 65,
-    "anulado": 2
-   },
-   "sigilosos": 73,
-   "sigilosos_liberados": 8,
-   "pct_sigilo_levantado": 11.0,
-   "partes_formais": [
-    {
-     "papel": "REQTE.(S)",
-     "nome": "DE OFÍCIO"
-    },
-    {
-     "papel": "REQDO.(A/S)",
-     "nome": "DANIEL BUENO VORCARO"
-    },
-    {
-     "papel": "AUT. POL.",
-     "nome": "POLÍCIA FEDERAL"
-    }
-   ],
-   "apuracao_ativa": true,
-   "gatilhos": [
-    "Autos disponibilizados à autoridade policial"
-   ],
-   "movimentacao_recente": true
-  },
-  {
    "incidente": 7473336,
    "rotulo": "Pet 15198",
    "numero_unico": "0126699-73.2025.1.00.0000",
@@ -513,26 +453,26 @@
    "origem": "DISTRITO FEDERAL",
    "nota": "",
    "partes": [
-    "FELIPE CANCADO VORCARO",
+    "HENRIQUE MOURA VORCARO",
     "NATALIA BUENO VORCARO ZETTEL",
-    "DANIEL BUENO VORCARO",
-    "HENRIQUE MOURA VORCARO"
+    "FELIPE CANCADO VORCARO",
+    "DANIEL BUENO VORCARO"
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7473336",
    "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7473336",
-   "andamentos": 402,
-   "andamentos_com_documento": 69,
-   "documentos": 69,
-   "pct_com_documento": 17.2,
+   "andamentos": 405,
+   "andamentos_com_documento": 70,
+   "documentos": 70,
+   "pct_com_documento": 17.3,
    "primeira_movimentacao": "2025-12-22",
-   "ultima_movimentacao": "2026-09-11",
+   "ultima_movimentacao": "2026-09-13",
    "decisoes": 0,
    "peticoes": 0,
    "classes": {
-    "sem_peca_por_natureza": 84,
-    "publico_com_peca": 63,
+    "sem_peca_por_natureza": 85,
+    "publico_com_peca": 64,
+    "peca_esperada_ausente": 67,
     "sigiloso_fechado": 181,
-    "peca_esperada_ausente": 66,
     "sigiloso_liberado": 6,
     "anulado": 2
    },
@@ -597,6 +537,66 @@
    "movimentacao_recente": true
   },
   {
+   "incidente": 7535768,
+   "rotulo": "Pet 15711",
+   "numero_unico": "0167857-74.2026.1.00.0000",
+   "relator": "MIN. ANDRÉ MENDONÇA",
+   "publicidade": "Público",
+   "etiquetas": [
+    "Processo Eletrônico",
+    "Público",
+    "Criminal"
+   ],
+   "em_tramitacao": "Sim",
+   "autuacao": "17/03/2026",
+   "assunto": "DIREITO PROCESSUAL PENAL | Investigação Penal",
+   "origem": "DISTRITO FEDERAL",
+   "nota": "",
+   "partes": [
+    "DANIEL BUENO VORCARO"
+   ],
+   "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7535768",
+   "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7535768",
+   "andamentos": 235,
+   "andamentos_com_documento": 70,
+   "documentos": 70,
+   "pct_com_documento": 29.8,
+   "primeira_movimentacao": "2026-03-17",
+   "ultima_movimentacao": "2026-09-10",
+   "decisoes": 0,
+   "peticoes": 0,
+   "classes": {
+    "sem_peca_por_natureza": 72,
+    "publico_com_peca": 62,
+    "peca_esperada_ausente": 26,
+    "sigiloso_liberado": 8,
+    "sigiloso_fechado": 65,
+    "anulado": 2
+   },
+   "sigilosos": 73,
+   "sigilosos_liberados": 8,
+   "pct_sigilo_levantado": 11.0,
+   "partes_formais": [
+    {
+     "papel": "REQTE.(S)",
+     "nome": "DE OFÍCIO"
+    },
+    {
+     "papel": "REQDO.(A/S)",
+     "nome": "DANIEL BUENO VORCARO"
+    },
+    {
+     "papel": "AUT. POL.",
+     "nome": "POLÍCIA FEDERAL"
+    }
+   ],
+   "apuracao_ativa": true,
+   "gatilhos": [
+    "Autos disponibilizados à autoridade policial"
+   ],
+   "movimentacao_recente": true
+  },
+  {
    "incidente": 7515623,
    "rotulo": "Pet 15562",
    "numero_unico": "0165839-80.2026.1.00.0000",
@@ -617,19 +617,19 @@
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7515623",
    "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7515623",
-   "andamentos": 126,
-   "andamentos_com_documento": 20,
-   "documentos": 20,
-   "pct_com_documento": 15.9,
+   "andamentos": 129,
+   "andamentos_com_documento": 21,
+   "documentos": 21,
+   "pct_com_documento": 16.3,
    "primeira_movimentacao": "2026-03-02",
-   "ultima_movimentacao": "2026-09-11",
+   "ultima_movimentacao": "2026-09-13",
    "decisoes": 0,
    "peticoes": 0,
    "classes": {
-    "sem_peca_por_natureza": 59,
-    "publico_com_peca": 17,
+    "sem_peca_por_natureza": 60,
+    "publico_com_peca": 18,
+    "peca_esperada_ausente": 13,
     "sigiloso_fechado": 33,
-    "peca_esperada_ausente": 12,
     "sigiloso_liberado": 2,
     "anulado": 3
    },
@@ -807,8 +807,8 @@
    "origem": "DISTRITO FEDERAL",
    "nota": "",
    "partes": [
-    "DANIEL BUENO VORCARO",
-    "HENRIQUE MOURA VORCARO"
+    "HENRIQUE MOURA VORCARO",
+    "DANIEL BUENO VORCARO"
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7576883",
    "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7576883",
@@ -2950,12 +2950,18 @@
    "andamentos": 16,
    "documentos": 5,
    "documentos_acumulados": 560
+  },
+  {
+   "data": "2026-09-13",
+   "andamentos": 8,
+   "documentos": 2,
+   "documentos_acumulados": 562
   }
  ],
  "tipos_andamento": [
   {
    "nome": "Petição",
-   "n": 1004
+   "n": 1007
   },
   {
    "nome": "Comunicação assinada",
@@ -2967,11 +2973,11 @@
   },
   {
    "nome": "Certidão",
-   "n": 206
+   "n": 208
   },
   {
    "nome": "Conclusos ao(à) Relator(a)",
-   "n": 152
+   "n": 155
   },
   {
    "nome": "Despacho",
@@ -3055,7 +3061,7 @@
   {
    "id": "sem_peca_por_natureza",
    "rotulo": "Andamento sem peça por natureza",
-   "n": 1017
+   "n": 1020
   },
   {
    "id": "sigiloso_fechado",
@@ -3065,12 +3071,12 @@
   {
    "id": "publico_com_peca",
    "rotulo": "Público, com peça acessível",
-   "n": 511
+   "n": 513
   },
   {
    "id": "peca_esperada_ausente",
    "rotulo": "Deveria ter peça, e não há",
-   "n": 362
+   "n": 365
   },
   {
    "id": "sigiloso_liberado",
@@ -3112,6 +3118,14 @@
    "ts": "2026-09-13T03:16:20+00:00",
    "documentos": 560,
    "andamentos": 2861,
+   "sigilosos": 956,
+   "sigilosos_liberados": 47,
+   "pct_sigilo_levantado": 4.92
+  },
+  {
+   "ts": "2026-09-13T22:05:56+00:00",
+   "documentos": 562,
+   "andamentos": 2869,
    "sigilosos": 956,
    "sigilosos_liberados": 47,
    "pct_sigilo_levantado": 4.92
