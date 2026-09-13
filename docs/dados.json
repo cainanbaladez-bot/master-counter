@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-12T02:53:42+00:00",
+ "gerado_em": "2026-09-13T02:51:43+00:00",
  "caso": {
   "nome": "Caso Banco Master no STF",
   "relator": "MIN. ANDRÉ MENDONÇA",
@@ -158,8 +158,8 @@
    "origem": "DISTRITO FEDERAL",
    "nota": "",
    "partes": [
-    "DANIEL BUENO VORCARO",
-    "FELIPE CANCADO VORCARO"
+    "FELIPE CANCADO VORCARO",
+    "DANIEL BUENO VORCARO"
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7559421",
    "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7559421",
@@ -200,6 +200,10 @@
     },
     {
      "papel": "REQDO.(A/S)",
+     "nome": "BRGD S.A."
+    },
+    {
+     "papel": "REQDO.(A/S)",
      "nome": "GREEN INVESTIMENTOS SA"
     },
     {
@@ -221,14 +225,6 @@
     {
      "papel": "INTDO.(A/S)",
      "nome": "DANIEL BUENO VORCARO"
-    },
-    {
-     "papel": "REQTE.(S)",
-     "nome": "DELEGADO DE POLÍCIA FEDERAL"
-    },
-    {
-     "papel": "REQDO.(A/S)",
-     "nome": "FELIPE CANCADO VORCARO"
     }
    ],
    "apuracao_ativa": true,
@@ -492,14 +488,6 @@
     {
      "papel": "AUT. POL.",
      "nome": "POLÍCIA FEDERAL"
-    },
-    {
-     "papel": "REQTE.(S)",
-     "nome": "DE OFÍCIO"
-    },
-    {
-     "papel": "REQDO.(A/S)",
-     "nome": "DANIEL BUENO VORCARO"
     }
    ],
    "apuracao_ativa": true,
@@ -525,10 +513,10 @@
    "origem": "DISTRITO FEDERAL",
    "nota": "",
    "partes": [
-    "DANIEL BUENO VORCARO",
-    "FELIPE CANCADO VORCARO",
     "NATALIA BUENO VORCARO ZETTEL",
-    "HENRIQUE MOURA VORCARO"
+    "FELIPE CANCADO VORCARO",
+    "HENRIQUE MOURA VORCARO",
+    "DANIEL BUENO VORCARO"
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7473336",
    "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7473336",
@@ -771,6 +759,10 @@
     },
     {
      "papel": "REQDO.(A/S)",
+     "nome": "BRGD S.A."
+    },
+    {
+     "papel": "REQDO.(A/S)",
      "nome": "FELIPE CANCADO VORCARO"
     },
     {
@@ -788,10 +780,6 @@
     {
      "papel": "AUT. POL.",
      "nome": "POLÍCIA FEDERAL"
-    },
-    {
-     "papel": "REQTE.(S)",
-     "nome": "DELEGADO DE POLÍCIA FEDERAL"
     }
    ],
    "apuracao_ativa": true,
@@ -968,14 +956,6 @@
     {
      "papel": "INTDO.(A/S)",
      "nome": "POLÍCIA FEDERAL"
-    },
-    {
-     "papel": "REQTE.(S)",
-     "nome": "DELEGADO DE POLÍCIA FEDERAL"
-    },
-    {
-     "papel": "REQDO.(A/S)",
-     "nome": "PAULO SERGIO NEVES DE SOUZA"
     }
    ],
    "apuracao_ativa": true,
@@ -1068,10 +1048,6 @@
     {
      "papel": "AUT. POL.",
      "nome": "DELEGADO DE POLÍCIA FEDERAL"
-    },
-    {
-     "papel": "REQTE.(S)",
-     "nome": "DELEGADO DE POLÍCIA FEDERAL"
     }
    ],
    "apuracao_ativa": true,
@@ -1147,14 +1123,6 @@
     {
      "papel": "INTDO.(A/S)",
      "nome": "JOÃO CARLOS PAOLILO BACELAR FILHO"
-    },
-    {
-     "papel": "RECLTE.(S)",
-     "nome": "DANIEL BUENO VORCARO"
-    },
-    {
-     "papel": "RECLDO.(A/S)",
-     "nome": "JUIZ FEDERAL DA 10ª VARA CRIMINAL E 1º JUIZADO ESPECIAL FEDERAL CRIMINAL DA SEÇÃO JUDICIÁRIA DO DISTRITO FEDERAL"
     }
    ],
    "apuracao_ativa": false,
@@ -1223,14 +1191,6 @@
     {
      "papel": "AUT. POL.",
      "nome": "POLÍCIA FEDERAL"
-    },
-    {
-     "papel": "AUTOR(A/S)(ES)",
-     "nome": "DELEGADO DE POLÍCIA FEDERAL"
-    },
-    {
-     "papel": "INVEST.(A/S)",
-     "nome": "THIAGO MIRANDA SILVA"
     }
    ],
    "apuracao_ativa": true,
@@ -1384,7 +1344,19 @@
     },
     {
      "papel": "BENEF.(A/S)",
+     "nome": "BANCO SANTANDER (BRASIL) S.A."
+    },
+    {
+     "papel": "BENEF.(A/S)",
      "nome": "BANCO DAYCOVAL S/A"
+    },
+    {
+     "papel": "BENEF.(A/S)",
+     "nome": "BANCO ALFA DE INVESTIMENTO S.A."
+    },
+    {
+     "papel": "BENEF.(A/S)",
+     "nome": "PKL ONE PARTICIPACOES S.A."
     },
     {
      "papel": "BENEF.(A/S)",
@@ -1393,14 +1365,6 @@
     {
      "papel": "BENEF.(A/S)",
      "nome": "CREFISA SA CREDITO FINANCIAMENTO E INVESTIMENTOS"
-    },
-    {
-     "papel": "RECLTE.(S)",
-     "nome": "RICARDO BAZAN DOS SANTOS"
-    },
-    {
-     "papel": "RECLDO.(A/S)",
-     "nome": "TRIBUNAL DE JUSTIÇA DO ESTADO DE SÃO PAULO"
     }
    ],
    "apuracao_ativa": false,
@@ -3123,12 +3087,26 @@
   {
    "ts": "2026-09-12T00:02:51+00:00",
    "documentos": 490,
-   "andamentos": 2626
+   "andamentos": 2626,
+   "sigilosos": null,
+   "sigilosos_liberados": null,
+   "pct_sigilo_levantado": null
   },
   {
    "ts": "2026-09-12T02:54:55+00:00",
    "documentos": 560,
-   "andamentos": 2861
+   "andamentos": 2861,
+   "sigilosos": null,
+   "sigilosos_liberados": null,
+   "pct_sigilo_levantado": null
+  },
+  {
+   "ts": "2026-09-13T02:51:55+00:00",
+   "documentos": 560,
+   "andamentos": 2861,
+   "sigilosos": 956,
+   "sigilosos_liberados": 47,
+   "pct_sigilo_levantado": 4.92
   }
  ],
  "fora_do_escopo": [

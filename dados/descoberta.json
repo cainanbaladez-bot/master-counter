@@ -1,5 +1,17 @@
 [
  {
+  "incidente": 7576885,
+  "rotulo": "Pet 15977",
+  "numero_unico": "0171984-55.2026.1.00.0000",
+  "autuacao": "28/04/2026",
+  "publicidade": "Público",
+  "em_tramitacao": "Sim",
+  "partes": [
+   "HENRIQUE MOURA VORCARO"
+  ],
+  "origem_descoberta": "VORCARO"
+ },
+ {
   "incidente": 7576883,
   "rotulo": "Pet 15976",
   "numero_unico": "0171983-70.2026.1.00.0000",
@@ -8,18 +20,6 @@
   "em_tramitacao": "Sim",
   "partes": [
    "DANIEL BUENO VORCARO",
-   "HENRIQUE MOURA VORCARO"
-  ],
-  "origem_descoberta": "VORCARO"
- },
- {
-  "incidente": 7576885,
-  "rotulo": "Pet 15977",
-  "numero_unico": "0171984-55.2026.1.00.0000",
-  "autuacao": "28/04/2026",
-  "publicidade": "Público",
-  "em_tramitacao": "Sim",
-  "partes": [
    "HENRIQUE MOURA VORCARO"
   ],
   "origem_descoberta": "VORCARO"
@@ -44,8 +44,8 @@
   "publicidade": "Público",
   "em_tramitacao": "Sim",
   "partes": [
-   "DANIEL BUENO VORCARO",
-   "FELIPE CANCADO VORCARO"
+   "FELIPE CANCADO VORCARO",
+   "DANIEL BUENO VORCARO"
   ],
   "origem_descoberta": "VORCARO"
  },
@@ -98,9 +98,9 @@
   "origem_descoberta": "VORCARO"
  },
  {
-  "incidente": 7509111,
-  "rotulo": "Pet 15499",
-  "numero_unico": "0165138-22.2026.1.00.0000",
+  "incidente": 7509527,
+  "rotulo": "Pet 15504",
+  "numero_unico": "0165174-64.2026.1.00.0000",
   "autuacao": "23/02/2026",
   "publicidade": "Público",
   "em_tramitacao": "Sim",
@@ -110,9 +110,9 @@
   "origem_descoberta": "VORCARO"
  },
  {
-  "incidente": 7509527,
-  "rotulo": "Pet 15504",
-  "numero_unico": "0165174-64.2026.1.00.0000",
+  "incidente": 7509111,
+  "rotulo": "Pet 15499",
+  "numero_unico": "0165138-22.2026.1.00.0000",
   "autuacao": "23/02/2026",
   "publicidade": "Público",
   "em_tramitacao": "Sim",
@@ -153,10 +153,10 @@
   "publicidade": "Público",
   "em_tramitacao": "Sim",
   "partes": [
-   "DANIEL BUENO VORCARO",
-   "FELIPE CANCADO VORCARO",
    "NATALIA BUENO VORCARO ZETTEL",
-   "HENRIQUE MOURA VORCARO"
+   "FELIPE CANCADO VORCARO",
+   "HENRIQUE MOURA VORCARO",
+   "DANIEL BUENO VORCARO"
   ],
   "origem_descoberta": "VORCARO"
  },
@@ -240,8 +240,8 @@
   "publicidade": "Público",
   "em_tramitacao": "Não",
   "partes": [
-   "JOSÉ EDUARDO DE MOURÃO VORCARO",
-   "DAVID MIGUEL MOURÃO VORCARO"
+   "DAVID MIGUEL MOURÃO VORCARO",
+   "JOSÉ EDUARDO DE MOURÃO VORCARO"
   ],
   "origem_descoberta": "VORCARO"
  },

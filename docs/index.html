@@ -47,6 +47,12 @@
   .kpi.destaque .n{font-size:3.6rem;color:var(--acento)}
   @media(max-width:640px){.kpi.destaque{grid-column:span 1}.kpi.destaque .n{font-size:2.6rem}}
 
+  .kpi.destaque .spark{margin-top:16px}
+  .kpi.destaque .spark svg{height:56px}
+  .delta{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:.8rem;
+    padding:3px 9px;border-radius:99px;margin-top:10px}
+  .delta.sobe{color:var(--ok);background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.3)}
+  .delta.parado{color:var(--txt-3);background:var(--bg-3);border:1px solid var(--linha)}
   .barra{height:10px;border-radius:6px;background:var(--bg-3);overflow:hidden;margin-top:14px}
   .barra i{display:block;height:100%;background:linear-gradient(90deg,var(--acento),var(--acento-2))}
 
@@ -285,7 +291,52 @@ function kpis(d){
       <div class="r">${k.r}</div>
       ${k.barra!==undefined?`<div class="barra"><i style="width:${Math.min(100,k.barra)}%"></i></div>`:""}
       <div class="d">${k.d}</div>
+      ${k.destaque?progresso(d):""}
     </div>`).join("");
+}
+
+// Evolução desde o primeiro dia da contagem. A taxa de sigilo só passou a ser
+// gravada depois; enquanto não houver dois pontos dela, o cartão mostra a série
+// de peças acessíveis, que existe desde a primeira coleta — e diz qual está vendo.
+function progresso(d){
+  const h = d.historico || [];
+  if(!h.length) return "";
+  const comTaxa = h.filter(x => x.pct_sigilo_levantado != null);
+  const usaTaxa = comTaxa.length > 1;
+  const serie = usaTaxa ? comTaxa : h;
+  const valor = x => usaTaxa ? x.pct_sigilo_levantado : x.documentos;
+  const rotulo = usaTaxa ? "taxa de sigilo aberto" : "peças acessíveis";
+  const inicio = serie[0], fim = serie[serie.length-1];
+  const delta = valor(fim) - valor(inicio);
+  const dia = t => new Date(t).toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"});
+  const num = v => usaTaxa ? v.toFixed(1).replace(".",",")+"%" : fmt(v);
+
+  let grafico = "";
+  if(serie.length > 1){
+    const W=320,H=56,pad=4;
+    const vs = serie.map(valor);
+    const max = Math.max(...vs), min = Math.min(...vs);
+    const x = i => pad + i*(W-2*pad)/(serie.length-1);
+    const y = v => H-pad - ((v-min)/((max-min)||1))*(H-2*pad);
+    const pts = serie.map((p,i)=>`${x(i).toFixed(1)},${y(valor(p)).toFixed(1)}`);
+    grafico = `<div class="spark"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"
+        role="img" aria-label="evolução desde o início da contagem">
+      <path d="M${pts.join(" L")} L${x(serie.length-1).toFixed(1)},${H-pad} L${pad},${H-pad} Z"
+            fill="rgba(242,181,68,.16)"/>
+      <path d="M${pts.join(" L")}" fill="none" stroke="var(--acento)" stroke-width="2" stroke-linejoin="round"/>
+      ${serie.map((p,i)=>`<circle cx="${x(i).toFixed(1)}" cy="${y(valor(p)).toFixed(1)}" r="2.5" fill="var(--acento)">
+          <title>${dia(p.ts)} — ${num(valor(p))} ${rotulo}</title></circle>`).join("")}
+    </svg></div>`;
+  }
+
+  const subiu = delta > 0;
+  const texto = serie.length === 1
+    ? "primeira medição"
+    : (subiu ? `▲ +${num(delta).replace("+","")} em ${rotulo}` : `sem mudança em ${rotulo}`);
+  return `${grafico}
+    <span class="delta ${subiu?"sobe":"parado"}">${texto}</span>
+    <div class="d">${num(valor(inicio))} → ${num(valor(fim))} · desde ${dia(inicio.ts)}, início desta
+      contagem (${serie.length} ${serie.length===1?"medição":"medições"}${usaTaxa?"":"; a taxa passa a ser medida a partir de "+dia((comTaxa[0]||fim).ts)})</div>`;
 }
 
 function sigilo(d){

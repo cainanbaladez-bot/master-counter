@@ -177,18 +177,37 @@ def main() -> None:
         "documentos": total_doc,
         "andamentos": total_and,
         "processos": len(processos),
+        # a curva do contador de sigilo: é isto que o painel mostra como progresso
+        "sigilosos": total_sigilosos,
+        "sigilosos_liberados": classes_totais["sigiloso_liberado"],
+        "pct_sigilo_levantado": round(100 * classes_totais["sigiloso_liberado"] / total_sigilosos, 2)
+        if total_sigilosos
+        else None,
         "por_processo": {str(p["incidente"]): p["documentos"] for p in processos},
     }
     anterior = []
     if HISTORICO.exists():
         anterior = [json.loads(l) for l in HISTORICO.read_text(encoding="utf-8").splitlines() if l.strip()]
-    if not anterior or anterior[-1]["documentos"] != total_doc or anterior[-1]["ts"][:10] != linha["ts"][:10]:
+    mudou = (
+        not anterior
+        or anterior[-1]["documentos"] != total_doc
+        or anterior[-1].get("sigilosos_liberados") != linha["sigilosos_liberados"]
+        or anterior[-1]["ts"][:10] != linha["ts"][:10]
+    )
+    if mudou:
         with HISTORICO.open("a", encoding="utf-8") as fh:
             fh.write(json.dumps(linha, ensure_ascii=False) + "\n")
         anterior.append(linha)
 
     historico = [
-        {"ts": h["ts"], "documentos": h["documentos"], "andamentos": h["andamentos"]}
+        {
+            "ts": h["ts"],
+            "documentos": h["documentos"],
+            "andamentos": h["andamentos"],
+            "sigilosos": h.get("sigilosos"),
+            "sigilosos_liberados": h.get("sigilosos_liberados"),
+            "pct_sigilo_levantado": h.get("pct_sigilo_levantado"),
+        }
         for h in anterior
     ]
 

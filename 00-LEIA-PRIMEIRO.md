@@ -23,7 +23,10 @@ Master-counter/
     montar_mencoes.py       -> docs/mencoes.json (+ dados/pecas_vistas.json, que define as LEVAS)
   dados/
     raw/<incidente>/*.html  cache bruto das abas do portal (fora do git)
-    pecas/<id>.pdf|.rtf     cache das peças baixadas (fora do git; ~0,4 MB cada)
+    pecas/<id>.pdf|.rtf     cache das peças baixadas (fora do git; ~0,4 MB cada, ~120 MB no total)
+                            DECISÃO 13/09/2026: Cainan quer MANTER esse cache local, porque
+                            acelera o reprocessamento. Nada de PDF vai para o GitHub (.gitignore).
+                            Quem não quiser acumular usa analisar_conteudo.py --nao-guardar.
     processos.json          estado bruto normalizado (fora do git)
     historico.jsonl         1 linha por coleta: e daqui que sai a curva do contador
     pecas_vistas.json       id da peça -> data em que apareceu (VERSIONADO: define as levas)
@@ -103,6 +106,7 @@ Três cuidados que estão escritos na página e não devem ser removidos:
 | Atualizar os números agora | `py -3.10 pipeline/coletar.py && py -3.10 pipeline/montar_dados.py` |
 | Atualizar os nomes citados | `py -3.10 pipeline/analisar_conteudo.py && py -3.10 pipeline/montar_mencoes.py` |
 | Reler as peças sem rebaixar | `py -3.10 pipeline/analisar_conteudo.py --sem-download` |
+| Rodar sem gravar PDF no disco | `py -3.10 pipeline/analisar_conteudo.py --nao-guardar` (lê na memória) |
 | Acompanhar mais um nome | editar `config/nomes.json` e reler as peças |
 | Reprocessar sem bater no STF | `py -3.10 pipeline/coletar.py --sem-rede` (usa `dados/raw/`) |
 | Acrescentar um processo à mão | editar `config/caso.json` → `processos_seed` |

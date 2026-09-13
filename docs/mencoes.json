@@ -1,13 +1,13 @@
 {
- "gerado_em": "2026-09-12T02:52:13+00:00",
+ "gerado_em": "2026-09-13T02:53:24+00:00",
  "observacao": "Citação de nome no texto de um documento público NÃO significa que a pessoa seja investigada, ré ou suspeita. O painel conta menções, e só isso. O papel processual mostrado ao lado de um nome vem da aba de partes do próprio processo — quem não é parte aparece apenas como citado.",
  "resumo": {
-  "pecas": 416,
-  "baixadas": 416,
-  "com_texto": 406,
+  "pecas": 474,
+  "baixadas": 474,
+  "com_texto": 462,
   "digitalizadas_sem_ocr": 0,
-  "paginas": 1129,
-  "substantivas": 49,
+  "paginas": 1220,
+  "substantivas": 52,
   "pecas_novas_nesta_coleta": 0,
   "nomes_encontrados": 13
  },
@@ -54,9 +54,9 @@
    "papel": "acusacao",
    "papel_no_config": "acusacao",
    "papel_processual": [],
-   "pecas": 237,
-   "pecas_de_conteudo": 31,
-   "mencoes": 305,
+   "pecas": 264,
+   "pecas_de_conteudo": 33,
+   "mencoes": 342,
    "processos": [
     "Inq 5026",
     "Inq 5035",
@@ -67,6 +67,7 @@
     "Pet 15504",
     "Pet 15556",
     "Pet 15562",
+    "Pet 15711",
     "Pet 15855",
     "Pet 15873",
     "Pet 15976",
@@ -83,9 +84,9 @@
    "papel": "julga",
    "papel_no_config": "julga",
    "papel_processual": [],
-   "pecas": 196,
-   "pecas_de_conteudo": 45,
-   "mencoes": 744,
+   "pecas": 230,
+   "pecas_de_conteudo": 48,
+   "mencoes": 860,
    "processos": [
     "Inq 5026",
     "Inq 5035",
@@ -96,6 +97,7 @@
     "Pet 15504",
     "Pet 15556",
     "Pet 15562",
+    "Pet 15711",
     "Pet 15855",
     "Pet 15873",
     "Pet 15976",
@@ -105,7 +107,7 @@
     "Rcl 95516"
    ],
    "primeira_peca": "2026-02-12",
-   "ultima_peca": "2026-09-04"
+   "ultima_peca": "2026-09-10"
   },
   {
    "nome": "Polícia Federal",
@@ -117,9 +119,9 @@
     "AUT. POL em Pet 15198",
     "AUT. POL em Pet 15487"
    ],
-   "pecas": 94,
-   "pecas_de_conteudo": 33,
-   "mencoes": 387,
+   "pecas": 105,
+   "pecas_de_conteudo": 35,
+   "mencoes": 437,
    "processos": [
     "Inq 5026",
     "Inq 5035",
@@ -130,6 +132,7 @@
     "Pet 15504",
     "Pet 15556",
     "Pet 15562",
+    "Pet 15711",
     "Pet 15855",
     "Pet 15873",
     "Pet 15976",
@@ -150,9 +153,9 @@
     "INTDO em Pet 15873",
     "INVEST em Inq 5035"
    ],
-   "pecas": 36,
-   "pecas_de_conteudo": 21,
-   "mencoes": 246,
+   "pecas": 56,
+   "pecas_de_conteudo": 24,
+   "mencoes": 285,
    "processos": [
     "Inq 5026",
     "Inq 5035",
@@ -162,6 +165,7 @@
     "Pet 15504",
     "Pet 15556",
     "Pet 15562",
+    "Pet 15711",
     "Pet 15855",
     "Pet 15873",
     "Pet 15976",
@@ -170,6 +174,31 @@
    ],
    "primeira_peca": "2026-01-08",
    "ultima_peca": "2026-09-11"
+  },
+  {
+   "nome": "Compliance Zero",
+   "papel": "tema",
+   "papel_no_config": "tema",
+   "papel_processual": [],
+   "pecas": 35,
+   "pecas_de_conteudo": 28,
+   "mencoes": 132,
+   "processos": [
+    "Inq 5026",
+    "Pet 15198",
+    "Pet 15478",
+    "Pet 15487",
+    "Pet 15556",
+    "Pet 15711",
+    "Pet 15855",
+    "Pet 15873",
+    "Pet 15976",
+    "Pet 15977",
+    "Pet 15978",
+    "Rcl 88121"
+   ],
+   "primeira_peca": "2025-12-09",
+   "ultima_peca": "2026-09-04"
   },
   {
    "nome": "Dias Toffoli",
@@ -189,30 +218,6 @@
    ],
    "primeira_peca": "2025-11-28",
    "ultima_peca": "2026-07-21"
-  },
-  {
-   "nome": "Compliance Zero",
-   "papel": "tema",
-   "papel_no_config": "tema",
-   "papel_processual": [],
-   "pecas": 33,
-   "pecas_de_conteudo": 26,
-   "mencoes": 126,
-   "processos": [
-    "Inq 5026",
-    "Pet 15198",
-    "Pet 15478",
-    "Pet 15487",
-    "Pet 15556",
-    "Pet 15855",
-    "Pet 15873",
-    "Pet 15976",
-    "Pet 15977",
-    "Pet 15978",
-    "Rcl 88121"
-   ],
-   "primeira_peca": "2025-12-09",
-   "ultima_peca": "2026-09-04"
   },
   {
    "nome": "Banco Master",
@@ -399,6 +404,17 @@
     "Daniel Vorcaro": 1,
     "Banco Master": 1,
     "Edson Fachin": 1
+   }
+  },
+  {
+   "processo": "Pet 15711",
+   "pecas": 58,
+   "nomes": {
+    "André Mendonça": 34,
+    "PGR": 27,
+    "Daniel Vorcaro": 20,
+    "Polícia Federal": 11,
+    "Compliance Zero": 2
    }
   },
   {
@@ -610,12 +626,12 @@
   },
   {
    "mes": "2026-03",
-   "pecas": 54,
+   "pecas": 61,
    "nomes": {
-    "PGR": 31,
-    "André Mendonça": 25,
-    "Polícia Federal": 11,
-    "Daniel Vorcaro": 8,
+    "PGR": 33,
+    "André Mendonça": 30,
+    "Polícia Federal": 14,
+    "Daniel Vorcaro": 9,
     "Dias Toffoli": 3,
     "Banco Master": 2,
     "Compliance Zero": 2,
@@ -625,13 +641,13 @@
   },
   {
    "mes": "2026-04",
-   "pecas": 40,
+   "pecas": 45,
    "nomes": {
-    "PGR": 24,
-    "André Mendonça": 19,
-    "Polícia Federal": 9,
+    "PGR": 28,
+    "André Mendonça": 21,
+    "Polícia Federal": 11,
     "Compliance Zero": 5,
-    "Daniel Vorcaro": 3,
+    "Daniel Vorcaro": 5,
     "Banco Master": 2,
     "Alexandre de Moraes": 1,
     "Banco Central": 1
@@ -639,14 +655,14 @@
   },
   {
    "mes": "2026-05",
-   "pecas": 87,
+   "pecas": 98,
    "nomes": {
-    "André Mendonça": 57,
-    "PGR": 41,
-    "Polícia Federal": 38,
+    "André Mendonça": 62,
+    "PGR": 47,
+    "Polícia Federal": 43,
     "Compliance Zero": 14,
+    "Daniel Vorcaro": 11,
     "Banco Master": 8,
-    "Daniel Vorcaro": 8,
     "Ciro Nogueira": 7,
     "Edson Fachin": 3,
     "Dias Toffoli": 1
@@ -654,14 +670,14 @@
   },
   {
    "mes": "2026-06",
-   "pecas": 65,
+   "pecas": 72,
    "nomes": {
-    "PGR": 35,
-    "André Mendonça": 34,
-    "Polícia Federal": 13,
+    "PGR": 40,
+    "André Mendonça": 37,
+    "Polícia Federal": 14,
+    "Compliance Zero": 5,
+    "Daniel Vorcaro": 5,
     "Ciro Nogueira": 5,
-    "Compliance Zero": 4,
-    "Daniel Vorcaro": 4,
     "Banco Master": 4,
     "Dias Toffoli": 4,
     "Banco Central": 1
@@ -669,12 +685,12 @@
   },
   {
    "mes": "2026-07",
-   "pecas": 41,
+   "pecas": 49,
    "nomes": {
-    "PGR": 30,
-    "André Mendonça": 20,
+    "PGR": 35,
+    "André Mendonça": 24,
+    "Daniel Vorcaro": 9,
     "Polícia Federal": 7,
-    "Daniel Vorcaro": 6,
     "Banco Master": 4,
     "Compliance Zero": 3,
     "Jair Bolsonaro": 2,
@@ -686,20 +702,22 @@
   },
   {
    "mes": "2026-08",
-   "pecas": 40,
+   "pecas": 50,
    "nomes": {
-    "PGR": 26,
-    "André Mendonça": 19,
-    "Polícia Federal": 4
+    "PGR": 30,
+    "André Mendonça": 26,
+    "Daniel Vorcaro": 5,
+    "Polícia Federal": 4,
+    "Compliance Zero": 1
    }
   },
   {
    "mes": "2026-09",
-   "pecas": 20,
+   "pecas": 30,
    "nomes": {
-    "André Mendonça": 8,
-    "PGR": 4,
-    "Daniel Vorcaro": 3,
+    "André Mendonça": 16,
+    "Daniel Vorcaro": 8,
+    "PGR": 5,
     "Compliance Zero": 1
    }
   }
@@ -723,6 +741,18 @@
     "Alexandre de Moraes": 2,
     "Jair Bolsonaro": 2,
     "Flávio Bolsonaro": 1
+   }
+  },
+  {
+   "data": "2026-09-12",
+   "pecas": 58,
+   "linha_de_base": false,
+   "nomes": {
+    "André Mendonça": 34,
+    "PGR": 27,
+    "Daniel Vorcaro": 20,
+    "Polícia Federal": 11,
+    "Compliance Zero": 2
    }
   }
  ]

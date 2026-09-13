@@ -18,7 +18,9 @@ permissions:
   contents: write
 
 concurrency:
-  group: coleta
+  # grupo versionado: um run fantasma preso em "queued" trava o grupo inteiro
+  # (aconteceu em 12/09/2026 e nem o cron rodava). Basta versionar para escapar.
+  group: coleta-v2
   cancel-in-progress: false
 
 jobs:

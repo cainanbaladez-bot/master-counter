@@ -73,6 +73,41 @@ def baixar_peca(url: str, destino: Path) -> tuple[bool, int]:
     return False, 0
 
 
+def baixar_em_memoria(url: str) -> bytes | None:
+    """Baixa a peça sem gravar nada em disco — para quem não quer acumular PDF."""
+    global VERIFICAR_TLS
+    for tentativa in range(3):
+        try:
+            r = requests.get(url, headers=UA, timeout=180, verify=VERIFICAR_TLS)
+            r.raise_for_status()
+            return r.content
+        except requests.exceptions.SSLError:
+            if VERIFICAR_TLS:
+                VERIFICAR_TLS = False
+                urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+        except Exception:  # noqa: BLE001
+            time.sleep(2 + 2 * tentativa)
+    return None
+
+
+def extrair_de_bytes(conteudo: bytes, tipo: str) -> tuple[str, int]:
+    if tipo == "texto":
+        return limpar_rtf(conteudo.decode("latin-1", errors="ignore")), 1
+    import fitz  # PyMuPDF
+
+    try:
+        with fitz.open(stream=conteudo, filetype="pdf") as doc:
+            return chr(10).join(p.get_text() for p in doc), doc.page_count
+    except Exception:  # noqa: BLE001
+        return "", 0
+
+
+def limpar_rtf(bruto: str) -> str:
+    limpo = re.sub(r"\'([0-9a-f]{2})", lambda m: bytes.fromhex(m.group(1)).decode("latin-1"), bruto)
+    limpo = re.sub(r"\[a-z]+-?\d* ?", " ", limpo)
+    return re.sub(r"[{}]", " ", limpo)
+
+
 def extrair_texto(caminho: Path) -> tuple[str, int]:
     """Devolve (texto, páginas). Aceita PDF (PyMuPDF) e RTF (texto cru)."""
     if caminho.suffix.lower() == ".rtf":
@@ -94,10 +129,39 @@ def extrair_texto(caminho: Path) -> tuple[str, int]:
         return "", 0
 
 
+def medir(reg: dict, texto: str, paginas: int, alvos: list) -> dict:
+    """Preenche páginas, tipo de peça e contagem de nomes a partir do texto extraído."""
+    if not reg["baixado"]:
+        reg.update({"paginas": 0, "caracteres": 0, "sem_texto": None, "substantiva": None, "mencoes": {}})
+        return reg
+    norm = normalizar(texto)
+    titulo = normalizar(reg["titulo"])
+    reg["paginas"] = paginas
+    reg["caracteres"] = len(texto)
+    # PDF digitalizado sem OCR: muitas páginas, quase nenhum texto extraível
+    reg["sem_texto"] = bool(paginas and len(texto) / max(1, paginas) < 120)
+    # peça de conteúdo x expediente de cartório
+    reg["substantiva"] = bool(
+        re.search(r"(decisao|acordao|relatorio|parecer|manifestacao|peticao|sentenca)", titulo)
+        or paginas >= 5
+    )
+    reg["mencoes"] = {
+        nome: total
+        for nome, _papel, padroes in alvos
+        if (total := sum(len(p.findall(norm)) for p in padroes))
+    }
+    return reg
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--limite", type=int, default=0, help="processa só as N primeiras peças")
     ap.add_argument("--sem-download", action="store_true", help="usa só o que já está em dados/pecas")
+    ap.add_argument(
+        "--nao-guardar",
+        action="store_true",
+        help="lê as peças na memória e não grava PDF nenhum em disco",
+    )
     args = ap.parse_args()
 
     cfg = json.loads(NOMES.read_text(encoding="utf-8"))
@@ -142,6 +206,17 @@ def main() -> None:
     for i, t in enumerate(unicas, 1):
         ext = ".rtf" if t["tipo"] == "texto" else ".pdf"
         caminho = DIR_PECAS / f"{t['id']}{ext}"
+
+        if args.nao_guardar:
+            conteudo = baixar_em_memoria(t["url"])
+            time.sleep(0.4)
+            reg = dict(t, bytes=len(conteudo or b""), baixado=bool(conteudo))
+            texto, paginas = extrair_de_bytes(conteudo, t["tipo"]) if conteudo else ("", 0)
+            saida.append(medir(reg, texto, paginas, alvos))
+            if i % 25 == 0 or i == len(unicas):
+                print(f"  {i}/{len(unicas)} peças", flush=True)
+            continue
+
         if not caminho.exists() and not args.sem_download:
             ok, tamanho = baixar_peca(t["url"], caminho)
             time.sleep(0.4)
