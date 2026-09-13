@@ -341,6 +341,26 @@ def main() -> None:
             rel = (p.get("cabecalho", {}).get("relator") or "").upper()
             p["do_relator_alvo"] = relator_alvo in rel
 
+    # TRAVA DURA: coleta vazia ou muito menor que a anterior NÃO sobrescreve o
+    # estado bom. O portal do STF responde 403 para IP de datacenter (GitHub
+    # Actions, 13/09/2026) e sem isso o painel publicou zero em tudo.
+    anteriores = 0
+    if SAIDA.exists():
+        try:
+            anteriores = len(json.loads(SAIDA.read_text(encoding="utf-8"))["processos"])
+        except Exception:  # noqa: BLE001
+            anteriores = 0
+    if not processos:
+        raise SystemExit(
+            "ABORTADO: nenhum processo coletado (portal fora do ar ou bloqueando este IP). "
+            f"O arquivo anterior, com {anteriores} processos, foi preservado."
+        )
+    if anteriores and len(processos) < anteriores * 0.7:
+        raise SystemExit(
+            f"ABORTADO: coleta com {len(processos)} processos contra {anteriores} da anterior "
+            "(queda acima de 30%). Estado anterior preservado; rode de novo ou investigue."
+        )
+
     saida = {
         "gerado_em": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "caso": cfg["caso"],

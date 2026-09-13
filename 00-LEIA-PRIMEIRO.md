@@ -85,6 +85,21 @@ Três cuidados que estão escritos na página e não devem ser removidos:
 
 ---
 
+## A coleta NÃO roda no GitHub Actions (13/09/2026)
+
+O portal do STF devolve **403 para IP de datacenter**. No runner do Actions a API de partes
+(`digital.stf.jus.br`) passa, mas **toda** aba `aba*.asp`/`detalhe.asp` é recusada. Na primeira
+rodada automática isso gerou 0 processos, e o pipeline publicou um painel zerado por cima dos dados
+bons (incidente de 13/09).
+
+Consertado em três frentes:
+1. **Travas duras** — `coletar.py` aborta se a coleta vier vazia ou 30% menor que a anterior;
+   `montar_dados.py` aborta se o `docs/dados.json` fosse encolher na mesma proporção. Nada de aviso:
+   sai com erro e **preserva o arquivo publicado**.
+2. **Cron da nuvem desligado** — `atualizar.yml` ficou só com `workflow_dispatch`, para teste.
+3. **Coleta é local** — `coletar_e_publicar.cmd` roda o pipeline inteiro e dá push; a nuvem só
+   publica (`publicar.yml`). Mesmo padrão do scheduler local do CqT.
+
 ## Detalhes que custaram tempo (não redescobrir)
 
 - O portal devolve **403** para `User-Agent` curto. Precisa do UA completo de Chrome.

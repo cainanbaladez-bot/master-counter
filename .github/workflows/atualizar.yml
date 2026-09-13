@@ -2,16 +2,15 @@ name: Atualizar dados
 
 # Só coleta e commita os dados. Quem publica a página é o "Publicar painel",
 # disparado ao fim deste workflow.
+#
+# ATENÇÃO — o cron está desligado de propósito: em 13/09/2026 descobrimos que o
+# portal do STF responde 403 a todo IP de datacenter, então este runner não
+# consegue raspar (a API de partes passa, as abas aba*.asp não). A coleta de
+# verdade roda na máquina do Cainan por coletar_e_publicar.cmd + Tarefa Agendada.
+# Este workflow fica só para teste manual; as travas do pipeline impedem que uma
+# coleta bloqueada publique um painel vazio.
 
 on:
-  schedule:
-    - cron: "0 9,21 * * *"   # 06h e 18h de Brasília
-  push:
-    branches: [main]
-    paths:
-      - "pipeline/**"
-      - "config/**"
-      - ".github/workflows/atualizar.yml"
   workflow_dispatch:
 
 permissions:

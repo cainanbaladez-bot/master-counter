@@ -246,6 +246,26 @@ def main() -> None:
             },
         ],
     }
+    # TRAVA DURA: o painel publicado nunca deve regredir para vazio por uma
+    # coleta ruim. Compara com o dados.json que já está no ar.
+    if SAIDA.exists():
+        try:
+            antes = json.loads(SAIDA.read_text(encoding="utf-8"))["resumo"]
+        except Exception:  # noqa: BLE001
+            antes = {}
+        if antes.get("processos") and (
+            not processos or len(processos) < antes["processos"] * 0.7
+        ):
+            raise SystemExit(
+                f"ABORTADO: {len(processos)} processos contra {antes['processos']} publicados. "
+                "docs/dados.json preservado."
+            )
+        if antes.get("andamentos") and total_and < antes["andamentos"] * 0.7:
+            raise SystemExit(
+                f"ABORTADO: {total_and} andamentos contra {antes['andamentos']} publicados. "
+                "docs/dados.json preservado."
+            )
+
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
     SAIDA.write_text(json.dumps(saida, ensure_ascii=False, indent=1), encoding="utf-8")
     print(
