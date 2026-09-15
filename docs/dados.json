@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-14T22:06:04+00:00",
+ "gerado_em": "2026-09-15T22:06:04+00:00",
  "caso": {
   "nome": "Caso Banco Master no STF",
   "relator": "MIN. ANDRÉ MENDONÇA",
@@ -30,7 +30,7 @@
   "processos_sob_relator": 18,
   "processos_publicos": 18,
   "processos_sigilosos": 0,
-  "andamentos": 2927,
+  "andamentos": 2930,
   "andamentos_com_documento": 568,
   "documentos": 568,
   "pct_andamentos_com_documento": 19.4,
@@ -38,7 +38,7 @@
   "sigilosos": 977,
   "sigilosos_liberados": 48,
   "pct_sigilo_levantado": 4.9,
-  "peca_esperada_ausente": 374,
+  "peca_esperada_ausente": 375,
   "processos_com_apuracao_ativa": 14
  },
  "processos": [
@@ -64,17 +64,17 @@
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7473347",
    "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7473347",
-   "andamentos": 659,
+   "andamentos": 660,
    "andamentos_com_documento": 85,
    "documentos": 85,
    "pct_com_documento": 12.9,
    "primeira_movimentacao": "2025-12-22",
-   "ultima_movimentacao": "2026-09-14",
+   "ultima_movimentacao": "2026-09-15",
    "decisoes": 0,
    "peticoes": 0,
    "classes": {
+    "sem_peca_por_natureza": 267,
     "peca_esperada_ausente": 89,
-    "sem_peca_por_natureza": 266,
     "sigiloso_fechado": 217,
     "publico_com_peca": 81,
     "sigiloso_liberado": 4,
@@ -454,8 +454,8 @@
    "nota": "",
    "partes": [
     "DANIEL BUENO VORCARO",
-    "NATALIA BUENO VORCARO ZETTEL",
     "FELIPE CANCADO VORCARO",
+    "NATALIA BUENO VORCARO ZETTEL",
     "HENRIQUE MOURA VORCARO"
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7473336",
@@ -986,20 +986,20 @@
    ],
    "url_portal": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7509111",
    "url_pecas": "https://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=7509111",
-   "andamentos": 41,
+   "andamentos": 43,
    "andamentos_com_documento": 12,
    "documentos": 12,
-   "pct_com_documento": 29.3,
+   "pct_com_documento": 27.9,
    "primeira_movimentacao": "2026-02-22",
-   "ultima_movimentacao": "2026-09-11",
+   "ultima_movimentacao": "2026-09-15",
    "decisoes": 0,
    "peticoes": 0,
    "classes": {
+    "sem_peca_por_natureza": 8,
+    "peca_esperada_ausente": 2,
     "sigiloso_fechado": 21,
     "publico_com_peca": 11,
-    "sigiloso_liberado": 1,
-    "sem_peca_por_natureza": 7,
-    "peca_esperada_ausente": 1
+    "sigiloso_liberado": 1
    },
    "sigilosos": 22,
    "sigilosos_liberados": 1,
@@ -3039,7 +3039,13 @@
   },
   {
    "data": "2026-09-14",
-   "andamentos": 8,
+   "andamentos": 9,
+   "documentos": 0,
+   "documentos_acumulados": 568
+  },
+  {
+   "data": "2026-09-15",
+   "andamentos": 2,
    "documentos": 0,
    "documentos_acumulados": 568
   }
@@ -3047,7 +3053,7 @@
  "tipos_andamento": [
   {
    "nome": "Petição",
-   "n": 1029
+   "n": 1030
   },
   {
    "nome": "Comunicação assinada",
@@ -3063,7 +3069,7 @@
   },
   {
    "nome": "Conclusos ao(à) Relator(a)",
-   "n": 160
+   "n": 162
   },
   {
    "nome": "Despacho",
@@ -3129,14 +3135,14 @@
    "pct": 0.0
   },
   {
-   "tipo": "Certidão",
+   "tipo": "Despacho",
    "abertos": 0,
    "fechados": 1,
    "total": 1,
    "pct": 0.0
   },
   {
-   "tipo": "Despacho",
+   "tipo": "Certidão",
    "abertos": 0,
    "fechados": 1,
    "total": 1,
@@ -3147,7 +3153,7 @@
   {
    "id": "sem_peca_por_natureza",
    "rotulo": "Andamento sem peça por natureza",
-   "n": 1043
+   "n": 1045
   },
   {
    "id": "sigiloso_fechado",
@@ -3162,7 +3168,7 @@
   {
    "id": "peca_esperada_ausente",
    "rotulo": "Deveria ter peça, e não há",
-   "n": 374
+   "n": 375
   },
   {
    "id": "sigiloso_liberado",
@@ -3220,6 +3226,14 @@
    "ts": "2026-09-14T22:06:05+00:00",
    "documentos": 568,
    "andamentos": 2927,
+   "sigilosos": 977,
+   "sigilosos_liberados": 48,
+   "pct_sigilo_levantado": 4.91
+  },
+  {
+   "ts": "2026-09-15T22:06:05+00:00",
+   "documentos": 568,
+   "andamentos": 2930,
    "sigilosos": 977,
    "sigilosos_liberados": 48,
    "pct_sigilo_levantado": 4.91
